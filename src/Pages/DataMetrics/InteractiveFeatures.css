@@ -1,0 +1,129 @@
+.interactive-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  
+  /* Textos estáticos */
+  .static-texts {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .static-texts h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .static-texts p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Sección interactiva */
+  .interactive-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Lista de características */
+  .features-list {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .feature-item img.feature-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .feature-item:hover {
+    background-color: #e6e6e6; /* Fondo más claro al hacer hover */
+  }
+  
+  .feature-item.active {
+    background-color: #dcdcdc; /* Fondo ligeramente más oscuro para el activo */
+  }
+  
+  .feature-item p {
+    margin: 0;
+  }
+  
+  /* Visualización de la característica */
+  .feature-display {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .feature-content img.feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1024px) {
+    .interactive-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .feature-item {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .static-texts h1 {
+      font-size: 2rem;
+    }
+  
+    .static-texts p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .static-texts h1 {
+      font-size: 1.5rem;
+    }
+  
+    .static-texts p {
+      font-size: 0.9rem;
+    }
+  
+    .feature-item {
+      font-size: 0.8rem;
+    }
+  }
+  

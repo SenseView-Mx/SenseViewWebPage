@@ -1,0 +1,171 @@
+.transformation-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.transformation-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.transformation-container p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.image-area {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+.image-display {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-display img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 33.33%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.image-overlay.left {
+  left: 0;
+}
+
+.image-overlay.center {
+  left: 33.33%;
+}
+
+.image-overlay.right {
+  left: 66.66%;
+}
+
+.steps-container-transformation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 40px;
+}
+
+.step-transformation {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  max-width: 30%;
+}
+
+.step-number-transformation {
+  font-size: 3rem;
+  font-weight: 650;
+  color: #00a5cf;
+  margin-bottom: 10px;
+}
+
+.step-transformation h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.step-transformation p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media Queries para ajustar a dispositivos de tamaño tableta */
+@media (max-width: 768px) {
+  .image-area {
+    width: fit-content;
+    height: fit-content; /* Ajusta esta altura según sea necesario para la visualización de la imagen */
+    margin-bottom: 0; /* Eliminar margen inferior directamente después de la imagen */
+}
+.image-display{
+
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+
+  .transformation-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .transformation-container p,
+  .step-transformation p {
+      font-size: 0.9rem;
+  }
+
+  .steps-container-transformation {
+      flex-direction: column;
+      padding: 20px 0;
+  }
+
+  .step-transformation {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .step-number-transformation {
+      font-size: 2rem;
+  }
+}
+
+/* Media Queries para ajustar a dispositivos móviles */
+/* Media Queries para ajustar a dispositivos móviles */
+@media (max-width: 480px) {
+  .image-area {
+      width: fit-content;
+      height: fit-content; /* Ajusta esta altura según sea necesario para la visualización de la imagen */
+      margin-bottom: 0; /* Eliminar margen inferior directamente después de la imagen */
+  }
+  .image-display{
+
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+
+  .steps-container-transformation {
+      margin-top: 0; /* Eliminar cualquier margen superior adicional en el contenedor de pasos */
+  }
+
+  .transformation-container {
+      padding: 10px 5px; /* Ajustar el padding general del contenedor para reducir el espacio */
+  }
+
+  .step-transformation {
+      padding: 5px 0; /* Reducir el padding vertical en cada paso */
+      margin-bottom: 10px; /* Ajustar el margen entre pasos si están en columna */
+  }
+
+  .step-transformation p {
+      margin-bottom: 0; /* Si es necesario, eliminar el margen inferior de los párrafos en los pasos */
+  }
+
+  .image-display img {
+      max-height: 100%; /* Asegurarse de que las imágenes no excedan la altura del contenedor */
+  }
+}

@@ -1,0 +1,243 @@
+.dm-body{
+    background: #f2f2f2;
+    font-family: "Manrope", sans-serif;
+    padding:  0;
+  }
+  
+  .data-metrics-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    padding: 40px;
+    min-height: 50vh;
+    background: linear-gradient(
+        to top,
+        rgba(33, 33, 33, 1),
+        rgba(33, 33, 33, 0.8),
+        rgba(23, 42, 79, 0.676) 100%
+      ),
+      url('') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  
+  .data-metrics-section-label {
+    margin-top: 5%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f3eeeeac;
+  }
+  
+  .data-metrics-content {
+    margin-top: 15px;
+    max-width: 600px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .data-metrics-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .data-metrics-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #ababab;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  
+  .data-metrics-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0px 10%;
+  }
+  
+  .highlight {
+    color: #00a5cf;
+  }
+  
+  .header-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin: 0 21%;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .image-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .info-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .info-text strong {
+    color: #000000b6;
+  }
+  
+
+  .section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #212121;
+    color: white;
+  }
+  
+  .text-and-mockup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .section3-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .section3-description {
+    font-size: 0.9rem;
+    color: #ababab;
+    margin-right: 14%;
+    line-height: 1.6;
+  }
+  
+  .mockup-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mockup-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  /* Estilos responsivos */
+@media (max-width: 1024px) {
+    .content-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .header-title {
+      font-size: 2rem;
+    }
+  
+    .header-description {
+      font-size: 1rem;
+      margin: 0 10%;
+    }
+
+    .text-and-mockup {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+    
+      .section3-title {
+        font-size: 2rem;
+      }
+    
+      .section3-description {
+        font-size: 1rem;
+      }
+
+  }
+  
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 1.8rem;
+    }
+  
+    .header-description {
+      font-size: 0.9rem;
+    }
+  
+    .info-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-title {
+      font-size: 1.5rem;
+    }
+  
+    .header-description {
+      font-size: 0.8rem;
+    }
+  
+    .info-text {
+      font-size: 0.8rem;
+    }
+  
+
+  }
+  

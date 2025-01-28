@@ -1,0 +1,72 @@
+/* Estilos base */
+.proteo-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ffffff; /* Fondo claro ajustable según tu diseño */
+    color: #333; /* Color de texto oscuro para contraste */
+}
+
+.proteo-image-container {
+    width: 50%;
+}
+
+.proteo-image-container img {
+    width: 100%;
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados si es necesario */
+}
+
+.proteo-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.proteo-content h2 {
+    font-size: 1.5em;
+    color: #004d40; /* Un color oscuro que combina con tu tema */
+    margin-bottom: 10px;
+}
+
+.proteo-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666; /* Un gris oscuro para el texto */
+    margin-bottom: 10px; /* Espaciado entre párrafos */
+}
+
+/* Ajustes responsivos para tabletas */
+@media (max-width: 768px) {
+    .proteo-section {
+        flex-direction: column;
+        padding: 20px; /* Padding reducido para tabletas */
+    }
+
+    .proteo-image-container,
+    .proteo-content {
+        width: 100%; /* Ancho completo para evitar desbordamientos */
+        padding: 10px 0; /* Padding vertical ajustado */
+    }
+
+    .proteo-content {
+        order: 1; /* Cambiar el orden si se desea mostrar el contenido primero */
+    }
+}
+
+/* Ajustes responsivos para móviles */
+@media (max-width: 480px) {
+    .proteo-section {
+        padding: 10px; /* Padding aún más reducido para móviles */
+    }
+
+    .proteo-content h2 {
+        font-size: 1.2em; /* Tamaño de fuente reducido para los títulos */
+    }
+
+    .proteo-content p {
+        font-size: 0.9em; /* Tamaño de fuente reducido para los textos */
+    }
+}

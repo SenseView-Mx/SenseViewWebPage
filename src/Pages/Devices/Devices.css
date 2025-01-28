@@ -1,0 +1,270 @@
+/* Estilos generales */
+.dv-body {
+    font-family: "Manrope", sans-serif;
+}
+
+.device-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    padding: 10% 5%;
+    min-height: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to left,
+        rgba(33, 33, 33, 0.507),
+        rgba(33, 33, 33, 0.8),
+        rgba(23, 42, 79, 0.676) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.device-section-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f3eeee81;
+}
+
+.device-content {
+    max-width: 600px;
+    z-index: 2;
+    position: relative;
+}
+
+.device-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.device-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #ababab;
+}
+
+/* Segunda sección con fondo dinámico */
+.dynamic-section {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 40px 80px;
+    transition: background-color 0.5s ease;
+}
+
+.dynamic-content {
+    width: 100%;
+    /* max-width: 800px; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.dynamic-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.dynamic-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* Estilo base del botón */
+.device-button {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ---- Modo oscuro ---- */
+.dark-mode .device-button.inactive {
+    background-color: #424242; /* Gris oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.dark-mode .device-button.active {
+    background-color: #00a5cf; /* Celeste */
+    color: #ffffff; /* Texto blanco */
+}
+
+.dark-mode .device-button.active .button-main {
+    color: #212121; /* Texto principal negro */
+}
+ 
+
+/* ---- Modo claro ---- */
+.light-mode .device-button.inactive {
+    background-color: #dbd9d99b; /* Blanco */
+    color: #212121; /* Texto negro */
+}
+
+.light-mode .device-button.active {
+    background-color: #212121; /* Negro */
+    color: #ffffff; /* Texto blanco */
+}
+
+.light-mode .device-button.active .button-main {
+    color: #00a5cf; /* Texto principal celeste */
+}
+
+.light-mode .device-button:hover {
+    background-color: #e0e0e0; /* Gris claro en hover */
+}
+
+/* ---- Estilos del texto ---- */
+.button-main {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.button-detail {
+    font-weight: normal;
+    margin-left: 4px;
+    transition: opacity 0.3s ease;
+}
+
+/* Texto inactivo */
+.device-button:not(.active) .button-detail {
+    display: none; /* Esconde el detalle si el botón no está activo */
+}
+
+
+/* Contenedor multimedia ajustado */
+.dynamic-media-container {
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    /* border-radius: 40px; Bordes redondeados */
+    overflow: hidden; /* Ocultar contenido que sobresalga */
+    box-shadow: none; /* Eliminar sombras no deseadas */
+}
+
+/* Estilo para los videos e imágenes */
+.dynamic-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el contenido para llenar el contenedor */
+}
+
+.dynamic-title-end {
+    font-size: 1.3rem;
+    font-weight: 650;
+    margin-bottom: 2px;
+    text-align: center;
+    align-self: center;
+}
+
+.dynamic-description-end {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    align-self: center;
+}
+
+
+/* Ajustes para fondo dinámico */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode {
+    background-color: #232323;
+    color: #ffffff;
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .device-container,
+    .dynamic-section {
+        padding: 20px;
+    }
+
+    .device-title {
+        font-size: 2rem; /* Tamaño de fuente más pequeño para títulos en dispositivos más pequeños */
+    }
+
+    .device-description,
+    .dynamic-description {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para descripciones */
+    }
+
+    .button-group {
+        flex-direction: column; /* Cambiar la orientación de los botones para mejor accesibilidad */
+    }
+
+    .dynamic-media-container {
+        height: 300px; /* Ajustar la altura del contenedor multimedia */
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    .device-container,
+    .dynamic-section {
+        padding: 10px;
+    }
+
+    .device-title {
+        font-size: 1.5rem;
+    }
+
+    .device-button {
+        font-size: 0.8rem; /* Reducir el tamaño del texto en los botones */
+        padding: 6px 12px; /* Ajustar el padding de los botones */
+    }
+
+    .dynamic-media-container {
+        height: 200px; /* Altura aún más pequeña para contenedores multimedia */
+    }
+}

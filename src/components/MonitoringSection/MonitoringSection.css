@@ -1,0 +1,123 @@
+.monitoring-section {
+  padding: 5% 60px;
+  background: rgba(33, 33, 33, 255);
+  text-align: center;
+  color: white;
+}
+
+.monitoring-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 15px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.monitoring-item {
+  position: relative;
+  background: #333333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.monitoring-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Contenedor del icono y título inicial */
+.icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.icon-container p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.monitoring-item:hover .icon-container {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Contenido que aparece al hacer hover */
+.content-monitoring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.monitoring-item:hover .content-monitoring {
+  opacity: 1;
+  visibility: visible;
+}
+
+.title-monitoring {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00a5cf;
+}
+
+.description-monitoring {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* **Ajustes para pantallas más pequeñas** */
+@media (max-width: 1024px) {
+  .monitoring-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .monitoring-grid {
+    grid-template-columns: 1fr; /* 1 columna */
+    max-width: 90%;
+  }
+
+  .monitoring-item {
+    height: 120px;
+  }
+}

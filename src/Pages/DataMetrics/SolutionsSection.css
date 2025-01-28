@@ -1,0 +1,51 @@
+.solutionsSection-section {
+  padding: 20px 5vw; /* Usa unidades relativas para ajustar el padding */
+  background-color: #212121;
+}
+
+.solutionsSection-section .section-label {
+  font-size: 1rem; /* Tamaño relativo para texto pequeño */
+  font-weight: 600;
+  color: #ababab;
+  margin-bottom: 10px;
+}
+
+.solutionsSection-section h1 {
+  font-size: 2rem; /* Ajusta el tamaño del título */
+  font-weight: 600;
+  color: white;
+  text-align: center; /* Centra el texto para pantallas pequeñas */
+  margin-bottom: 20px;
+}
+
+.solutionsSection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Se adapta a pantallas pequeñas */
+  gap: 20px;
+  align-items: center;
+}
+
+/* Media Queries para ajustes adicionales */
+@media (max-width: 768px) {
+  .solutionsSection-section h1 {
+      font-size: 1.8rem;
+  }
+  .solutionsSection-section .section-label {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .solutionsSection-section {
+      padding: 10px 3vw; /* Reduce el padding en dispositivos muy pequeños */
+  }
+  .solutionsSection-section h1 {
+      font-size: 1.5rem;
+  }
+  .solutionsSection-section .section-label {
+      font-size: 0.8rem;
+  }
+  .solutionsSection-grid {
+      gap: 15px; /* Reduce la separación entre tarjetas */
+  }
+}
