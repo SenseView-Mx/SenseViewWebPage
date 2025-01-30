@@ -37,7 +37,7 @@ const MissionSection = () => {
         {/* Texto en la izquierda */}
         <div className="cta-text">
           <h3>{t("ctaText")}</h3>
-          <Button>
+          <Button to={"/contact"}>
             {t("ctaButton")}
             <img src="/00-Buttons, Dropdowns & Questions/contact_page.png" alt="Contact Icon" />
           </Button>

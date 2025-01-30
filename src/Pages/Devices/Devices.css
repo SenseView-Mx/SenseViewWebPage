@@ -1,4 +1,3 @@
-/* Estilos generales */
 .dv-body {
     font-family: "Manrope", sans-serif;
 }
@@ -67,19 +66,13 @@
     color: #ababab;
 }
 
-/* Segunda sección con fondo dinámico */
 .dynamic-section {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
     padding: 40px 80px;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.001s ease;
 }
 
 .dynamic-content {
     width: 100%;
-    /* max-width: 800px; */
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -107,7 +100,6 @@
     padding: 16px;
 }
 
-/* Estilo base del botón */
 .device-button {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -123,42 +115,40 @@
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ---- Modo oscuro ---- */
 .dark-mode .device-button.inactive {
-    background-color: #424242; /* Gris oscuro */
-    color: #ffffff; /* Texto blanco */
+    background-color: 
+    #626262; 
+    color: #ffffff; 
 }
 
 .dark-mode .device-button.active {
-    background-color: #00a5cf; /* Celeste */
-    color: #ffffff; /* Texto blanco */
+    background-color: #00a5cf; 
+    color: #ffffff; 
 }
 
 .dark-mode .device-button.active .button-main {
-    color: #212121; /* Texto principal negro */
+    color: #212121; 
 }
  
 
-/* ---- Modo claro ---- */
 .light-mode .device-button.inactive {
-    background-color: #dbd9d99b; /* Blanco */
-    color: #212121; /* Texto negro */
+    background-color: #dbd9d99b;
+    color: #212121; 
 }
 
 .light-mode .device-button.active {
-    background-color: #212121; /* Negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #212121; 
+    color: #ffffff; 
 }
 
 .light-mode .device-button.active .button-main {
-    color: #00a5cf; /* Texto principal celeste */
+    color: #00a5cf; 
 }
 
 .light-mode .device-button:hover {
-    background-color: #e0e0e0; /* Gris claro en hover */
+    background-color: #e0e0e0; 
 }
 
-/* ---- Estilos del texto ---- */
 .button-main {
     font-weight: bold;
     transition: color 0.3s ease;
@@ -170,30 +160,62 @@
     transition: opacity 0.3s ease;
 }
 
-/* Texto inactivo */
 .device-button:not(.active) .button-detail {
-    display: none; /* Esconde el detalle si el botón no está activo */
+    display: none; 
 }
 
-
-/* Contenedor multimedia ajustado */
 .dynamic-media-container {
+    position: relative;
     justify-content: center;
+    align-items: center;
     align-self: center;
     width: 100%;
-    max-width: 600px;
-    height: 400px;
-    /* border-radius: 40px; Bordes redondeados */
-    overflow: hidden; /* Ocultar contenido que sobresalga */
-    box-shadow: none; /* Eliminar sombras no deseadas */
+    /* max-width: 600px; */
+    height: 500px;
+    overflow: hidden;
+    z-index: 1;
 }
 
-/* Estilo para los videos e imágenes */
+.button-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    gap: 20px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
 .dynamic-media {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta el contenido para llenar el contenedor */
+    object-fit: contain;
+    transition: opacity 1s ease, z-index 1s ease-in-out;
 }
+
+.dynamic-media.final-position {
+    z-index: -1;
+    opacity: 0.8;
+}
+
 
 .dynamic-title-end {
     font-size: 1.3rem;
@@ -212,18 +234,16 @@
 }
 
 
-/* Ajustes para fondo dinámico */
 .light-mode {
     background-color: #ffffff;
     color: #000000;
 }
 
 .dark-mode {
-    background-color: #232323;
+    background-color: #212121;
     color: #ffffff;
 }
 
-/* Estilos para tablets */
 @media (max-width: 768px) {
     .device-container,
     .dynamic-section {
@@ -231,24 +251,23 @@
     }
 
     .device-title {
-        font-size: 2rem; /* Tamaño de fuente más pequeño para títulos en dispositivos más pequeños */
+        font-size: 2rem; 
     }
 
     .device-description,
     .dynamic-description {
-        font-size: 1rem; /* Tamaño de fuente más pequeño para descripciones */
+        font-size: 1rem;
     }
 
     .button-group {
-        flex-direction: column; /* Cambiar la orientación de los botones para mejor accesibilidad */
+        flex-direction: column;
     }
 
     .dynamic-media-container {
-        height: 300px; /* Ajustar la altura del contenedor multimedia */
+        height: 300px; 
     }
 }
 
-/* Estilos para móviles */
 @media (max-width: 480px) {
     .device-container,
     .dynamic-section {
@@ -260,11 +279,11 @@
     }
 
     .device-button {
-        font-size: 0.8rem; /* Reducir el tamaño del texto en los botones */
-        padding: 6px 12px; /* Ajustar el padding de los botones */
+        font-size: 0.8rem; 
+        padding: 6px 12px; 
     }
 
     .dynamic-media-container {
-        height: 200px; /* Altura aún más pequeña para contenedores multimedia */
+        height: 200px; 
     }
 }

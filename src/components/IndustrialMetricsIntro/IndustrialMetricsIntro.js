@@ -9,6 +9,7 @@ const IndustrialMetricsIntro = ({
   description,
   buttonText,
   buttonIcon,
+  toLink,
 }) => {
   return (
     <div
@@ -36,7 +37,7 @@ const IndustrialMetricsIntro = ({
       <div className="content">
         <h1 className="title">{title}</h1>
         <p className="description">{description}</p>
-        <Button>
+        <Button to={toLink}>
           {buttonText}
           {buttonIcon && <img src={buttonIcon} alt="icon" />}
         </Button>

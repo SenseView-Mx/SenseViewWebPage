@@ -36,7 +36,7 @@ const HowItWorks = () => {
           <p className="hw-section-label">{t("sectionLabelHW")}</p>
           <h1 className="how-it-works-title">{t("titleHW")}</h1>
           <p className="how-it-works-description">{t("descriptionHW")}</p>
-          <Button>
+          <Button to={"/contact"}>
             {t("scheduleDemoButton")}
             <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="Demo" />
           </Button>
@@ -76,7 +76,7 @@ const HowItWorks = () => {
         <div className="hw-cta-text">
           <h3>{t("ctaTitleHW")}</h3>
           <p>{t("ctaDescriptionHW")}</p>
-          <Button>
+          <Button to={"/contact"}>
             {t("ctaButton")}
             <img src="/00-Buttons, Dropdowns & Questions/contact_page.png" alt={t("ctaImageAlt")} />
           </Button>

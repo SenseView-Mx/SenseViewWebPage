@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/Buttons/Button"; // Asegúrate de importar tu componente Button
+import Button from "../../components/Buttons/Button"; 
 import "./BenefitsSection.css";
 import { useLanguage } from "../../LanguageContext";
 
@@ -24,14 +24,14 @@ const BenefitsSection = () => {
           <h1 className="section5-title">{t("powerfulTool")}</h1>
           <p className="section5-description">{t("benefitsDescription")}</p>
           <div className="section5-buttons">
-            <Button>
+            <Button to={"/contact"}>
               {t("scheduleDemoButton")}
               <img
                 src="/00-Buttons, Dropdowns & Questions/event.svg"
                 alt="Demo"
               />
             </Button>
-            <Button variant="secondary">
+            <Button variant="secondary" to={"/pricing"}>
               {t("pricingButton")}
               <img
                 src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"

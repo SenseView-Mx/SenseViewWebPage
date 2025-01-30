@@ -2,7 +2,7 @@ import React from "react";
 import "./ContactCard.css";
 import Button from "../Buttons/Button";
 
-const ContactCard = ({ title, email, phone, buttonText, buttonIcon, onButtonClick, variantButton = "primary" }) => {
+const ContactCard = ({ title, email, phone, buttonText, buttonIcon, onButtonClick, variantButton = "primary", toLink }) => {
   return (
     <div className="contact-card">
       <h2>{title}</h2>
@@ -14,9 +14,9 @@ const ContactCard = ({ title, email, phone, buttonText, buttonIcon, onButtonClic
       </p>
       {buttonText && (
         <Button
-          className="contact-button" 
           variant={variantButton}
           onClick={onButtonClick}
+          to={toLink}
         >
           {buttonText} {buttonIcon && <img src={buttonIcon} alt="button-icon" />}
         </Button>

@@ -80,7 +80,7 @@
   transform: rotate(180deg);
 }
 
-/* Estilos responsivos para tablets
+/* Estilos responsivos para tablets */
 @media screen and (max-width: 768px) {
   .faq-section {
       margin: 30px auto;
@@ -98,7 +98,7 @@
   .faq-item {
       padding: 12px 15px;
   }
-} */
+} 
 
 /* Estilos responsivos para móviles */
 @media screen and (max-width: 480px) {
@@ -147,7 +147,7 @@
   }
 }
 
-/* Ajuste para pantallas muy pequeñas
+/* Ajuste para pantallas muy pequeñas */
 @media screen and (max-width: 320px) {
   .faq-title {
       font-size: 1.25rem;
@@ -160,4 +160,4 @@
   .faq-answer {
       font-size: 0.8rem;
   }
-} */
+} 

@@ -130,9 +130,6 @@ textarea {
   font-weight: 700;
 }
 
-/* ======================
-   MEDIA QUERIES
-   ====================== */
 
 /* Pantallas entre ~768px y ~1024px (tablets / pantallas medianas) */
 @media (max-width: 1024px) {

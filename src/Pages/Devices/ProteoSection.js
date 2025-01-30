@@ -1,9 +1,9 @@
 import React from 'react';
 import './ProteoSection.css';
-import { useLanguage } from "../../LanguageContext";  // Importar el contexto de idioma
+import { useLanguage } from "../../LanguageContext";  
 
 const ProteoSection = () => {
-    const { t } = useLanguage();  // Obtener la función de traducción
+    const { t } = useLanguage();  
 
     return (
         <div className="proteo-section">

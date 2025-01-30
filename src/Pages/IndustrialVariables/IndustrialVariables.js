@@ -54,6 +54,7 @@ const IndustrialVariables = () => {
         description={t("industrialVariablesDescription")}
         buttonText={t("scheduleDemoButton")}
         buttonIcon="/00-Buttons, Dropdowns & Questions/event.svg"
+        toLink={"/contact"}
       />
       <div className="description-section">
         <div className="description-left">

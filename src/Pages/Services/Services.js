@@ -15,7 +15,7 @@ function Services() {
             <p className="section-label">{t("sectionLabel")}</p>
             <h1>{t("heroTitle")}</h1>
             <p>{t("heroDescription")}</p>
-            <Button>
+            <Button to={"/contact"}>
               {t("scheduleDemoButton")}
               <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="Demo" />
             </Button>
@@ -28,7 +28,7 @@ function Services() {
                   <img src="/05-Services/Icons/troubleshoot.svg" alt="Icon" />
                 </div>
                 <h3 className="card-title">{t("variablesCardtitle")}</h3>
-                <Button variant="secondary">
+                <Button variant="secondary" to={"/services/industrial-variables"}>
                   {t("variablesCardbuttonText")}
                   <img
                     src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"
@@ -55,7 +55,7 @@ function Services() {
                   <img src="/05-Services/Icons/leaderboard.svg" alt="Icon" />
                 </div>
                 <h3 className="card-title">{t("metricsCardtitle")}</h3>
-                <Button variant="secondary">
+                <Button variant="secondary" to={"/services/production-metrics"}>
                   {t("metricsCardbuttonText")}
                   <img
                     src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"
@@ -77,16 +77,17 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className="solutions-section">
+      <div className="solutionsServices-section">
         <p className="section-label">{t("solutionsLabel")}</p>
         <h1>{t("solutionsTitle")}</h1>
-        <div className="solutions-grid">
+        <div className="solutionsServices-grid">
           <FeatureCard
             imageSrc="/05-Services/Photo_Device01.webp"
             title={t("proteoTitle")}
             description={t("proteoDescription")}
             buttonText={t("proteoButton")}
             buttonIcon="/00-Buttons, Dropdowns & Questions/memory.svg"
+            toLink={"/devices"}
           />
           <FeatureCard
             imageSrc="/05-Services/Photo_Laptop02.webp"
@@ -94,6 +95,7 @@ function Services() {
             description={t("dataDescription")}
             buttonText={t("dataButton")}
             buttonIcon="/00-Buttons, Dropdowns & Questions/dashboard_customize.svg"
+            toLink={"/data-metrics"}
           />
         </div>
       </div>

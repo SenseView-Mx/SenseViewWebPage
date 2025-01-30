@@ -26,7 +26,7 @@ const Prices = () => {
               <li>{t("feature")}</li>
               <li>{t("feature")}</li>
             </ul>
-            <Button>
+            <Button to={"/contact"}>
               {t("ScheduleDemoButton")}
               <img
                 src="00-Buttons, Dropdowns & Questions/event.svg"
@@ -46,7 +46,7 @@ const Prices = () => {
               <li>{t("feature")}</li>
               <li>{t("feature")}</li>
             </ul>
-            <Button>
+            <Button to={"/contact"}>
               {t("ScheduleDemoButton")}
               <img
                 src="00-Buttons, Dropdowns & Questions/event.svg"

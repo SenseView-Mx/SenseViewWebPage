@@ -10,31 +10,31 @@ const InteractiveFeatures = () => {
     {
       id: "feature1",
       title: t("feature1Title"),
-      icon: "/09-Dashboard/Icons/dashboard_customize.svg", // Ruta del ícono correspondiente
+      icon: "/09-Dashboard/Icons/dashboard_customize.svg", 
       image: "/path-to-image1.png", // Ruta de la imagen
     },
     {
       id: "feature2",
       title: t("feature2Title"),
-      icon: "/09-Dashboard/Icons/ads_click.svg", // Ruta del ícono correspondiente
+      icon: "/09-Dashboard/Icons/ads_click.svg",
       image: "/path-to-image2.png",
     },
     {
       id: "feature3",
       title: t("feature3Title"),
-      icon: "/09-Dashboard/Icons/tune.svg", // Ruta del ícono correspondiente
+      icon: "/09-Dashboard/Icons/tune.svg", 
       image: "/path-to-image3.png",
     },
     {
       id: "feature4",
       title: t("feature4Title"),
-      icon: "/09-Dashboard/Icons/notifications_unread.svg", // Ruta del ícono correspondiente
+      icon: "/09-Dashboard/Icons/notifications_unread.svg", 
       image: "/path-to-image4.png",
     },
     {
       id: "feature5",
       title: t("feature5Title"),
-      icon: "/09-Dashboard/Icons/verified_user.svg", // Ruta del ícono correspondiente
+      icon: "/09-Dashboard/Icons/verified_user.svg", 
       image: "/path-to-image5.png",
     },
   ];

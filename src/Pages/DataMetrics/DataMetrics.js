@@ -16,7 +16,7 @@ const DataMetrics = () => {
           <p className="data-metrics-section-label">{t("dataAndMetrics")}</p>
           <h1 className="data-metrics-title">{t("fromDataToInformation")}</h1>
           <p className="data-metrics-description">{t("discoverBenefits")}</p>
-          <Button>
+          <Button to={"/contact"}>
             {t("scheduleDemoButton")}
             <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="Demo" />
           </Button>
@@ -52,7 +52,7 @@ const DataMetrics = () => {
       </div>
 
       <div className="section3">
-        {/* Text and mockup section */}
+        {/* Text and image section */}
         <div className="text-and-mockup">
           <div className="text-content">
             <h1 className="section3-title">

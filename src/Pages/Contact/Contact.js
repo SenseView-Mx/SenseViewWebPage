@@ -35,7 +35,7 @@ const Contact = () => {
             </p>
             <div className="social-icons">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Sense-View/61556885189499/?is_tour_completed=true"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -46,7 +46,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/senseview/about/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -57,7 +57,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@senseviewmx"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -68,7 +68,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/senseviewmx/?igsh=MXZzMmoyc3BoMW9ocA%3D%3D#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -79,7 +79,7 @@ const Contact = () => {
                 />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/senseviewmx?s=11&t=yUWHfdCX1kRt_eElh_qhsg"
                 target="_blank"
                 rel="noopener noreferrer"
               >

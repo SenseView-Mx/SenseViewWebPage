@@ -19,14 +19,14 @@ const GiantCardSection = () => {
           <h3>{t("GiantCardTitle1")}</h3>
           <p>{t("GiantCardDescription1")}</p>
           <div className="section-buttons">
-            <Button>
+            <Button to={"/services"}>
               {t("GiantCardButton1")}
               <img
                 src="00-Buttons, Dropdowns & Questions/senseview_isotype.svg"
                 alt={t("GiantCardButton1Alt")}
               />
             </Button>
-            <Button variant="secondary">{t("GiantCardButton2")}
+            <Button variant="secondary" to={"/how-it-works"}>{t("GiantCardButton2")}
             <img
                 src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"
                 alt={t("GiantCardButton1Alt")}
@@ -47,7 +47,7 @@ const GiantCardSection = () => {
           <h3>{t("GiantCardTitle2")}</h3>
           <p>{t("GiantCardDescription2")}</p>
           <div className="section-buttons">
-            <Button>
+            <Button to={"/devices"}>
               {t("GiantCardButton3")}
               <img
                 src="00-Buttons, Dropdowns & Questions/memory.svg"
@@ -69,7 +69,7 @@ const GiantCardSection = () => {
           <h3>{t("GiantCardTitle3")}</h3>
           <p>{t("GiantCardDescription3")}</p>
           <div className="section-buttons">
-            <Button>
+            <Button to={"/data-metrics"}>
               {t("GiantCardButton4")}
               <img
                 src="00-Buttons, Dropdowns & Questions/dashboard_customize.svg"

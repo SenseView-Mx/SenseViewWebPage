@@ -18,6 +18,7 @@ const SolutionSection = () => {
             description={t("proteoDescription")}
             buttonText={t("proteoButton")}
             buttonIcon="/00-Buttons, Dropdowns & Questions/memory.svg"
+            toLink={"/devices"}
           />
           <FeatureCard
             imageSrc="/05-Services/Photo_Laptop02.webp"
@@ -25,6 +26,7 @@ const SolutionSection = () => {
             description={t("dataDescription")}
             buttonText={t("dataButton")}
             buttonIcon="/00-Buttons, Dropdowns & Questions/dashboard_customize.svg"
+            toLink={"/data-metrics"}
           />
         </div>
       </div>

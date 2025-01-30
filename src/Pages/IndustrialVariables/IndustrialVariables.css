@@ -96,37 +96,33 @@
   margin-top: -1%;
 }
 
-/* Section 3 */
-
-
-/* General Responsive Adjustments */
 @media (max-width: 1200px) {
   .description-section {
-    padding: 50px 80px; /* Reducir padding para pantallas medianas */
+    padding: 50px 80px; 
   }
   .description-left {
-    width: 50%; /* Más ancho para pantallas medianas */
+    width: 50%; 
   }
   .description-right {
-    gap: 20px; /* Reducir el espacio entre elementos */
+    gap: 20px; 
   }
   .feature-description {
-    width: 280px; /* Ajustar el ancho de los elementos */
+    width: 280px; 
   }
 }
 
 @media (max-width: 992px) {
   .description-section {
-    flex-direction: column; /* Cambiar a disposición en columna */
+    flex-direction: column;
     padding: 40px 20px;
     align-items: center;
   }
   .description-left,
   .description-right {
-    width: 100%; /* Ocupan todo el ancho */
+    width: 100%; 
   }
   .feature-description {
-    width: 90%; /* Asegurarse de que quepan en pantallas pequeñas */
+    width: 90%; 
   }
 }
 
@@ -134,20 +130,20 @@
   .industrial-variables-container {
     margin-top: 10%;
     padding: 20px;
-    min-height: 40vh; /* Reducir altura mínima */
+    min-height: 40vh; 
   }
   .title {
-    font-size: 2rem; /* Tamaño reducido de títulos */
+    font-size: 2rem;
   }
   .description {
-    font-size: 1rem; /* Ajustar texto descriptivo */
+    font-size: 1rem; 
   }
   .monitoring-grid {
-    margin-left: 5%; /* Reducir márgenes horizontales */
+    margin-left: 5%;
     margin-right: 5%;
   }
   .monitoring-item {
-    flex: 1 1 calc(50% - 10px); /* 2 elementos por fila */
+    flex: 1 1 calc(50% - 10px); 
     max-width: calc(50% - 10px);
   }
   .description-right{
@@ -158,38 +154,38 @@
 
 @media (max-width: 576px) {
   .description-section {
-    padding: 20px 10px; /* Reducir padding general */
+    padding: 20px 10px; 
   }
+
   .monitoring-item {
-    flex: 1 1 100%; /* 1 elemento por fila */
+    flex: 1 1 100%;
     max-width: 100%;
   }
   .content-monitoring {
-    padding: 10px; /* Reducir padding interno */
+    padding: 10px; 
   }
   .icon-container {
-    padding: 30px; /* Ajustar espaciado para iconos */
+    padding: 30px; 
   }
   .feature-description {
-    width: 100%; /* Usar todo el ancho */
-    height: auto; /* Ajustar altura automáticamente */
+    width: 100%;
+    height: auto; 
   }
 }
 
-/* Specific adjustments for very small screens */
 @media (max-width: 375px) {
   .breadcrumb {
-    flex-wrap: wrap; /* Permitir múltiples líneas si es necesario */
-    font-size: 0.9rem; /* Reducir tamaño de texto */
+    flex-wrap: wrap;
+    font-size: 0.9rem; 
   }
   .title {
-    font-size: 1.8rem; /* Más pequeño para pantallas pequeñas */
+    font-size: 1.8rem; 
   }
   .description {
     font-size: 0.9rem;
   }
   .feature-text-description {
-    font-size: 0.8rem; /* Reducir texto de las características */
+    font-size: 0.8rem; 
   }
   
 }

@@ -46,15 +46,15 @@
 /* Ajustes responsivos para tabletas */
 @media (max-width: 768px) {
   .feature-card-content {
-    padding: 15px; /* Menos padding en dispositivos más pequeños */
+    padding: 15px; 
 }
 
 .feature-card-content h3 {
-    font-size: 0.5rem; /* Tamaño de fuente más pequeño para los títulos */
+    font-size: 0.5rem; 
 }
 
 .feature-card-content p {
-    font-size: 0.9rem; /* Tamaño de fuente más pequeño para los párrafos */
+    font-size: 0.9rem; 
 }
 
   .feature-card-content {
@@ -74,9 +74,6 @@
 
 /* Ajustes responsivos para móviles */
 @media (max-width: 480px) {
-  .feature-card {
-      /* No further size adjustments needed, only text and padding */
-  }
 
   .feature-card-content {
       bottom: 5px;
@@ -85,10 +82,10 @@
   }
 
   .feature-card-content h3 {
-      font-size: 1rem; /* Tamaño de fuente más pequeño para cabeceras en móviles */
+      font-size: 1rem; 
   }
 
   .feature-card-content p {
-      font-size: 0.8rem; /* Tamaño de texto reducido para descripciones en móviles */
+      font-size: 0.8rem; 
   }
 }

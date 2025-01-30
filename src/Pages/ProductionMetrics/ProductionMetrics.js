@@ -55,6 +55,7 @@ const ProductionMetrics = () => {
           description={t("introDescription")}
           buttonText={t("scheduleDemoButton")}
           buttonIcon="/00-Buttons, Dropdowns & Questions/event.svg"
+          toLink={"/contact"}
         />
         {/* KPI Section */}
         <div className="metrics-s2">

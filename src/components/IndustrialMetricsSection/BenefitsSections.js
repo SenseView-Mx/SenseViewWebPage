@@ -1,6 +1,6 @@
 import React from "react";
 import { useLanguage } from "../../LanguageContext";
-import "./BenefitsSections.css"; // Archivo CSS para estilos
+import "./BenefitsSections.css";
 
 const BenefitsSections = ({ variant = "default" }) => {
   const { t } = useLanguage();

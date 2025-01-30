@@ -92,12 +92,11 @@
   color: #555;
 }
 
-/* Media Queries para ajustar a dispositivos de tamaño tableta */
 @media (max-width: 768px) {
   .image-area {
     width: fit-content;
-    height: fit-content; /* Ajusta esta altura según sea necesario para la visualización de la imagen */
-    margin-bottom: 0; /* Eliminar margen inferior directamente después de la imagen */
+    height: fit-content;
+    margin-bottom: 0; 
 }
 .image-display{
 
@@ -132,13 +131,11 @@
   }
 }
 
-/* Media Queries para ajustar a dispositivos móviles */
-/* Media Queries para ajustar a dispositivos móviles */
 @media (max-width: 480px) {
   .image-area {
       width: fit-content;
-      height: fit-content; /* Ajusta esta altura según sea necesario para la visualización de la imagen */
-      margin-bottom: 0; /* Eliminar margen inferior directamente después de la imagen */
+      height: fit-content; 
+      margin-bottom: 0; 
   }
   .image-display{
 
@@ -149,23 +146,23 @@
   }
 
   .steps-container-transformation {
-      margin-top: 0; /* Eliminar cualquier margen superior adicional en el contenedor de pasos */
+      margin-top: 0; 
   }
 
   .transformation-container {
-      padding: 10px 5px; /* Ajustar el padding general del contenedor para reducir el espacio */
+      padding: 10px 5px; 
   }
 
   .step-transformation {
-      padding: 5px 0; /* Reducir el padding vertical en cada paso */
-      margin-bottom: 10px; /* Ajustar el margen entre pasos si están en columna */
+      padding: 5px 0; 
+      margin-bottom: 10px;
   }
 
   .step-transformation p {
-      margin-bottom: 0; /* Si es necesario, eliminar el margen inferior de los párrafos en los pasos */
+      margin-bottom: 0; 
   }
 
   .image-display img {
-      max-height: 100%; /* Asegurarse de que las imágenes no excedan la altura del contenedor */
+      max-height: 100%; 
   }
 }

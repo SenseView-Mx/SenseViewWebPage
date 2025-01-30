@@ -43,7 +43,7 @@ const SoftwareSection = () => {
           <p>{t("softwareFooterDescription1")}</p>
           <h3>{t("softwareFooterTitle2")}</h3>
           <p>{t("softwareFooterDescription2")}</p>
-          <Button
+          <Button to={"/devices"}
             variant="secondary"
             style={{
               border: "none",

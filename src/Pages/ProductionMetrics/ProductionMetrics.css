@@ -17,8 +17,8 @@
   }
 
   .metrics-s2 {
-    padding: 0; /* Elimina padding innecesario */
-    margin: 0 auto; /* Centra el contenedor sin márgenes adicionales */
+    padding: 0; 
+    margin: 0 auto; 
   }
 
   .metrics-s2 h2 {
@@ -26,7 +26,7 @@
     font-weight: 600;
     color: #00a5cf;
     text-align: center;
-    margin-bottom: 10px; /* Reduce el margen inferior */
+    margin-bottom: 10px; 
   }
 
   .metrics-s2 h3 {
@@ -34,21 +34,21 @@
     font-weight: 600;
     color: #ffffff;
     text-align: center;
-    margin: 5px 0; /* Reduce márgenes superior e inferior */
+    margin: 5px 0; 
   }
 
   .metrics-s2 p {
     font-weight: 500;
     color: #d1d1d1;
     text-align: center;
-    margin-top: 5px; /* Ajusta el margen superior */
+    margin-top: 5px;
     margin-bottom: -3%;
-    line-height: 0; /* Controla el espacio entre líneas */
+    line-height: 0; 
   }
 
   .metrics-s2 h3,
   .metrics-s2 p {
-    line-height: 1.2; /* Reduce el espacio entre líneas */
+    line-height: 1.2; 
   }
 
   .metrics-p-section{
@@ -59,27 +59,26 @@
     padding-bottom: 2%;  
   }
 
-  /* Pantallas pequeñas */
 @media (max-width: 768px) {
   .metrics {
-    padding: 20px 10px; /* Reduce el espaciado en pantallas pequeñas */
+    padding: 20px 10px; 
   }
 
   .metrics-s2 h2 {
-    font-size: 2rem; /* Reduce aún más el tamaño del título */
+    font-size: 2rem; 
   }
 
   .metrics-s2 h3 {
-    font-size: 1.8rem; /* Reduce el subtítulo */
+    font-size: 1.8rem;
   }
 
   .metrics-s2 p {
-    font-size: 0.9rem; /* Reduce el tamaño del texto */
-    line-height: 1.4; /* Ajusta el interlineado */
+    font-size: 0.9rem; 
+    line-height: 1.4; 
   }
 
   .metrics-p-section {
-    margin: 0 10%; /* Más compacto */
+    margin: 0 10%; 
     padding-bottom: 5%;
   }
 }

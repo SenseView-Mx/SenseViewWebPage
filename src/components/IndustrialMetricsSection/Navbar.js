@@ -3,7 +3,7 @@ import Button from '../Buttons/Button';
 import { useLanguage } from "../../LanguageContext";
 import './Navbar.css';
 
-const Navbar = ({title}) => {
+const Navbar = ({title, toLink}) => {
   const { t } = useLanguage();
   const [activeSection, setActiveSection] = useState(''); // Estado para la sección activa
 
@@ -42,7 +42,7 @@ const Navbar = ({title}) => {
     <nav className="industrial-navbar">
       <div className="navbar-top">
         <h1>{title}</h1>
-        <Button>
+        <Button to={toLink}>
         {t("scheduleDemo")}
           <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="demo" />
         </Button>
