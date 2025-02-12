@@ -8,8 +8,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     color: white;
-    padding: 10% 5%;
-    min-height: 80%;
+    padding: 8% 5%;
+    margin-top: 4%;
     position: relative;
     z-index: 2;
 }
@@ -20,7 +20,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     z-index: 1;
     pointer-events: none;
 }
@@ -42,25 +42,27 @@
 }
 
 .device-section-label {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
     font-weight: 600;
     color: #f3eeee81;
 }
 
 .device-content {
-    max-width: 600px;
+    max-width: 60%;
     z-index: 2;
     position: relative;
 }
 
 .device-title {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    margin-top: 1%;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
 .device-description {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 30px;
     line-height: 1.5;
     color: #ababab;
@@ -81,15 +83,22 @@
 .dynamic-title {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.dynamic-title2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
     text-align: left;
 }
 
 .dynamic-description {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 3%;
     text-align: left;
-    max-width: 800px;
+    max-width: 70%;
 }
 
 .button-group {
@@ -101,6 +110,7 @@
 }
 
 .device-button {
+    font-family: "Manrope", sans-serif;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
@@ -109,9 +119,7 @@
     padding: 8px 16px;
     border: none;
     border-radius: 12px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 500;
+    cursor: pointer; 
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -150,13 +158,16 @@
 }
 
 .button-main {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .button-detail {
     font-weight: normal;
     margin-left: 4px;
+    font-weight: 600;
+    font-size: 1.5rem;
     transition: opacity 0.3s ease;
 }
 
@@ -192,11 +203,12 @@
 
 .text-overlay {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 60px; 
+    height: auto;
+    min-height: 100px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,20 +217,22 @@
 }
 
 .dynamic-media {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Reduce width */
+    max-width: 60%; /* Optional: set maximum width */
+    margin: 0 auto; /* Center the media */
+    display: block;
     object-fit: contain;
-    transition: opacity 1s ease, z-index 1s ease-in-out;
-}
+    object-position: center;
+    clip-path:inset(0 0 0 10px);
+  }
 
 .dynamic-media.final-position {
-    z-index: -1;
-    opacity: 0.8;
+    transform: scale(1);
+    opacity: 1;
 }
 
-
 .dynamic-title-end {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 650;
     margin-bottom: 2px;
     text-align: center;
@@ -226,13 +240,12 @@
 }
 
 .dynamic-description-end {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
     text-align: center;
-    max-width: 800px;
+    /* max-width: 800px; */
     align-self: center;
 }
-
 
 .light-mode {
     background-color: #ffffff;
@@ -244,46 +257,184 @@
     color: #ffffff;
 }
 
+
+@media (max-width: 1200px) {
+
+    .device-section-label { font-size: 1.3rem; }
+   .device-title { font-size: 3rem; }
+   .device-description { font-size: 1.1rem; }
+   .dynamic-title { font-size: 1.8rem; }
+   .dynamic-title2 { font-size: 1.3rem; }
+   .dynamic-description { font-size: 1.1rem; }
+   .dynamic-title-end { font-size: 1.3rem; }
+   .dynamic-description-end { font-size: 1.1rem; }
+    .dynamic-media-container {
+        height: 400px;
+    }
+
+    .dynamic-media {
+        width: 85%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .device-section-label { font-size: 1.2rem; }
+   .device-title { font-size: 2.5rem; }
+   .device-description { font-size: 1rem; }
+   .dynamic-title { font-size: 1.6rem; }
+   .dynamic-title2 { font-size: 1.2rem; }
+   .dynamic-description { font-size: 1rem; }
+   .dynamic-title-end { font-size: 1.2rem; }
+   .dynamic-description-end { font-size: 1rem; }
+    .dynamic-media-container {
+        height: 350px;
+    }
+
+    .dynamic-media {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .button-overlay {
+        gap: 10px;
+    }
+}
+
 @media (max-width: 768px) {
-    .device-container,
+    .device-container {
+        padding: 8% 0;
+    }
+    .device-section-label { 
+        font-size: 1.1rem;
+        /* margin-left: 10%;  */
+    }
+   .device-title { font-size: 2rem; 
+    /* margin-left: 10%;  */
+    }
+   .device-description {
+    /* width: 100%; */
+    font-size: 0.9rem; 
+    /* margin-left: 10%;  */
+    }
+   .dynamic-title { font-size: 1.4rem; }
+   .dynamic-title2 { font-size: 1.1rem; }
+   .dynamic-description { font-size: 0.9rem; }
+   .dynamic-title-end { font-size: 1.1rem; }
+   .dynamic-description-end { font-size: 0.9rem; }
+
+   .device-content{
+    padding: 0 4%;
+    max-width: 100%;
+   }
+
+   .device-container{
+    width: 100%;
+   }
+
+    .button-main {
+        font-weight: 700;
+        font-size: 0.8rem;
+        transition: color 0.3s ease;
+    }
+    
+    .button-detail {
+        font-weight: normal;
+        margin-left: 0;
+        font-weight: 600;
+        font-size: 0.65rem;
+        transition: opacity 0.3s ease;
+    }
+
     .dynamic-section {
-        padding: 20px;
+        padding: 40px 50px;
     }
 
-    .device-title {
-        font-size: 2rem; 
-    }
-
-    .device-description,
     .dynamic-description {
-        font-size: 1rem;
+        margin-bottom: 3%;
+        max-width: 100%;
     }
 
-    .button-group {
-        flex-direction: column;
+    .dynamic-content{
+        padding: 0;
     }
 
     .dynamic-media-container {
-        height: 300px; 
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dynamic-media {
+        position: relative;
+        margin: auto 0;
+    }
+
+    .button-overlay {
+        position: relative;
+        transform: none;
+        left: 0;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .device-button {
+        padding: 6px 12px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    .text-overlay {
+        position: relative;
+        transform: none;
+        left: 0;
+        margin-top: 0;
+    }
+    
+    .dynamic-title-end {
+        font-size: 1rem;
+        font-weight: 650;
+        margin-bottom: 0;
+        text-align: center;
+        align-self: center;
+    }
+
+    .dynamic-description-end {
+        font-size: 0.9rem;
+        margin-bottom: 10%;
+        margin-top: 0;
+        text-align: center;
+        /* max-width: 800px; */
+        align-self: center;
     }
 }
 
 @media (max-width: 480px) {
-    .device-container,
-    .dynamic-section {
-        padding: 10px;
+    .device-section-label { font-size: 1rem; }
+    .device-title { font-size: 1.8rem; }
+    .device-description { font-size: 0.85rem; }
+    .dynamic-title { font-size: 1.2rem; }
+    .dynamic-title2 { font-size: 1rem; }
+    .dynamic-description { font-size: 0.85rem; }
+    .dynamic-title-end { font-size: 1rem; }
+    .dynamic-description-end { font-size: 0.85rem; }
+    
+    .dynamic-media-container {
+        height: 250px;
     }
 
-    .device-title {
-        font-size: 1.5rem;
+    .dynamic-media {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .button-overlay {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .device-button {
-        font-size: 0.8rem; 
-        padding: 6px 12px; 
-    }
-
-    .dynamic-media-container {
-        height: 200px; 
+        width: 100%;
+        max-width: 250px;
     }
 }

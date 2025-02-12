@@ -13,14 +13,13 @@ const Devices = () => {
     const [isFinalPosition, setIsFinalPosition] = useState(false);
 
     useEffect(() => {
-        if (isDarkMode) {
+        if (isDarkMode && !isFinalPosition) {
             setTimeout(() => {
                 setIsFinalPosition(true);
-            }, 2000); // Cambia la capa del video/imagen después de 2 segundos
-        } else {
-            setIsFinalPosition(false);
+            }, 2000);
         }
-    }, [isDarkMode]);
+    }, [isDarkMode, isFinalPosition]); 
+    
 
     const buttonLabels = {
         COM: { main: "COM", detail: t("Communication") },

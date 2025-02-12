@@ -56,6 +56,8 @@ const ProductionMetrics = () => {
           buttonText={t("scheduleDemoButton")}
           buttonIcon="/00-Buttons, Dropdowns & Questions/event.svg"
           toLink={"/contact"}
+          backgroundImage={"/07-Service02/Headline Image/Métricas.webp"}
+          backgroundPosition={"center"}
         />
         {/* KPI Section */}
         <div className="metrics-s2">

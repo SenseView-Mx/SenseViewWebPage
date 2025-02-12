@@ -4,6 +4,7 @@ body {
   font-family: 'Manrope', sans-serif;
   margin: 0;
   padding: 0;
+  background: var(--Palette-Light-Gray, #F2F2F2);
 }
 
 /* Section 1 */
@@ -31,8 +32,11 @@ body {
 
 .changing-text {
   color: white;
+  font-family: Manrope;
   font-size: 40px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
   background: rgba(255, 255, 255, 0.103);
   display: flex; 
   align-items: center;
@@ -73,16 +77,15 @@ body {
 }
 
 .hero-content {
-  padding: 20px;
-  margin-top: 5%;
-  margin-left: 4%;
-  border-radius: 8px;
-  max-width: 70%;
+  padding: 10% 5%;
 }
 
 .hero-content h1 {
-  font-size: 60px;
-  font-weight: 600;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30), 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
   display: flex;
   align-items: center;
@@ -99,9 +102,14 @@ body {
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: 1.5;
   margin-bottom: 30px;
+  color: var(--Tones-Black-20, #FFF);
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30), 0px 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Ajustes responsivos para móviles */
@@ -129,6 +137,7 @@ body {
   .hero-content p {
     font-size: 1rem;
     line-height: 1.4;
+    text-align: left;
   }
 
   .dynamic-container {

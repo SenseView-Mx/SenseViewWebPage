@@ -10,7 +10,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     color: white;
-    padding: 40px;
+    padding: 7% 6%;
     min-height: 50vh;
     background: linear-gradient(
         to top,
@@ -25,27 +25,29 @@
   }
   
   .data-metrics-section-label {
-    margin-top: 5%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #f3eeeeac;
+    margin-bottom: 0;
   }
   
   .data-metrics-content {
-    margin-top: 15px;
-    max-width: 600px;
+    padding: 2% 0;
+    margin-top: 0;
+    max-width: 60%;
     z-index: 2;
     position: relative;
   }
   
   .data-metrics-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
   
   .data-metrics-description {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 30px;
     line-height: 1.5;
     color: #ababab;
@@ -66,9 +68,9 @@
   }
   
   .header-title {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
-    margin: 0px 10%;
+    margin: 0px 15%;
   }
   
   .highlight {
@@ -126,56 +128,88 @@
   }
   
 
-  .section3 {
+  .login-button {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 50px;
-    background-color: #212121;
+    justify-content: center;
+    padding: 12px 20px;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--Palette-Black, #212121);
     color: white;
-  }
-  
-  .text-and-mockup {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-  }
-  
-  .text-content {
-    flex: 1;
-    max-width: 600px;
-  }
-  
-  .section3-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  .section3-description {
-    font-size: 0.9rem;
-    color: #ababab;
-    margin-right: 14%;
-    line-height: 1.6;
-  }
-  
-  .mockup-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .mockup-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 20px auto; /* Centra horizontalmente */
+}
+
+.login-button:hover {
+    background: #333;
+    transform: scale(1.05);
+    /* font-weight: bold; */
+}
+
+.login-button:active {
+    background: #111;
+    transform: scale(0.98);
+}
+
+
+.section3 {
+  display: flex;
+  justify-content: center; /* Asegurar que el contenido esté centrado */
+  align-items: center;
+  padding: 3% 0; /* Reducir el margen lateral */
+  background-color: #212121;
+  color: white;
+  width: 100%; /* Ocupar todo el ancho */
+}
+
+.text-and-mockup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* Reducir el espacio entre texto e imagen */
+  max-width: 90vw; /* Hacer que el contenedor sea más ancho */
+  width: 100%;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 45%; /* Ajustar el ancho del texto */
+}
+
+.section3-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section3-description {
+  font-size: 1.1rem;
+  color: #ababab;
+  line-height: 1.6;
+  margin-right: 5%; /* Reducido de 14% */
+}
+
+.mockup-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
   
 
   /* Estilos responsivos */
@@ -212,6 +246,47 @@
   }
   
   @media (max-width: 768px) {
+
+    .data-metrics-container {
+      padding: 7% 6%;
+    }
+    
+    .data-metrics-section-label {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #f3eeeeac;
+      margin-bottom: 0;
+    }
+    
+    .data-metrics-section-label {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #f3eeeeac;
+      margin-bottom: 0;
+    }
+    
+    .data-metrics-content {
+      padding: 4% 0;
+      margin-top: 0;
+      max-width: 100%;
+      z-index: 2;
+      position: relative;
+    }
+    
+    .data-metrics-title {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+    
+    .data-metrics-description {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      color: #ababab;
+    }
+
     .header-title {
       font-size: 1.8rem;
     }

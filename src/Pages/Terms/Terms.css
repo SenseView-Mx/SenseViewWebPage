@@ -1,0 +1,54 @@
+.terms-container {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    margin: 0 auto; 
+  }
+  
+  .terms-header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5% 5%;
+  }
+  
+  .terms-header h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: 600;
+  }
+  
+  .terms-header p {
+    font-size: 1.2em;
+    padding: 0 10%;
+    color: #ababaa;
+  }
+  
+  .terms-content {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    padding: 2% 15%;
+
+  }
+  
+  .terms-content h2 {
+    color: black;
+    font-size: 2.5em;
+    margin-top: 20px;
+
+  }
+  
+  .terms-content p, .terms-content ul {
+    color: #333;
+    font-size: 1.1em;
+  }
+  
+  .terms-content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .terms-content ul li {
+    padding: 5px 0;
+  }
+  

@@ -13,6 +13,8 @@ import ProductionMetrics from "./Pages/ProductionMetrics/ProductionMetrics.js";
 import HowItWorks from "./Pages/HowItWorks/HowItWorks.js";
 import Devices from "./Pages/Devices/Devices.js";
 import DataMetrics from "./Pages/DataMetrics/DataMetrics.js";
+import Terms from "./Pages/Terms/Terms.js";
+import Privacy from "./Pages/Privacy/Privacy.js";
 import "./App.css";
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/devices" element={<Devices />} />
           <Route path="/data-metrics" element={<DataMetrics />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </div>
       {/* Footer */}

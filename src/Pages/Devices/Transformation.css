@@ -1,8 +1,7 @@
 .transformation-container {
   text-align: center;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  background: var(--Palette-Light-Gray, #F2F2F2);
   color: #333;
 }
 
@@ -93,18 +92,27 @@
 }
 
 @media (max-width: 768px) {
+
+  .transformation-container {
+    text-align: center;
+    padding: 20px;
+    background: var(--Palette-Light-Gray, #F2F2F2);
+    color: #333;
+  }
+
   .image-area {
     width: fit-content;
     height: fit-content;
     margin-bottom: 0; 
-}
-.image-display{
+  }
+  
+  .image-display{
 
-  width: fit-content;
-  height: fit-content;
-  padding: 0;
-  margin: 0;
-}
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  }
 
 
   .transformation-container h2 {
@@ -117,18 +125,22 @@
   }
 
   .steps-container-transformation {
-      flex-direction: column;
-      padding: 20px 0;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Asegura que el texto también esté centrado */
+}
 
-  .step-transformation {
-      max-width: 100%;
-      margin-bottom: 20px;
-  }
+.step-transformation {
+  width: 100%; /* Asegura que los elementos ocupen todo el ancho */
+  max-width: 100%;
+}
 
-  .step-number-transformation {
-      font-size: 2rem;
-  }
+.step-number-transformation {
+  display: block; /* Asegura que los números estén en su propia línea */
+  text-align: center; /* Centra el número */
+  font-size: 2rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -145,18 +157,12 @@
     margin: 0;
   }
 
-  .steps-container-transformation {
-      margin-top: 0; 
-  }
-
+  
   .transformation-container {
       padding: 10px 5px; 
   }
 
-  .step-transformation {
-      padding: 5px 0; 
-      margin-bottom: 10px;
-  }
+  
 
   .step-transformation p {
       margin-bottom: 0; 
@@ -165,4 +171,24 @@
   .image-display img {
       max-height: 100%; 
   }
+
+  .steps-container-transformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+    text-align: center;
+}
+
+.step-transformation {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.step-number-transformation {
+    text-align: center; /* Centra los números */
+    font-size: 2rem;
+}
+
 }

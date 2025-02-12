@@ -1,17 +1,8 @@
-  .industrial-variables-container {
-    margin-top: 3%;
-    background: 
-      linear-gradient(
-        to top,
-        rgba(33, 33, 33, 1), /* Fondo negro intenso en la parte inferior */
-        rgba(33, 33, 33, 0.8),
-        rgba(23, 42, 79, 0.5) 100% /* Más claro hacia la parte superior */
-      ),
+  /* 
       url('/public/07-Service02/Headline Image/Métricas.webp') no-repeat center/cover;
-  }
+  */
 
   .metrics{
-
     background-color: rgba(33, 33, 33, 1);
     padding: 10px 0;
   }

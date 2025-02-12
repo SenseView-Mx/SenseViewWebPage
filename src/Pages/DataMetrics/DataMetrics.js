@@ -5,9 +5,11 @@ import InteractiveFeatures from "./InteractiveFeatures";
 import "./DataMetrics.css";
 import BenefitsSection from "./BenefitsSection";
 import SolutionsSection from "./SolutionsSection";
+import { useNavigate } from "react-router-dom";
 
 const DataMetrics = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate(); // Navegación con react-router
 
   return (
     <div className="dm-body">
@@ -32,6 +34,10 @@ const DataMetrics = () => {
           <p className="header-description">
             {t("senseViewDashboard")}
           </p>
+          <button className="login-button" onClick={() => navigate("/login")}>
+            {t("login")}
+            <img src="/01-NavBar/login.svg" alt="Log in button" />
+          </button>
         </div>
 
         {/* Sección de contenido visual e información */}
@@ -63,7 +69,7 @@ const DataMetrics = () => {
             </p>
           </div>
           <div className="mockup-container">
-            <img src="/path-to-your-image.png" alt="Dashboard mockup" className="mockup-image" />
+            <img src="/08-Devices/Proteo Transparente v4.png" alt="Dashboard mockup" className="mockup-image" />
           </div>
         </div>
       </div>

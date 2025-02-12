@@ -127,14 +127,20 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <LanguageSelector
-        isOpen={isLanguageDropdownOpen}
-        toggleLanguageDropdown={toggleLanguageDropdown}
-        languages={[
-          { label: t("spanish"), icon: "/01-NavBar/language_spanish.png", code: "es" },
-          { label: t("english"), icon: "/01-NavBar/language_us.png", code: "en" },
-        ]}
-      />
+      <div className="navbar-actions">
+        <LanguageSelector
+          isOpen={isLanguageDropdownOpen}
+          toggleLanguageDropdown={toggleLanguageDropdown}
+          languages={[
+            { label: t("spanish"), icon: "/01-NavBar/language_spanish.png", code: "es" },
+            { label: t("english"), icon: "/01-NavBar/language_us.png", code: "en" },
+          ]}
+        />
+        <button className="login-button-nav" onClick={() => navigate("/login")}>
+          {t("login")}
+          <img src="/01-NavBar/login.svg" alt="Log in button" />
+        </button>
+      </div>
       <NavbarToggle onClick={toggleMenu} isOpen={isMenuOpen} />
     </nav>
   );

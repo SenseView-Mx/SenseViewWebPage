@@ -78,7 +78,7 @@ const CaracteristicsSections = () => {
                 </div>
               </li>
             </ul>
-            <Button variant="secondary" style={{ border: "none" }}>
+            <Button variant="secondary" style={{ border: "none" }} to={"/devices"}>
               {t("moreInfoButton")}{" "}
               <img src="/00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg" alt="arrow" />
             </Button>

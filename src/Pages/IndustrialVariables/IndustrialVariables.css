@@ -1,16 +1,6 @@
-.industrial-variables-container {
-  background: 
-    linear-gradient(
-      to top,
-      rgba(33, 33, 33, 1), /* Fondo negro intenso en la parte inferior */
-      rgba(33, 33, 33, 0.8),
-      rgba(23, 42, 79, 0.5) 100% /* Más claro hacia la parte superior */
-    ),
-    url('/public/06-Service01/Headline Image/Variables Industriales.webp') no-repeat center/cover;
-}
-
 /* section 2 */
 .description-section {
+  font-family: 'Manrope', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,21 +8,22 @@
   padding: 65px 120px;
   color: white;
   background-color: rgba(33, 33, 33, 255); 
-  border-bottom: 1px solid black;
 }
 
 .description-left {
   width: 40%;
 }
 
-.description-right-description {
+.description-right {
   display: flex;
   flex-direction: column;
-  gap: 25px; 
+  gap: 80px; 
 }
 
 .section-subtitle {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  margin-top: 10%;
+  margin-bottom: 2%;
   font-weight: 600;
   color: #b3b3b3; 
 }
@@ -62,7 +53,7 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px 0;
   position: relative;
-  margin-bottom: 50px; 
+  margin-bottom: 2%; 
   width: 300px;
   height: 60px;
 }
@@ -81,8 +72,8 @@
 }
 
 .feature-icon-description img {
-  width: 65px; 
-  height: 65px;
+  width: fit-content; 
+  height: fit-content;
 }
 
 .feature-text-description {
@@ -104,7 +95,7 @@
     width: 50%; 
   }
   .description-right {
-    gap: 20px; 
+    gap: 40px; 
   }
   .feature-description {
     width: 280px; 

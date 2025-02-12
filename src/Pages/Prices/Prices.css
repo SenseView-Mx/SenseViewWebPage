@@ -1,15 +1,14 @@
 .prices-container {
   font-family: "Manrope", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 8% 0;
   background: radial-gradient(ellipse at center, #00a5cf 1%, #212121 35%, #202425 95%);
   color: #ffffff;
   text-align: center;
-  padding: 50px 20px;
 }
 
 .prices-title {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 10px;
@@ -20,11 +19,11 @@
 }
 
 .prices-subtitle {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #cccccc;
   margin-bottom: 40px;
-  max-width: 800px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,20 +33,24 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  align-items: stretch; /* Todas las tarjetas tendrán la misma altura */
 }
 
 .price-card {
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 2%;
-  width: 25%;
+  padding: 3% 1%;
+  width: 100%;
+  max-width: 340px; /* Tamaño máximo de la tarjeta */
+  min-width: 280px; /* Tamaño mínimo para evitar que se hagan demasiado pequeñas */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
   position: relative;
 }
 
+
 .plan-title {
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   font-weight: 600;
   background-color: #000000;
   color: #ffffff;
@@ -57,22 +60,24 @@
   top: -35px;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%;
+  max-width: 350px; /* Evita que se desborde en móviles */
   text-align: center;
   z-index: 1;
   border: 5px solid #ffffff;
 }
 
 .price {
-  font-size: 2rem;
+  font-size: clamp(2.2rem, 2.5vw, 2rem); /* Se ajusta dinámicamente al tamaño de pantalla */
   font-weight: 800;
   color: #000000;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 8%;
+  margin-bottom: 2%;
 }
 
+
 .price sup {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   vertical-align: super;
   color: #666666;
   font-weight: 300;
@@ -94,7 +99,7 @@
 
 .features li {
   margin-bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .price-card Button {
@@ -103,7 +108,7 @@
 }
 
 .disclaimer {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #aaaaaa;
   margin-top: 40px;
   max-width: 800px;
@@ -114,14 +119,17 @@
 
 @media (max-width: 767px) {
   .prices-title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .prices-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0 10px; /* Espaciado para mejorar la legibilidad */
   }
 
   .price-card {
-    width: 60%;
+    width: 100%;
+    max-width: 90%; /* Se ajusta al ancho disponible */
   }
 }
+

@@ -50,11 +50,13 @@ const IndustrialVariables = () => {
     <div>
       <IndustrialMetricsIntro
         breadcrumbLinks={breadcrumbLinks}
-        title={t("industrialVariables")}
+        title={t("industrialVariables")} 
         description={t("industrialVariablesDescription")}
         buttonText={t("scheduleDemoButton")}
         buttonIcon="/00-Buttons, Dropdowns & Questions/event.svg"
         toLink={"/contact"}
+        backgroundPosition={"top"}
+        backgroundImage="/06-Service01/Headline Image/Variables Industriales.webp" // Imagen específica
       />
       <div className="description-section">
         <div className="description-left">

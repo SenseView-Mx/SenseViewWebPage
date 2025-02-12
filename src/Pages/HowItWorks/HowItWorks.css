@@ -1,7 +1,7 @@
 .hw-body{
   background: #f2f2f2;
   font-family: "Manrope", sans-serif;
-  padding: 1% 0;
+  /* padding: 4% 0; */
 }
 
 .how-it-works-container {
@@ -10,8 +10,9 @@
   justify-content: flex-start;
   align-items: flex-start;
   color: white;
-  padding: 40px;
-  min-height: 50vh;
+  padding: 10% 7%;
+  min-height: 100vh;
+  background-position: top;
   background: linear-gradient(
       to top,
       rgba(33, 33, 33, 1),
@@ -25,27 +26,28 @@
 }
 
 .hw-section-label {
-  margin-top: 5%;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #f3eeeeac;
+  padding-bottom: 0;
 }
 
 .how-it-works-content {
-  margin-top: 15px;
-  max-width: 600px;
+  max-width: 70%;
   z-index: 2;
   position: relative;
 }
 
 .how-it-works-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-size: 4.3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .how-it-works-description {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  margin-top: 0;
   margin-bottom: 30px;
   line-height: 1.5;
   color: #ababab;
@@ -75,9 +77,9 @@
 
 /* Estilo de los círculos */
 .timeline-circle {
-  margin-right: 2%;
-  width: 150px;
-  height: 120px;
+  margin-right: 1%;
+  width: 160px;
+  height: 130px;
   border-radius: 50%;
   background-color: #ddd;
   border: 4px solid #ddd;
@@ -92,8 +94,8 @@
 .timeline-circle span {
   opacity: 0;
   transition: opacity 0.3s ease;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 
 /* Resaltar el círculo actual */
@@ -215,6 +217,7 @@
   width: 81%;
   height: 260px;
   margin-left: 10%;
+  margin-bottom: 5%;
   overflow: hidden;
   background: linear-gradient(
       to left,
@@ -300,12 +303,18 @@
 
 @media (max-width: 768px) {
   .how-it-works-container {
-    margin-top: 10%;
+    /* margin-top: 10%; */
+    min-height: 60vh;
     padding: 10px;
   }
 
+  .how-it-works-content {
+    max-width: 100%;
+    margin: 10% 0%;
+  }
+
   .how-it-works-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .how-it-works-description {

@@ -13,6 +13,7 @@ const en = {
     aboutUs: "About us",
     spanish: "Spanish",
     english: "English",
+    login: "Login",
   // footer
     terms: "Terms",
     privacy: "Privacy",  
@@ -101,7 +102,10 @@ const en = {
     pricePerVariable: "per month per measured variable",
     forOneUser: "For 1 user", 
     forThreeUsers: "For 3 users", 
-    feature: "Feature", 
+     feature1: "1 Usuario", 
+     feature2: "100 USD por dispositivo", 
+     feature3: "De 6 a 8 dispositivos", 
+     feature4: "80 USD por dispositivo", 
     pricesDisclaimer: "No device purchase needed. Monthly cost includes sensor and device rental.*", 
 
     // FAQ section

@@ -7,12 +7,13 @@
 .benefits-section h4 {
   font-size: 1rem;
   color: #888;
+  margin-bottom: 0;
 }
 
 .benefits-section h2 {
   font-size: 4rem;
   font-weight: 600;
-  margin: 0.5rem 0 2rem;
+  margin: 0rem 0 2rem;
 }
 
 .benefits-section p{
@@ -50,8 +51,8 @@
   left: -90px; 
   top: 50%;
   transform: translateY(-50%);
-  width: 110px;
-  height: 110px;
+  width: 25%;
+  height: 80%;
   background-color: rgba(0, 166, 207, 0.979);
   border-radius: 50%;
   border: 8px solid #f9f9f9;
@@ -69,6 +70,14 @@
   flex: 1;
   text-align: left;
   padding-left: 60px;
+}
+
+.benefit-text-container h3{
+  font-size: 1.5rem;
+}
+
+.benefit-text-container p{
+  font-size: 1.2rem;
 }
 
 .benefits-section.alternative {

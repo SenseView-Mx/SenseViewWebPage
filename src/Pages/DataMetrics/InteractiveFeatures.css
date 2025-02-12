@@ -1,125 +1,152 @@
 .interactive-features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    background-color: #ffffff;
-  }
-  
-  .static-texts {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .static-texts h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  
-  .static-texts p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-top: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0; 
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.static-texts {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+.static-texts h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.static-texts p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.interactive-section {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 90%; /* Se adapta dinámicamente */
+  max-width: 1400px;
+}
+
+.features-list {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px; /* Evita que los textos se vuelvan muy estrechos */
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.feature-item img.feature-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.feature-item:hover {
+  background-color: #e6e6e6; 
+}
+
+.feature-item.active {
+  background-color: #dcdcdc;
+}
+
+.feature-item p {
+  margin: 0;
+}
+
+.feature-display {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  min-width: 350px;
+  max-width: 100%;
+}
+
+.feature-content img.feature-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
   .interactive-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .features-list {
-    flex: 1.3;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .feature-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  
-  .feature-item img.feature-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .feature-item:hover {
-    background-color: #e6e6e6; 
-  }
-  
-  .feature-item.active {
-    background-color: #dcdcdc;
-  }
-  
-  .feature-item p {
-    margin: 0;
-  }
-  
-  .feature-display {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  .feature-content img.feature-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 1024px) {
-    .interactive-section {
       flex-direction: column;
       align-items: center;
       gap: 30px;
-    }
-  
-    .feature-item {
-      font-size: 0.9rem;
-    }
   }
-  
-  @media (max-width: 768px) {
-    .static-texts h1 {
+
+  .feature-display {
+      padding: 20px;
+  }
+
+  .feature-item {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .static-texts h1 {
       font-size: 2rem;
-    }
-  
-    .static-texts p {
+  }
+
+  .static-texts p {
       font-size: 1rem;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .static-texts h1 {
-      font-size: 1.5rem;
-    }
-  
-    .static-texts p {
+
+  .feature-display {
+      padding: 15px;
+  }
+
+  .features-list {
+      width: 100%;
+      align-items: center;
+  }
+
+  .feature-item {
       font-size: 0.9rem;
-    }
-  
-    .feature-item {
-      font-size: 0.8rem;
-    }
+      width: 90%;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .static-texts h1 {
+      font-size: 1.5rem;
+  }
+
+  .static-texts p {
+      font-size: 0.9rem;
+  }
+
+  .feature-item {
+      font-size: 0.8rem;
+      width: 100%;
+  }
+
+  .feature-display {
+      padding: 10px;
+  }
+}

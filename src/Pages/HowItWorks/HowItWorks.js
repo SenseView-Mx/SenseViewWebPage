@@ -58,7 +58,7 @@ const HowItWorks = () => {
                 ${hoveredStep === index + 2 || completedStep >= index + 2 ? "connected" : ""}
                 ${completedStep >= index + 1 ? "completed" : ""}`}
             >
-              <span>{index + 1 < 10 ? `0${index + 1}` : index + 1}</span>
+              <span>{index + 1 < 10 ? `0${index + 1}.` : index + 1}</span>
             </div>
             <div className="step-content">
               <img src={stepImages[index]} alt={step.title} />

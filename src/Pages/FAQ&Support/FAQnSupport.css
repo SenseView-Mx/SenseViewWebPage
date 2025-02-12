@@ -1,9 +1,12 @@
 .faq-support-container {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
-  gap: 20px;
+  padding: 5% 2%;
+  gap: 2%;
+  align-items: flex-start; /* Asegura que ambos lados comiencen en el mismo nivel */
+  min-height: 100vh; /* Asegura que ambas secciones tengan altura similar */
 }
+
 
 .faq-support-sidebar {
   flex: 0 0 380px;
@@ -20,19 +23,21 @@
 
 .faq-support-content {
   flex: 3;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 30px;
   padding: 25px 30px;
   border-radius: 15px;
+  align-self: flex-start; /* Asegura alineación con FAQSection */
 }
 
-.faq-support-title{
+.faq-support-title {
   font-size: 3.5rem;
   font-weight: 600;
-  margin-left: 7%;
-  margin-right: 20%;
+  text-align: left; /* Asegura que el texto no se desplace */
+  max-width: 600px; /* Evita que se desborde en pantallas grandes */
+  margin: 0 auto; /* Centra en dispositivos móviles */
 }
+
 
 
 /* Responsividad */
