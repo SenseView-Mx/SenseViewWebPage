@@ -1,4 +1,5 @@
 .faq-support-container {
+  background: var(--Palette-White, #FFF);
   display: flex;
   justify-content: space-between;
   padding: 5% 2%;
@@ -30,13 +31,6 @@
   align-self: flex-start; /* Asegura alineación con FAQSection */
 }
 
-.faq-support-title {
-  font-size: 3.5rem;
-  font-weight: 600;
-  text-align: left; /* Asegura que el texto no se desplace */
-  max-width: 600px; /* Evita que se desborde en pantallas grandes */
-  margin: 0 auto; /* Centra en dispositivos móviles */
-}
 
 
 
@@ -45,6 +39,8 @@
   .faq-support-container {
     flex-direction: column;
     align-items: center;
+    padding: 5% 0;
+    gap: 0;    
   }
 
   .faq-support-sidebar {
@@ -55,6 +51,6 @@
   }
 
   .faq-support-content {
-    width: 100%;
+    width: 90%;
   }
 }

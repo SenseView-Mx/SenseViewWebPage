@@ -38,6 +38,8 @@ body {
   }
   
   .navbar-menu {
+    /* flex-grow: 1; */
+    /* align-items: stretch; */
     display: flex;
     list-style: none;
     margin: 0;
@@ -100,6 +102,39 @@ body {
 .login-button-nav:active {
   background: #111;
   transform: scale(0.98);
+}
+
+
+
+.request-trial-button, 
+.login-button-mobile {
+  font-family: 'Manrope', sans-serif;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.request-trial-button {
+  background-color: var(--palette-100-cyan-35-blue, #087AA2);
+  font-weight: bold;
+  /* border-radius: 12px; */
+  color: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  height: 35px;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-button-mobile {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
 }
 
   
@@ -317,33 +352,63 @@ body {
       display: block;
     }
 
+    /* Contenedor del menú móvil */
     .navbar-links.open {
       display: flex;
       flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
+      position: fixed;
+      top: 60px; /* Ajuste para que esté debajo del navbar */
+      left: -60px;
       width: 100%;
+      height: calc(100vh - 60px); 
       background-color: white;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 10px 0; 
-      align-items: flex-start; 
+      overflow-y: auto; /* Permitir scroll si hay muchos elementos */
+      padding-bottom: 100px; /* Espacio para los botones inferiores */
+      z-index: 998;
     }
-  
-    .navbar-menu {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; 
-      padding: 0 20px; 
-      width: 100%; 
-    }
-  
-    .navbar-menu li {
-      width: 100%; 
-      margin: 0;
-      padding: 10px 20px; 
-      text-align: left; 
-      border-bottom: 1px solid #ccc;
+
+  /* Botones móviles fijos en la parte inferior */
+  .mobile-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: white; */
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); */
+    z-index: 999; /* Asegurar que esté sobre el menú */
+  }
+
+    
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 0; /* Eliminar padding lateral */
+    width: 100%; 
+  }
+    
+  .navbar-menu li {
+    width: 100%; 
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Ajustar padding */
+    text-align: left; /* Asegurar alineación izquierda */
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar-menu a {
+    width: 100%;
+    display: block; /* Asegurar que ocupa todo el ancho */
+    padding: 10px 0px; /* Agregar padding solo en los lados para espaciar */
+    margin: 0;
+    
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
     }
 
     .navbar-menu li:last-child {
@@ -353,16 +418,17 @@ body {
     .dropdown-solutions .solutions-dropdown {
       position: static; 
       display: block; 
-      margin-top: 10px;
+      margin-top: 0px;
       box-shadow: none; 
       border: none;
-      width: 100%; 
+      width: 100%;
+      padding: 0; 
     }
   
     .solutions-dropdown li {
       width: 100%; 
       text-align: left; 
-      padding: 10px 0 10px 20px; 
+      padding: 0 12px;
       font-size: 18px;
     }
   

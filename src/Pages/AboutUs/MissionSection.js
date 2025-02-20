@@ -16,7 +16,16 @@ const MissionSection = () => {
           </div>
           <div className="text-container">
             <h2>{t("missionTitle")}</h2>
-            <p>{t("missionDescription")}</p>
+            <div className="mission-text">
+              <span style={{ fontWeight: "bold" }}>{t("missionDescription1")}</span>
+              <span>{t("missionDescription2")}</span>
+              <br></br>
+              <br></br>
+              <span>{t("missionDescription3")}</span>
+              <span style={{ fontWeight: "bold" }}>{t("missionDescription4")}</span>
+              <span>{t("missionDescription5")}</span>
+
+            </div>
           </div>
         </div>
 
@@ -24,7 +33,14 @@ const MissionSection = () => {
         <div className="section reverse">
           <div className="text-container">
             <h2>{t("commitmentTitle")}</h2>
-            <p>{t("commitmentDescription")}</p>
+            <div className="mission-text">
+              <span>{t("commitmentDescription1")}</span>
+              <span style={{ fontWeight: "bold"}}>{t("commitmentDescription2")}</span>
+              <span>{t("commitmentDescription3")}</span>
+              <br></br>
+              <br></br>
+              <span>{t("commitmentDescription4")}</span>
+            </div>
           </div>
           <div className="image-container">
             <img src="/13-About Us/Nuestro Compromiso.webp" alt={t("commitmentImageAlt")} />
@@ -32,21 +48,24 @@ const MissionSection = () => {
         </div>
       </div>
 
-      {/* Sección de llamado a la acción */}
-      <div className="call-to-action">
-        {/* Texto en la izquierda */}
-        <div className="cta-text">
-          <h3>{t("ctaText")}</h3>
-          <Button to={"/contact"}>
-            {t("ctaButton")}
-            <img src="/00-Buttons, Dropdowns & Questions/contact_page.png" alt="Contact Icon" />
-          </Button>
-        </div>
-        {/* Imagen en la derecha */}
-        <div className="cta-image">
-          <img src="/13-About Us/Image_Production04.jpg" alt={t("ctaImageAlt")} />
-        </div>
-      </div>
+      {/* Tercera sección */}
+<div className="call-to-action">
+  {/* Texto en la izquierda */}
+  <div className="cta-text">
+    <h3>{t("ctaText")}</h3>
+    <Button to={"/contact"}>
+      {t("ctaButton")}
+      <img src="/00-Buttons, Dropdowns & Questions/contact_page.png" alt="Contact Icon" />
+    </Button>
+  </div>
+  
+  {/* Imagen en la derecha con gradiente */}
+  <div className="cta-image">
+    <div className="cta-image-overlay"></div>
+    <img src="/13-About Us/Image_Production04.jpg" alt={t("ctaImageAlt")} />
+  </div>
+</div>
+
     </div>
   );
 };

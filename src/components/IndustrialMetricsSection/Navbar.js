@@ -34,9 +34,16 @@ const Navbar = ({title, toLink}) => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const navbarHeight = document.querySelector('.industrial-navbar')?.offsetHeight || 0;
+      const sectionPosition = section.getBoundingClientRect().top + window.scrollY - navbarHeight - 0; // Ajuste de 20px extra
+  
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth'
+      });
     }
   };
+  
 
   return (
     <nav className="industrial-navbar">

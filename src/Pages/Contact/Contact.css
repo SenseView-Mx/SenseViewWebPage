@@ -1,29 +1,33 @@
 .contact-page-container {
+  margin: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  background-color: #ffffff;
+  background-color: #fbfcfd;
 }
 
 .contact-container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* Reducir la altura para subir el contenido */
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 5%;
-  background: url('/public/12-Contact Us/Headline Image/Photo-CU-Headline.webp');
+  align-items: start; /* Asegura que el contenido empiece desde arriba */
+  justify-content: start;
+  /* padding: 9% 5%;  */
+  /* background: url('/public/12-Contact Us/Headline Image/Photo-CU-Headline.webp');*/
+  background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%), 
+  linear-gradient(270deg, rgba(23, 42, 79, 0.00) 0%, #172A4F 100%), 
+  url('/public/12-Contact Us/Headline Image/Photo-CU-Headline.webp') lightgray 50% / cover no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   color: white;
   box-sizing: border-box;
 }
 
-.contact-container::before {
+/* .contact-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -32,32 +36,33 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(10, 31, 68, 0.85),
+    rgba(10, 31, 68, 0.667),
     rgba(43, 43, 43, 0.9)
   );
   z-index: 1;
-}
+} */
 
 .contact-content {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 40%;
+  padding: 6% 5%;
 }
 
 .contact-title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 600;
-  margin-bottom: 20px;
-  margin-right: 14%;
+  margin-bottom: 15px;
 }
 
 .contact-description {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #cccccc;
   line-height: 1.8;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
 
 .contact-info {
   font-size: 1.1rem;
@@ -65,7 +70,7 @@
 }
 
 .contact-info p {
-  margin: 10px 0;
+  margin: 20px 0;
   display: flex;
   align-items: center;
 }
@@ -122,18 +127,20 @@
 
 @media (max-width: 576px) {
   .contact-container {
-    justify-content: center;
+    justify-content: left;
     min-height: auto; 
     padding: 2rem 1rem;
     text-align: center; 
   }
 
   .contact-title {
+    text-align: left;
     font-size: 2rem;
     margin: 0 auto 1rem auto;
   }
 
   .contact-description {
+    text-align: left;
     font-size: 0.95rem;
     margin-bottom: 1rem;
   }
@@ -143,7 +150,7 @@
   }
 
   .social-icons {
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
   }
 

@@ -67,17 +67,17 @@
   }
   
   .benefit-icon-home {
-    position: static;
     background-color: #00A5CF;
-    width: 16%;
-    padding: 2% 0;
+    width: 60px; /* Ajusta el tamaño para asegurar que siempre sea proporcional */
+    height: 60px; /* Mantiene la relación 1:1 */
+    aspect-ratio: 1/1; /* Mantiene siempre el círculo */
     border-radius: 50%;
     border: 4px solid #1c1c1c;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
+}
   
   .benefit-icon-home img {
     width: fit-content;

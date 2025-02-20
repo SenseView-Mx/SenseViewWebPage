@@ -10,7 +10,6 @@ const AboutUs = () => {
         <div className="about-us">
         {/* Hero Section */}
         <div className="hero-section">
-          <div className="overlay"></div>
           <div className="hero-text">
             <h1>
               {t("aboutUsHeroTitle")} <br />

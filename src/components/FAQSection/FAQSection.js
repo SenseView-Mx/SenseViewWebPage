@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLanguage } from "../../LanguageContext";
 import "./FAQSection.css";
 
-const FAQSection = ({ includeData = false }) => {
+const FAQSection = ({ includeData = false, showTitle = false }) => {
   const { t } = useLanguage();
   const [expandedItems, setExpandedItems] = useState({});
 
@@ -52,7 +52,11 @@ const FAQSection = ({ includeData = false }) => {
   };
 
   return (
-    <div className="faq-section">
+    <div
+      className="faq-section"
+      style={{ padding: includeData ? "0" : "5% 0" }}
+    >
+      {includeData && <h1 className="faq-support-title">{t("faqSupportTitle")}</h1>}
       <h1 className="faq-title">{t("frequentlyAskedQuestions")}</h1>
       {Object.entries(faqData).map(([category, questions], categoryIndex) => (
         <div key={category} className="faq-category">
@@ -88,6 +92,7 @@ const FAQSection = ({ includeData = false }) => {
       ))}
     </div>
   );
+  
 };
 
 export default FAQSection;

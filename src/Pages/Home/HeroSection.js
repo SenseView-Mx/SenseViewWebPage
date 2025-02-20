@@ -44,8 +44,7 @@ const HeroSection = () => {
         </p>
         <Button to={"/contact"}>
           {t("ScheduleDemoButton")}
-          <img src="00-Buttons, Dropdowns & Questions/event.svg" alt={t("DemoImageAlt")} 
-          />
+          <img src="00-Buttons, Dropdowns & Questions/event.svg" alt={t("DemoImageAlt")} />
         </Button>
       </div>
     </div>

@@ -1,3 +1,6 @@
+.body-prices{
+  background: var(--Palette-White, #FFF);
+}
 .prices-container {
   font-family: "Manrope", sans-serif;
   margin: 0;
@@ -50,17 +53,17 @@
 
 
 .plan-title {
-  font-size: 1.18rem;
+  font-size: 1.25rem;
   font-weight: 600;
   background-color: #000000;
   color: #ffffff;
-  padding: 8px 15px;
+  padding: 8px 4px;
   border-radius: 20px;
   position: absolute;
   top: -35px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 350px; /* Evita que se desborde en móviles */
+  max-width: 380px; /* Evita que se desborde en móviles */
   text-align: center;
   z-index: 1;
   border: 5px solid #ffffff;
@@ -118,6 +121,10 @@
 }
 
 @media (max-width: 767px) {
+
+  .body-prices{
+    background: var(--Palette-White, #FFF);
+  }
   .prices-title {
     font-size: 2.4rem;
   }

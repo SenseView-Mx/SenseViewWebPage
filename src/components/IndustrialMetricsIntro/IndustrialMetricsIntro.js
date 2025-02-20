@@ -24,7 +24,7 @@ const IndustrialMetricsIntro = ({
           : "none",
         backgroundSize: "cover",
         backgroundPosition: backgroundPosition,
-        width: "100%",
+        width: "fit-content",
         marginTop: "3%",
         height: "80vh",
         display: "flex",

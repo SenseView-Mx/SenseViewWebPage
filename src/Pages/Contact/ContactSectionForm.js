@@ -75,7 +75,6 @@ const ContactSectionForm = () => {
           <p className="extra-section-description">{t("contactExtraSectionDescription")}</p>
           <CalendlyComponent />
         </div>
-
         <div className="form-section">
           <h1>{t("contactFormTitle")}</h1>
           <p>{t("contactFormDescription")}</p>
@@ -84,45 +83,50 @@ const ContactSectionForm = () => {
             <div className="form-group">
               <div>
                 <h3>{t("firstName")}</h3>
-                <input type="text" name="firstName" required value={formData.firstName} onChange={handleChange} />
+                <input placeholder={t("firstName")} type="text" name="firstName" required value={formData.firstName} onChange={handleChange} />
               </div>
               <div>
                 <h3>{t("lastName")}</h3>
-                <input type="text" name="lastName" required value={formData.lastName} onChange={handleChange} />
+                <input placeholder={t("lastName")} type="text" name="lastName" required value={formData.lastName} onChange={handleChange} />
               </div>
             </div>
 
             <div className="form-group">
               <div>
                 <h3>{t("email")}</h3>
-                <input type="email" name="email" required value={formData.email} onChange={handleChange} />
+                <input placeholder="email@domain.net" type="email" name="email" required value={formData.email} onChange={handleChange} />
               </div>
               <div>
                 <h3>{t("phone")}</h3>
-                <input type="tel" name="phone" required value={formData.phone} onChange={handleChange} />
+                <input placeholder="(000) 000 0000" type="tel" name="phone" required value={formData.phone} onChange={handleChange} />
               </div>
             </div>
 
             <div className="form-group-single-input">
               <div>
                 <h3>{t("company")}</h3>
-                <input type="text" name="company" value={formData.company} onChange={handleChange} />
+                <input placeholder={"  " + t("company")} type="text" name="company" value={formData.company} onChange={handleChange} />
               </div>
             </div>
 
             <div className="form-group select-group">
               <div>
                 <h3>Estado</h3>
-                <select name="state" value={formData.state} onChange={handleChange}>
-                  <option value="">Selecciona un estado</option>
-                  {MEXICO_STATES.map((state) => (
-                    <option key={state} value={state}>{state}</option>
-                  ))}
-                </select>
+                <select name="state" value={formData.state} onChange={handleChange} required>
+                <option value="" disabled>
+  <span className="custom-text-color">{t("selectState")}</span>
+</option>
+{MEXICO_STATES.map((state) => (
+  <option key={state} value={state}>
+    <span className="custom-text-color">{state}</span>
+  </option>
+))}
+</select>
+
               </div>
               <div>
-                <h3>Ciudad</h3>
-                <input type="text" name="city" value={formData.city} onChange={handleChange} placeholder="Ingresa tu ciudad" />
+                <h3>{t("city")}</h3>
+                <input placeholder={t("city")} type="text" name="city" value={formData.city} onChange={handleChange}  />
               </div>
             </div>
 

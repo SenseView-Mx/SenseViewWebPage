@@ -1,7 +1,7 @@
 /* Section 4 */
 .giant-card {
     background-color: #ffffff;
-    border-radius: 5%;
+    border-radius: 56px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 3rem;
     display: flex;
@@ -25,7 +25,7 @@
     width: 49%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 16px;
   }
   
   .section-content {

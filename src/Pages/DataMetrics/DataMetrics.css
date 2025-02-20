@@ -248,6 +248,7 @@
   @media (max-width: 768px) {
 
     .data-metrics-container {
+      margin-top: 4%;
       padding: 7% 6%;
     }
     

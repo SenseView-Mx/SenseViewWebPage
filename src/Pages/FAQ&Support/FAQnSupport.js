@@ -23,12 +23,12 @@ const FAQnSupport = () => {
           buttonIcon={"/00-Buttons, Dropdowns & Questions/arrow_forward_ios.png"}
           buttonAction={() => console.log("Redirigir a más métodos de contacto")}
           variantButton="secondary"
+          toLink={"/contact"}
         />
       </div>
       {/* Contenido principal */}
       <div className="faq-support-content">
-        <h1 className="faq-support-title">{t("faqSupportTitle")}</h1>
-        <FAQSection includeData={true} />
+        <FAQSection includeData={true} showTitle={true} />
       </div>
     </div>
   );

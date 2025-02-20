@@ -91,6 +91,7 @@ function Navbar() {
           <img src="/01-NavBar/Original.svg" alt="Sense View Logo" />
         </Link>
       </div>
+  
       <div className={`navbar-links ${isMenuOpen || !isMobile ? "open" : ""}`}>
         <ul className="navbar-menu">
           <li>
@@ -127,6 +128,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
+  
       <div className="navbar-actions">
         <LanguageSelector
           isOpen={isLanguageDropdownOpen}
@@ -136,14 +138,32 @@ function Navbar() {
             { label: t("english"), icon: "/01-NavBar/language_us.png", code: "en" },
           ]}
         />
-        <button className="login-button-nav" onClick={() => navigate("/login")}>
-          {t("login")}
-          <img src="/01-NavBar/login.svg" alt="Log in button" />
-        </button>
+  
+        {!isMobile && (
+          <button className="login-button-nav" onClick={() => navigate("/")}>
+            {t("login")}
+            <img src="/01-NavBar/login.svg" alt="Log in button" />
+          </button>
+        )}
       </div>
+  
+      {/* Botones móviles en la parte inferior */}
+      {isMobile && isMenuOpen && (
+        <div className="mobile-buttons">
+          <button className="request-trial-button" onClick={() => navigate("/contact")}>
+            {t("ScheduleDemoButton")}
+            <img src="00-Buttons, Dropdowns & Questions/event.svg" alt={t("DemoImageAlt")} />
+          </button>
+          <button className="login-button-mobile" onClick={() => navigate("/")}>
+            {t("login")}
+          </button>
+        </div>
+      )}
+  
       <NavbarToggle onClick={toggleMenu} isOpen={isMenuOpen} />
     </nav>
   );
+  
 }
 
 export default Navbar;
