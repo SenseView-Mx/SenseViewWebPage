@@ -65,7 +65,7 @@
 .timeline-circle::after {
   content: "";
   position: absolute;
-  bottom: -250px;
+  bottom: -240px;
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
@@ -126,26 +126,30 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  margin-bottom: 30px;
-  padding: 20px;
+  padding: 2% 3%; /* Reducir el espacio entre tarjetas */
 }
 
 .step-content {
   display: flex;
-  align-items: center; /* Asegura que la imagen y los textos estén alineados verticalmente */
+  align-items: center;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 16px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%; /* El card ocupa todo el ancho disponible */
-  gap: 20px; /* Espaciado entre la imagen y el texto */
+  width: 100%;
+  gap: 3%; /* Reduce la separación entre imagen y texto */
+  min-height: 180px; /* Asegura que todas las tarjetas tengan la misma altura */
 }
 
 .step-content img {
-  width: 120px; /* Ajusta el tamaño de la imagen */
-  height: 120px; /* Ajusta el tamaño de la imagen */
-  border-radius: 10px;
-  object-fit: cover; /* Mantiene la relación de aspecto */
+  width: 256px;  /* Tamaño fijo para todas las imágenes */
+  height: 192px; /* Tamaño fijo para todas las imágenes */
+  border-radius: 16px;
+  object-fit: cover; /* Asegura que la imagen se recorte y no se deforme */
+  /* margin-left: 15px;  */
+  /* margin-top: 15px; */
+  /* margin-bottom: 15px; */
+  flex-shrink: 0; /* Evita que la imagen se reduzca en flexbox */
 }
 
 .step-content-text {
@@ -172,10 +176,7 @@
   margin-bottom: 0;
 }
 
-.step-content img{
-  width: 300px;
-  height: fit-content;
-}
+
 
 .step-item:last-child .timeline-circle::after {
   display: none;

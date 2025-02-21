@@ -24,11 +24,10 @@
     align-items: center;
   }
   
-  .mockup-image {
-    max-width: 100%;
+  .mockup-image-benefits {
+    max-width: 80%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   /* Sección del texto */

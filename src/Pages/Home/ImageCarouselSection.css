@@ -50,11 +50,6 @@
     overflow: hidden;
   }
   
-  .device-images img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
   
   .instant-info-texts {
     margin-top: 1rem;

@@ -36,7 +36,7 @@
 }
 
 .software-description {
-  flex: 1;
+  flex: 1.2;
   padding: 1rem;
   margin: 0 5%;
 }
@@ -49,13 +49,13 @@
 }
 
 .software-description p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
   margin-bottom: 1.5rem;
 }
 
 .software-images {
-  flex: 1;
+  flex: 1.5;
   display: flex;
   justify-content: center;
   margin-right: 2%;
@@ -96,9 +96,10 @@
 }
 
 .software-footer-description p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
   margin-bottom: 1rem;
+  width: 90%;
 }
 
 /* Responsive Design */

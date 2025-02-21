@@ -23,18 +23,23 @@ const IndustrialMetricsIntro = ({
             ), url("${backgroundImage}")`
           : "none",
         backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
         backgroundPosition: backgroundPosition,
-        width: "fit-content",
-        marginTop: "3%",
-        height: "80vh",
+        boxSizing: "border-box",
+        width: "100%",
+        minHeight: "80vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-start",
         alignItems: "flex-start",
         color: "white",
         overflow: "hidden",
+        marginBottom: "0",
+        paddingBottom: "0",
+        flexGrow: 1, // Permite que el contenedor crezca correctamente
       }}
     >
+
       {/* Breadcrumb */}
       <div className="breadcrumb">
         {breadcrumbLinks.map((link, index) => (

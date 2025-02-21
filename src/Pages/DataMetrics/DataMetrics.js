@@ -43,7 +43,7 @@ const DataMetrics = () => {
         {/* Sección de contenido visual e información */}
         <div className="content-section">
           <div className="image-container">
-            <img src="/path-to-your-image.png" alt="Mockup del tablero" className="dashboard-image" />
+            <img src="/14-Data Metrics/Datos_Tablet-Celular.png" alt="Mockup del tablero"  />
           </div>
 
           <div className="text-section">
@@ -69,7 +69,7 @@ const DataMetrics = () => {
             </p>
           </div>
           <div className="mockup-container">
-            <img src="/08-Devices/Proteo Transparente v4.png" alt="Dashboard mockup" className="mockup-image" />
+            <img src="/14-Data Metrics/Datos_Laptop.png" alt="Dashboard mockup" className="mockup-image" />
           </div>
         </div>
       </div>

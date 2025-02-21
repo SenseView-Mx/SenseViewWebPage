@@ -76,19 +76,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
   min-width: 350px;
   max-width: 100%;
 }
 
+.feature-content {
+  position: absolute;
+  width: 45%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+
 .feature-content img.feature-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 /* Estilos responsivos */

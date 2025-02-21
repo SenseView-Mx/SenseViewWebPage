@@ -3,8 +3,17 @@ import Button from "../Buttons/Button";
 import { useLanguage } from "../../LanguageContext";
 import "./CaracteristicsSections.css";
 
-const CaracteristicsSections = () => {
+const CaracteristicsSections = ({ variant = "default" }) => {
   const { t } = useLanguage();
+
+  // Definir los textos según la variante
+  const textVariants = {
+    default: t("sensorsDescription"),
+    alternative: t("sensorsDescriptionMetrics"), // Nueva clave para la variante
+  };
+
+  // Seleccionar el texto basado en la variante
+  const sensorsDescriptionText = textVariants[variant] || textVariants.default;
 
   return (
     <section id="characteristics" className="characteristics-section">
@@ -25,7 +34,7 @@ const CaracteristicsSections = () => {
                 <img src="/06-Service01/Icons/sensors.svg" alt={t("sensorsTitle")} />
                 <div>
                   <h4>{t("sensorsTitle")}</h4>
-                  <p>{t("sensorsDescription")}</p>
+                  <p>{sensorsDescriptionText}</p> {/* Texto dinámico */}
                 </div>
               </li>
               <li>

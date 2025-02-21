@@ -12,9 +12,9 @@ const BenefitsSection = () => {
         {/* Mockup de imágenes en la izquierda */}
         <div className="section5-image">
           <img
-            src="/path-to-your-image.png"
+            src="/14-Data Metrics/Datos_Celular-Celular.png"
             alt={t("powerfulTool")}
-            className="mockup-image"
+            className="mockup-image-benefits"
           />
         </div>
 

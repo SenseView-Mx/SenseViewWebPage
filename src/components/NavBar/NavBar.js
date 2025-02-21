@@ -153,6 +153,7 @@ function Navbar() {
           <button className="request-trial-button" onClick={() => navigate("/contact")}>
             {t("ScheduleDemoButton")}
             <img src="00-Buttons, Dropdowns & Questions/event.svg" alt={t("DemoImageAlt")} />
+
           </button>
           <button className="login-button-mobile" onClick={() => navigate("/")}>
             {t("login")}
