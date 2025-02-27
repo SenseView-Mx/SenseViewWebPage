@@ -10,9 +10,9 @@ const HowItWorks = () => {
   const stepImages = [
       "/04-How It Works/Valoración.webp", // Imagen para el paso 1
       "/04-How It Works/Selección.webp",  // Imagen para el paso 2
-      "/04-How It Works/Photo_Device03.webp", // Imagen para el paso 3
-      "/04-How It Works/Photo_Phone02.webp",     // Imagen para el paso 4
-      "/04-How It Works/Photo_Laptop03.webp",   // Imagen para el paso 5
+      "/04-How It Works/Proteo_Desarmador.jpg", // Imagen para el paso 3
+      "/04-How It Works/Operador_Botellas.png",     // Imagen para el paso 4
+      "/04-How It Works/Operador_Ope.png",   // Imagen para el paso 5
     ];
 
   const [hoveredStep, setHoveredStep] = useState(null);

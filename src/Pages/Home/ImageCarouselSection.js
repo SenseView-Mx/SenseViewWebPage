@@ -1,6 +1,6 @@
 import React from "react";
 import { useLanguage } from "../../LanguageContext";
-import SimpleSwiper from "../../components/SimpleSwiper";
+import SimpleSwiper from "../../components/SimpleSwiper/SimpleSwiper";
 import "./ImageCarouselSection.css"
 
 const ImageCarouselSection = () => {

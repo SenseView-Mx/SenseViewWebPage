@@ -9,7 +9,7 @@ const ProductionMetrics = () => {
   const { t } = useLanguage();
 
   const breadcrumbLinks = [
-    { label: t("solutions"), to: "/solutions", active: false },
+    { label: t("solutions"), active: false },
     { label: t("services"), to: "/services", active: true },
   ];
 
@@ -56,7 +56,7 @@ const ProductionMetrics = () => {
           buttonText={t("scheduleDemoButton")}
           buttonIcon="/00-Buttons, Dropdowns & Questions/event.svg"
           toLink={"/contact"}
-          backgroundImage={"/07-Service02/Headline Image/Métricas.webp"}
+          backgroundImage={"/07-Service02/Headline Image/Operador_Ope.png"}
           backgroundPosition={"center"}
         />
         {/* KPI Section */}

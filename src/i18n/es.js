@@ -100,8 +100,8 @@ const es = {
     professionalPlanTitle: "Plan Profesional", 
     enterprisePlanTitle: "Plan Enterprise",
     currency: "USD", 
-    enterprisePrice: "Sobre cotización",
-    pricePerVariable: "al mes por dispositivo", 
+    enterprisePrice: "Hablemos",
+    pricePerVariable: "Servicio sobre cotización", 
     forOneUser: "De 1 a 5 dispositivos, 1 usuario, 100 USD por dispositivo", 
     forThreeUsers: "De 6 a 10 dispositivos, hasta 3 usuarios, 80 USD por dispositivo", 
     feature1: "De 1 a 5 dispositivos",
@@ -233,7 +233,6 @@ const es = {
     gpsDesc: "Optimice la gestión de sus activos. Supervise la ubicación y el rendimiento de sus vehículos y equipos, mejorando la logística.",
     energyConsumption: "Consumo de energía",
     energyConsumptionDesc: "Reduzca costos e incremente la sostenibilidad al identificar áreas de alto gasto, contribuyendo a una operación más eficiente y responsable.",
-    
     // Features
     wasteDetection: "Detección de desperdicios de forma temprana",
     wasteDetectionAlt: "Detección de Desperdicios",
@@ -245,6 +244,7 @@ const es = {
     characteristicsTitle: "Así optimizamos su negocio.",
     whatWeInstall: "Qué instalamos",
     sensorsTitle: "Sensores no invasivos",
+    sensorsTitleMetrics: "Sensor infrarrojo de alta precisión",
     sensorsDescription: "Sensores adecuados para las medidas que se desea reclectar y visualizar",
     sensorsDescriptionMetrics: "Ensable ajustable, no invasivo.",
     proteoTitleCharacteristics: "Proteo",
@@ -449,7 +449,9 @@ const es = {
     feature3Title: "Filtros de información relevante",
     feature4Title: "Configuración de alarmas para valores límite",
     feature5Title: "Datos protegidos con altas medidas de seguridad",
-
+    // Section 4
+    solutionsDataMetricsTitle: "Digitalice su producción",
+    solutionsDataMetricsDescription: "Conozca los servicios que Sense View tiene para su negocio.",
 
   };
   

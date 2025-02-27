@@ -65,7 +65,7 @@ function Services() {
               </div>
               <div className="card-body">
                 <img
-                  src="/05-Services/Métricas.webp"
+                  src="/05-Services/Operador_Ope.png"
                   alt="Métricas"
                   className="card-image"
                 />
@@ -82,7 +82,7 @@ function Services() {
         <h1>{t("solutionsTitle")}</h1>
         <div className="solutionsServices-grid">
           <FeatureCard
-            imageSrc="/05-Services/Photo_Device01.webp"
+            imageSrc="/05-Services/Photo_Encendido.jpg"
             title={t("proteoTitle")}
             description={t("proteoDescription")}
             buttonText={t("proteoButton")}
@@ -90,7 +90,7 @@ function Services() {
             toLink={"/devices"}
           />
           <FeatureCard
-            imageSrc="/05-Services/Photo_Laptop02.webp"
+            imageSrc="/05-Services/Gerente_Var.png"
             title={t("dataTitle")}
             description={t("dataDescription")}
             buttonText={t("dataButton")}

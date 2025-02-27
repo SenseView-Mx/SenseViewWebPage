@@ -9,7 +9,7 @@ const IndustrialVariables = () => {
   const { t } = useLanguage();
 
   const breadcrumbLinks = [
-    { label: t("solutions"), to: "/solutions", active: false },
+    { label: t("solutions"), active: false },
     { label: t("services"), to: "/services", active: true },
   ];
 

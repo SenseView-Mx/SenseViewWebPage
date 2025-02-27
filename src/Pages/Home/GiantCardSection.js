@@ -39,7 +39,7 @@ const GiantCardSection = () => {
       {/* Segundo bloque: Plug & Play */}
       <div className="card-section reverse">
         <img
-          src="03-Home/Photo_Device02.webp"
+          src="03-Home/Proteo_Botellas.jpg"
           alt={t("GiantCardAlt2")}
           className="section-image"
         />
@@ -61,7 +61,7 @@ const GiantCardSection = () => {
       {/* Tercer bloque */}
       <div className="card-section">
         <img
-          src="03-Home/Photo_Laptop01.webp"
+          src="03-Home/Operador_Ope.png"
           alt={t("GiantCardAlt3")}
           className="section-image"
         />

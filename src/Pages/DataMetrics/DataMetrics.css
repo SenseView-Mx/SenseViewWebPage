@@ -10,7 +10,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     color: white;
-    padding: 7% 6%;
+    padding: 11% 6%;
     min-height: 50vh;
     background: linear-gradient(
         to top,
@@ -21,7 +21,6 @@
       url('/public/14-Data Metrics/Portada_Datos.png') no-repeat center;
     background-size: 110%;
     background-attachment: fixed;
-    margin: 0;
   }
   
   .data-metrics-section-label {
@@ -32,7 +31,7 @@
   }
   
   .data-metrics-content {
-    padding: 2% 0;
+    /* padding: 1% 0; */
     margin-top: 0;
     max-width: 60%;
     z-index: 2;
@@ -42,8 +41,8 @@
   .data-metrics-title {
     font-size: 4rem;
     font-weight: 600;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   
   .data-metrics-description {
@@ -133,6 +132,7 @@
   
 
   .login-button {
+    font-family: 'Manrope', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,8 +250,15 @@
   @media (max-width: 768px) {
 
     .data-metrics-container {
-      margin-top: 4%;
-      padding: 7% 6%;
+      min-height: fit-content;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+    }
+
+    .data-metrics-container {
+      margin-top: 5%;
+      padding: 5% 3%;
     }
     
     .data-metrics-section-label {
@@ -266,8 +273,7 @@
       font-weight: 600;
       color: #f3eeeeac;
       margin-bottom: 0;
-    }
-    
+    }   
     .data-metrics-content {
       padding: 4% 0;
       margin-top: 0;
@@ -277,14 +283,14 @@
     }
     
     .data-metrics-title {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 600;
       margin-top: 1%;
       margin-bottom: 1%;
     }
     
     .data-metrics-description {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       margin-bottom: 30px;
       line-height: 1.5;
       color: #ababab;
@@ -292,15 +298,39 @@
 
     .header-title {
       font-size: 1.8rem;
+      text-align: start;
+      margin: 0px;
+
     }
   
     .header-description {
       font-size: 0.9rem;
+      text-align: start;
+      margin: 10px 0;
     }
   
     .info-text {
       font-size: 0.9rem;
     }
+    
+    .text-content {
+      flex: 1;
+      max-width: 100%; /* Ajustar el ancho del texto */
+    }
+    
+    .section3-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    
+    .section3-description {
+      font-size: 1.1rem;
+      color: #ababab;
+      line-height: 1.6;
+      margin-right: 0%; /* Reducido de 14% */
+    }
+    
   }
   
   @media (max-width: 480px) {

@@ -11,9 +11,15 @@ const CaracteristicsSections = ({ variant = "default" }) => {
     default: t("sensorsDescription"),
     alternative: t("sensorsDescriptionMetrics"), // Nueva clave para la variante
   };
+  const textVariantsTitle = {
+    default: t("sensorsTitle"),
+    alternative: t("sensorsTitleMetrics"), // Nueva clave para la variante
+  };
+
 
   // Seleccionar el texto basado en la variante
   const sensorsDescriptionText = textVariants[variant] || textVariants.default;
+  const sensorsTitle = textVariantsTitle[variant] || textVariantsTitle.default;
 
   return (
     <section id="characteristics" className="characteristics-section">
@@ -33,7 +39,7 @@ const CaracteristicsSections = ({ variant = "default" }) => {
               <li>
                 <img src="/06-Service01/Icons/sensors.svg" alt={t("sensorsTitle")} />
                 <div>
-                  <h4>{t("sensorsTitle")}</h4>
+                  <h4>{sensorsTitle}</h4>
                   <p>{sensorsDescriptionText}</p> {/* Texto dinámico */}
                 </div>
               </li>

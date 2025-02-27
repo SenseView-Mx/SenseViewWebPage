@@ -23,10 +23,9 @@ const SoftwareSection = ({ variant = "default" }) => {
     default: t("softwareContentDescription1"),
     alternative: t("softwareContentDescription1Metrics"), // Nueva clave para la variante
   };
-
   // Seleccionar imágenes y texto según la variante
   const images = imageVariants[variant] || imageVariants.default;
-  const softwareContentDescription1 = textVariants[variant] || textVariants.default;
+  const softwareContentDescription = textVariants[variant] || textVariants.default;
 
   return (
     <section id="software" className="software-section">
@@ -39,7 +38,7 @@ const SoftwareSection = ({ variant = "default" }) => {
       <div className="software-content">
         <div className="software-description">
           <h3>{t("softwareContentTitle1")}</h3>
-          <p>{softwareContentDescription1}</p> {/* Texto dinámico */}
+          <p>{softwareContentDescription}</p> {/* Texto dinámico */}
           <h3>{t("softwareContentTitle2")}</h3>
           <p>{t("softwareContentDescription2")}</p>
         </div>

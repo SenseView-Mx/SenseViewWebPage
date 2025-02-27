@@ -9,7 +9,7 @@ const AboutUs = () => {
     <div>
         <div className="about-us">
         {/* Hero Section */}
-        <div className="hero-section">
+        <div className="hero-section-AboutUs">
           <div className="hero-text">
             <h1>
               {t("aboutUsHeroTitle")} <br />

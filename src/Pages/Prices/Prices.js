@@ -77,7 +77,9 @@ const Prices = () => {
         </div>
         <p className="disclaimer">{t("pricesDisclaimer")}</p>
       </div>
-      <FAQSection />
+      <div className="fq-section">
+        <FAQSection />
+      </div>
     </div>
   );
 };

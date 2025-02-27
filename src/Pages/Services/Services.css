@@ -11,6 +11,7 @@
   display: flex;
   align-items: center; /* Centrar contenido verticalmente */
   justify-content: center;
+  
 }
 
 .services-page::before {
@@ -218,7 +219,7 @@
   .card-image {
     width: 100%;
     height: auto;
-    max-width: 200px;
+    max-width: 350px;
   }
 
   .solutionsServices-section{

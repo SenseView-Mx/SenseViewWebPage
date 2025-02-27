@@ -4,49 +4,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   background-color: #fbfcfd;
 }
 
 .contact-container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh; /* Reducir la altura para subir el contenido */
   display: flex;
-  align-items: start; /* Asegura que el contenido empiece desde arriba */
-  justify-content: start;
-  /* padding: 9% 5%;  */
-  /* background: url('/public/12-Contact Us/Headline Image/Photo-CU-Headline.webp');*/
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  padding: 2% 6%;
+  margin-top: 5%;
   background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%), 
   linear-gradient(270deg, rgba(23, 42, 79, 0.00) 0%, #172A4F 100%), 
-  url('/public/12-Contact Us/Headline Image/Photo-CU-Headline.webp') lightgray 50% / cover no-repeat;
-  background-size: cover;
+  url("/public/12-Contact Us/Headline Image/Contact_Us_MediumDark.png") lightgray 50% / cover no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
   background-position: top;
-  background-repeat: no-repeat;
-  color: white;
-  box-sizing: border-box;
 }
-
-/* .contact-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 31, 68, 0.667),
-    rgba(43, 43, 43, 0.9)
-  );
-  z-index: 1;
-} */
 
 .contact-content {
   position: relative;
   z-index: 2;
   max-width: 40%;
-  padding: 6% 5%;
 }
 
 .contact-title {
@@ -125,12 +106,11 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .contact-container {
-    justify-content: left;
-    min-height: auto; 
-    padding: 2rem 1rem;
-    text-align: center; 
+    padding: 3% 5%;
+    backdrop-filter: blur(8px);
+    background-size: cover;
   }
 
   .contact-title {

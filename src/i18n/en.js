@@ -246,6 +246,7 @@ const en = {
     characteristicsTitle: "This is how we optimize your business.",
     whatWeInstall: "What we install",
     sensorsTitle: "Non-invasive sensors",
+    sensorsTitleMetrics: "High precision infrared sensor",
     sensorsDescription: "Sensors suitable for the measurements you want to collect and visualize.",
     sensorsDescriptionMetrics: "Adjustable, non-invasive assembly.",
     proteoTitleCharacteristics: "Proteo",
@@ -453,6 +454,10 @@ const en = {
       feature3Title: "Relevant information filters",
       feature4Title: "Alarm settings for threshold values",
       feature5Title: "Data protected with high-security measures",
+      // Section 4
+      solutionsDataMetricsTitle: "Digitize your production",
+      solutionsDataMetricsDescription: "Discover the services that Sense View has for your business."
+
   };
   
   export default en;

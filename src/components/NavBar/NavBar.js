@@ -27,6 +27,9 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isSecondaryNavbarVisible, setIsSecondaryNavbarVisible] = useState(false);
+  const [navbarGap, setNavbarGap] = useState(0);
+
 
   // Detectar clics fuera del dropdown
   useEffect(() => {
@@ -67,8 +70,88 @@ function Navbar() {
     window.scrollTo(0, 0); // Mover al inicio de la página
   }, [location]);
 
-  const toggleSolutionsDropdown = () =>
-    setIsSolutionsDropdownOpen(!isSolutionsDropdownOpen);
+  
+
+
+  useEffect(() => {
+    const checkSecondaryNavbar = () => {
+      const secondaryNavbar = document.querySelector(".industrial-navbar");
+      
+      if (secondaryNavbar) {
+        const rect = secondaryNavbar.getBoundingClientRect();
+        // Verificamos si el navbar secundario está visible en la pantalla
+        setIsSecondaryNavbarVisible(rect.top < window.innerHeight && rect.bottom > 0);
+      } else {
+        setIsSecondaryNavbarVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", checkSecondaryNavbar);
+    window.addEventListener("resize", checkSecondaryNavbar);
+    checkSecondaryNavbar(); // Llamar una vez al inicio
+
+    return () => {
+      window.removeEventListener("scroll", checkSecondaryNavbar);
+      window.removeEventListener("resize", checkSecondaryNavbar);
+    };
+  }, []);
+
+  
+  useEffect(() => {
+    const checkNavbarOverlap = () => {
+      const secondaryNavbar = document.querySelector(".industrial-navbar");
+      const globalNavbar = document.querySelector(".navbar");
+  
+      if (secondaryNavbar && globalNavbar) {
+        const secondaryRect = secondaryNavbar.getBoundingClientRect();
+        const globalRect = globalNavbar.getBoundingClientRect();
+  
+        // Medimos la distancia entre el navbar global y el navbar secundario
+        const gap = secondaryRect.top - globalRect.bottom;
+  
+        setNavbarGap(gap); // Guardamos la distancia en el estado
+        setIsSecondaryNavbarVisible(secondaryRect.top < window.innerHeight && secondaryRect.bottom > 0);
+      } else {
+        setIsSecondaryNavbarVisible(false);
+        setNavbarGap(Infinity); // Si no está visible, asumimos que hay suficiente espacio
+      }
+    };
+  
+    window.addEventListener("scroll", checkNavbarOverlap);
+    window.addEventListener("resize", checkNavbarOverlap);
+    checkNavbarOverlap(); // Ejecutamos la función al inicio
+  
+    return () => {
+      window.removeEventListener("scroll", checkNavbarOverlap);
+      window.removeEventListener("resize", checkNavbarOverlap);
+    };
+  }, []);
+  
+
+const dropdownButtonHeight = 180; // Ajusta esto al tamaño real de tu dropdown button
+
+const toggleSolutionsDropdown = () => {
+  if (navbarGap < dropdownButtonHeight) {
+    setIsSolutionsDropdownOpen(false);
+    return;
+  }
+  setIsSolutionsDropdownOpen(!isSolutionsDropdownOpen);
+};
+
+useEffect(() => {
+  if (navbarGap < dropdownButtonHeight) {
+    setIsSolutionsDropdownOpen(false);
+  }
+}, [navbarGap]);
+
+
+
+  useEffect(() => {
+    if (isSecondaryNavbarVisible) {
+      setIsSolutionsDropdownOpen(false);
+    }
+  }, [isSecondaryNavbarVisible]);
+    
 
   const toggleLanguageDropdown = () =>
     setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
@@ -150,13 +233,13 @@ function Navbar() {
       {/* Botones móviles en la parte inferior */}
       {isMobile && isMenuOpen && (
         <div className="mobile-buttons">
+          <button className="login-button-mobile" onClick={() => navigate("/")}>
+            {t("login")}
+            <img src="/01-NavBar/login.svg" alt="Log in button" />
+          </button>
           <button className="request-trial-button" onClick={() => navigate("/contact")}>
             {t("ScheduleDemoButton")}
             <img src="00-Buttons, Dropdowns & Questions/event.svg" alt={t("DemoImageAlt")} />
-
-          </button>
-          <button className="login-button-mobile" onClick={() => navigate("/")}>
-            {t("login")}
           </button>
         </div>
       )}

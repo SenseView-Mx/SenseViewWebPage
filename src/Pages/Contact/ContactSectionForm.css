@@ -87,18 +87,34 @@
   padding: 8px 8px;
   border: 1px solid #ccc;
   border-radius: 15px;
-  height: 36px;
+  height: 50px;
   min-width: 270px;
-  font-size: 14px;
+  font-size: 17px;
   background-color: white;
   appearance: none;
-  color: #5e5d5dc9; /* Placeholder color */
+  color: var(--Tones-Black-60, #5e5d5dc9); /* Placeholder color */
 }
 
 /* Cuando el usuario selecciona una opción válida, cambia el color a negro */
 .select-group select:focus,
 .select-group select:not(:invalid) {
   color: #000000;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-family: 'Manrope', sans-serif;
+  color: #aaa; /* Color de placeholder más tenue */
+}
+
+.contact-form, 
+.contact-form input, 
+.contact-form textarea, 
+.contact-form select, 
+.contact-form button, 
+.contact-form h3, 
+.contact-form p {
+  font-family: 'Manrope', sans-serif !important;
 }
 
 
@@ -118,6 +134,7 @@ textarea {
 }
 
 .submit-button {
+  font-family: 'Manrope', sans-serif !important;
   background-color: #101011;
   color: white;
   padding: 10px;
@@ -192,7 +209,7 @@ textarea {
 
   .form-section {
     width: 80%;
-    margin: 0;
+    margin: 4% 0;
   }
 
   .form-section h1 {
@@ -232,6 +249,7 @@ textarea {
     font-size: 1.3rem;
     cursor: pointer;
     min-width: fit-content;
+    margin-bottom: 5%;
   }
 }
 

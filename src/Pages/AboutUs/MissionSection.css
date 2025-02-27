@@ -161,6 +161,12 @@
   }
   
   @media screen and (max-width: 768px) {
+   
+  
+    .section.reverse {
+      margin-top: 4%;
+      flex-direction: column-reverse; /* Invierte la disposición en móviles */
+    }
     .dual-image-card {
       padding: 2rem;
     }

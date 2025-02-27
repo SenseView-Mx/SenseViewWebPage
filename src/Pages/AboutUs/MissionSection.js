@@ -43,7 +43,7 @@ const MissionSection = () => {
             </div>
           </div>
           <div className="image-container">
-            <img src="/13-About Us/Nuestro Compromiso.webp" alt={t("commitmentImageAlt")} />
+            <img src="/13-About Us/Nuestro_Compromiso.png" alt={t("commitmentImageAlt")} />
           </div>
         </div>
       </div>

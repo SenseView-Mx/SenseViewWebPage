@@ -13,7 +13,7 @@ const SolutionSection = () => {
         <h1>{t("solutionsTitle")}</h1>
         <div className="solutionsSection-grid">
           <FeatureCard
-            imageSrc="/05-Services/Photo_Device01.webp"
+            imageSrc="/05-Services/Photo_Encendido.jpg"
             title={t("proteoTitle")}
             description={t("proteoDescription")}
             buttonText={t("proteoButton")}
@@ -21,7 +21,7 @@ const SolutionSection = () => {
             toLink={"/devices"}
           />
           <FeatureCard
-            imageSrc="/05-Services/Photo_Laptop02.webp"
+            imageSrc="/05-Services/Gerente_Var.png"
             title={t("dataTitle")}
             description={t("dataDescription")}
             buttonText={t("dataButton")}
