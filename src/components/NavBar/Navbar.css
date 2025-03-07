@@ -7,12 +7,12 @@ body {
 
 .navbar {
   font-size: 18px;
-  position: fixed; 
+  position: sticky; 
   top: 0; 
   left: 0; 
   width: 100%; 
   height: fit-content;
-  z-index: 1000; 
+  z-index: 1001; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -203,10 +203,10 @@ body {
   }
 
   /* Cuando el navbar secundario está cerca, oculta el dropdown */
-  .navbar-near .solutions-dropdown {
+  /* .navbar-near .solutions-dropdown {
     visibility: hidden;
   }
-  
+   */
   
   .solutions-dropdown li {
     display: flex;
@@ -344,6 +344,9 @@ body {
 
     .navbar-links {
       display: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
     }
   
     .navbar-actions {
@@ -359,13 +362,14 @@ body {
       display: flex;
       flex-direction: column;
       position: fixed;
-      top: 60px; /* Ajuste para que esté debajo del navbar */
-      left: -60px;
+      top: 60px; /* Espacio debajo del navbar */
+      left: 0;
+      padding: 0 2%;
       width: 100%;
-      height: calc(100vh - 60px); 
+      height: calc(100vh - 200px); /* Ajuste dinámico, llega hasta los botones */
       background-color: white;
-      overflow-y: auto; /* Permitir scroll si hay muchos elementos */
-      padding-bottom: 100px; /* Espacio para los botones inferiores */
+      overflow-y: auto; /* Permite desplazamiento si hay muchos elementos */
+      padding-bottom: 20px;
       z-index: 998;
     }
 
@@ -375,14 +379,15 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    /* background-color: white; */
-    padding: 15px 0;
+    background-color: white;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     /* box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); */
-    z-index: 999; /* Asegurar que esté sobre el menú */
+    z-index: 999;
+    height: 120px; /* Altura total de los botones */
   }
 
     

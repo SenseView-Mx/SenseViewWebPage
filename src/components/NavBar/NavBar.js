@@ -73,28 +73,28 @@ function Navbar() {
   
 
 
-  useEffect(() => {
-    const checkSecondaryNavbar = () => {
-      const secondaryNavbar = document.querySelector(".industrial-navbar");
+  // useEffect(() => {
+  //   const checkSecondaryNavbar = () => {
+  //     const secondaryNavbar = document.querySelector(".industrial-navbar");
       
-      if (secondaryNavbar) {
-        const rect = secondaryNavbar.getBoundingClientRect();
-        // Verificamos si el navbar secundario está visible en la pantalla
-        setIsSecondaryNavbarVisible(rect.top < window.innerHeight && rect.bottom > 0);
-      } else {
-        setIsSecondaryNavbarVisible(false);
-      }
-    };
+  //     if (secondaryNavbar) {
+  //       const rect = secondaryNavbar.getBoundingClientRect();
+  //       // Verificamos si el navbar secundario está visible en la pantalla
+  //       setIsSecondaryNavbarVisible(rect.top < window.innerHeight && rect.bottom > 0);
+  //     } else {
+  //       setIsSecondaryNavbarVisible(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", checkSecondaryNavbar);
-    window.addEventListener("resize", checkSecondaryNavbar);
-    checkSecondaryNavbar(); // Llamar una vez al inicio
+  //   window.addEventListener("scroll", checkSecondaryNavbar);
+  //   window.addEventListener("resize", checkSecondaryNavbar);
+  //   checkSecondaryNavbar(); // Llamar una vez al inicio
 
-    return () => {
-      window.removeEventListener("scroll", checkSecondaryNavbar);
-      window.removeEventListener("resize", checkSecondaryNavbar);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", checkSecondaryNavbar);
+  //     window.removeEventListener("resize", checkSecondaryNavbar);
+  //   };
+  // }, []);
 
   
   useEffect(() => {
@@ -110,39 +110,39 @@ function Navbar() {
         const gap = secondaryRect.top - globalRect.bottom;
   
         setNavbarGap(gap); // Guardamos la distancia en el estado
-        setIsSecondaryNavbarVisible(secondaryRect.top < window.innerHeight && secondaryRect.bottom > 0);
+        // setIsSecondaryNavbarVisible(secondaryRect.top < window.innerHeight && secondaryRect.bottom > 0);
       } else {
-        setIsSecondaryNavbarVisible(false);
+        // setIsSecondaryNavbarVisible(false);
         setNavbarGap(Infinity); // Si no está visible, asumimos que hay suficiente espacio
       }
     };
   
-    window.addEventListener("scroll", checkNavbarOverlap);
-    window.addEventListener("resize", checkNavbarOverlap);
-    checkNavbarOverlap(); // Ejecutamos la función al inicio
+    // window.addEventListener("scroll", checkNavbarOverlap);
+    // window.addEventListener("resize", checkNavbarOverlap);
+    // checkNavbarOverlap(); // Ejecutamos la función al inicio
   
-    return () => {
-      window.removeEventListener("scroll", checkNavbarOverlap);
-      window.removeEventListener("resize", checkNavbarOverlap);
-    };
+    // return () => {
+    //   window.removeEventListener("scroll", checkNavbarOverlap);
+    //   window.removeEventListener("resize", checkNavbarOverlap);
+    // };
   }, []);
   
 
 const dropdownButtonHeight = 180; // Ajusta esto al tamaño real de tu dropdown button
 
 const toggleSolutionsDropdown = () => {
-  if (navbarGap < dropdownButtonHeight) {
-    setIsSolutionsDropdownOpen(false);
-    return;
-  }
+  // if (navbarGap < dropdownButtonHeight) {
+  //   setIsSolutionsDropdownOpen(false);
+  //   return;
+  // }
   setIsSolutionsDropdownOpen(!isSolutionsDropdownOpen);
 };
 
-useEffect(() => {
-  if (navbarGap < dropdownButtonHeight) {
-    setIsSolutionsDropdownOpen(false);
-  }
-}, [navbarGap]);
+// useEffect(() => {
+//   if (navbarGap < dropdownButtonHeight) {
+//     setIsSolutionsDropdownOpen(false);
+//   }
+// }, [navbarGap]);
 
 
 
@@ -175,7 +175,7 @@ useEffect(() => {
         </Link>
       </div>
   
-      <div className={`navbar-links ${isMenuOpen || !isMobile ? "open" : ""}`}>
+      <div className={`navbar-links ${isMenuOpen ? "open" : ""}`}>
         <ul className="navbar-menu">
           <li>
             <Dropdown
@@ -184,7 +184,7 @@ useEffect(() => {
               label={t("solutions")}
               items={solutionItems.map((item) => ({
                 ...item,
-                onClick: () => handleSolutionClick(item.path), // Redirigir y cerrar el menú
+                onClick: () => handleSolutionClick(item.path), 
               }))}
               isMenuOpen={isMenuOpen}
             />
@@ -211,6 +211,7 @@ useEffect(() => {
           </li>
         </ul>
       </div>
+
   
       <div className="navbar-actions">
         <LanguageSelector

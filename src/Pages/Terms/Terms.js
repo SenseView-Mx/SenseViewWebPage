@@ -1,90 +1,236 @@
+import { useState } from "react";
 import React from "react";
 import "./Terms.css";
+import { useLanguage } from "../../LanguageContext";
+
 
 const Terms = () => {
+  const { t } = useLanguage();  
+  const [openSections, setOpenSections] = useState({});
+
+  const toggleSection = (index) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
+
+  const sections = [
+    {
+      title: t("welcome_title"),
+      content: (
+        <>
+          <p>{t("welcome_content")}</p>
+          <p>{t("welcome_terms")}</p>
+          <p>{t("welcome_terms2")}</p>
+
+        </>
+      ),
+    },
+    {
+      title: t("definitions_title"),
+      content: (
+        <>
+          {t("definitions_content").map((item, index) => (
+            <p key={index}>
+              <strong>{item.term}:</strong> {item.definition}
+            </p>
+          ))}
+        </>
+      ),
+    },
+    {
+      title: t("services_title"),
+      content: (
+        <p>{t("services_content")}</p>
+      ),
+    },
+    {
+      title: t("platform_registration_title"),
+      content: (
+        <>
+          <h3>{t("platform_registration_section")}</h3>
+          <p>{t("platform_registration_content")}</p>
+          <ul>
+            {t("platform_registration_steps").map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <p>{t("platform_registration_acceptance")}</p>
+    
+          <h3>{t("platform_access_section")}</h3>
+          <p>{t("platform_access_content")}</p>
+          <p>{t("platform_access_reset")}</p>
+          <ul>
+            {t("platform_access_reset_steps").map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+    
+          <h3>{t("platform_responsibility_section")}</h3>
+          <p>{t("platform_responsibility_content")}</p>
+          <p>{t("platform_restrictions")}</p>
+        </>
+      ),
+    },
+    
+    {
+      title: t("equipment_use_title"),
+      content: (
+        <>
+          <h3>{t("equipment_ownership_section")}</h3>
+          {t("equipment_ownership_content").map((item, index) => (
+            <p key={index}>{item}</p>
+          ))}
+    
+          <h3>{t("equipment_usage_conditions_section")}</h3>
+          {t("equipment_usage_conditions_content").map((item, index) => (
+            <p key={index}>{item}</p>
+          ))}
+    
+          <h3>{t("equipment_return_section")}</h3>
+          <p>{t("equipment_return_content")}</p>
+        </>
+      ),
+    },
+    
+    {
+      title: t("contractual_relationship_title"),
+      content: (
+        <>
+          <p>{t("contractual_relationship_content")}</p>
+          <p>{t("contractual_relationship_includes")}</p>
+          <ul>
+            {t("contractual_relationship_list").map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <p>{t("contractual_relationship_final")}</p>
+        </>
+      ),
+    },
+    
+    {
+      title: t("cloud_services_title"),
+      content: (
+        <>
+          <h3>{t("cloud_storage_options_section")}</h3>
+          <p>{t("cloud_storage_options_intro")}</p>
+          <ol>
+            {t("cloud_storage_options_list").map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ol>
+    
+          <h3>{t("cloud_data_responsibility_section")}</h3>
+          <p>{t("cloud_data_responsibility_content")}</p>
+        </>
+      ),
+    },
+    
+    {
+      title: t("fees_payments_title"),
+      content: (
+        <>
+          <h3>{t("cost_structure_section")}</h3>
+          <ul>
+            {t("cost_structure_list").map((item, index) => (
+              <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
+            ))}
+          </ul>
+    
+          <h3>{t("non_payment_section")}</h3>
+          <p>{t("non_payment_content")}</p>
+        </>
+      ),
+    },
+    {
+      title: t("confidentiality_title"),
+      content: (
+        <>
+          <h3>{t("data_protection_section")}</h3>
+          <p>{t("data_protection_content")}</p>
+    
+          <h3>{t("confidential_information_section")}</h3>
+          <p>{t("confidential_information_content")}</p>
+        </>
+      ),
+    },
+    {
+      title: t("electronic_acceptance_title"),
+      content: (
+        <p>{t("electronic_acceptance_content")}</p>
+      ),
+    },
+    {
+      title: t("intellectual_property_title"),
+      content: (
+        <p>{t("intellectual_property_content")}</p>
+      ),
+    },
+    {
+      title: t("modifications_title"),
+      content: (
+        <p>{t("modifications_content")}</p>
+      ),
+    },
+    
+    {
+      title: t("liability_limitation_title"),
+      content: (
+        <>
+          <p>{t("liability_limitation_intro")}</p>
+          <ul>
+            {t("liability_limitation_list").map((item, index) => (
+              <li key={index}>- {item}</li>
+            ))}
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: t("jurisdiction_title"),
+      content: (
+        <>
+          <p>{t("jurisdiction_content")}</p>
+          <p>{t("jurisdiction_commitment")}</p>
+        </>
+      ),
+    },
+    
+  ];
+
   return (
     <div className="terms-container">
-      <header className="terms-header">
-        <h1>Términos y condiciones</h1>
-        <p>
-          Estos Términos y Condiciones establecen las reglas que rigen el uso de
-          nuestro sitio web y servicios. Al acceder o utilizar nuestro sitio,
-          acepta cumplir con estos términos.
-        </p>
-      </header>
+     <header className="terms-header">
+      <h1>{t("terms_conditions_header")}</h1>
+      <p>{t("last_updated")}</p>
+    </header>
+
 
       <div className="terms-content">
-        <section>
-          <h2>Bienvenido a Sense View</h2>
-          <p>
-            En Sense View estamos comprometidos con impulsar la transformación y
-            optimización de tus procesos industriales. Al acceder, interactuar o
-            navegar en nuestra Plataforma, usted acepta estos Términos y
-            Condiciones.
-          </p>
-        </section>
+        {sections.map((section, index) => {
+          const isExpanded = openSections[index];
 
-        <section>
-          <h2>Definiciones</h2>
-          <ul>
-            <li>
-              <strong>Credenciales:</strong> Datos únicos (usuario y
-              contraseña) para acceder a la plataforma.
-            </li>
-            <li>
-              <strong>Sense View:</strong> Empresa responsable de los servicios.
-            </li>
-            <li>
-              <strong>Plataforma:</strong> Sitio web y aplicaciones móviles de
-              Sense View.
-            </li>
-            <li>
-              <strong>Equipo:</strong> Dispositivos con sensores para analizar
-              datos en tiempo real.
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Servicios</h2>
-          <p>
-            Sense View proporciona hardware y software avanzados para medir y
-            analizar información clave en tiempo real.
-          </p>
-        </section>
-
-        <section>
-          <h2>Registro y Uso de la Plataforma</h2>
-          <p>
-            Para acceder a los servicios, el usuario debe registrarse con datos
-            verídicos y seguros.
-          </p>
-        </section>
-
-        <section>
-          <h2>Propiedad Intelectual</h2>
-          <p>
-            Sense View es titular exclusivo de patentes, marcas y derechos de
-            propiedad intelectual. Está prohibido el uso no autorizado.
-          </p>
-        </section>
-
-        <section>
-          <h2>Modificaciones</h2>
-          <p>
-            Sense View puede modificar estos Términos y Condiciones en cualquier
-            momento y notificará a los usuarios a través de la plataforma.
-          </p>
-        </section>
-
-        <section>
-          <h2>Jurisdicción</h2>
-          <p>
-            Estos términos se rigen por las leyes de los Estados Unidos
-            Mexicanos y cualquier disputa será resuelta en los tribunales del
-            Estado de Jalisco.
-          </p>
-        </section>
+          return (
+            <section key={index} className="terms-section">
+              <h2 onClick={() => toggleSection(index)} className="terms-title">
+                {section.title}
+                <img
+                  className="faq-icon"
+                  src={
+                    isExpanded
+                      ? "/00-Buttons, Dropdowns & Questions/remove.svg"
+                      : "/00-Buttons, Dropdowns & Questions/add.svg"
+                  }
+                  alt={isExpanded ? "Colapsar" : "Expandir"}
+                />
+              </h2>
+              {isExpanded && <div className="terms-text">{section.content}</div>}
+            </section>
+          );
+        })}
       </div>
     </div>
   );

@@ -15,7 +15,7 @@
   align-items: flex-end;
   color: white;
   padding: 7% 6%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   background-image: url("/public/13-About Us/Headline Image/AU-Headline.webp");
   background-size: 100%;
   background-attachment: cover;
@@ -88,18 +88,25 @@
 
 @media (max-width: 768px) {
   .hero-section-AboutUs {
-    margin-top: 9%;
-    padding: 0 2%;
+    background: url("/public/13-About Us/Headline Image/About_Us.png");
+    /* margin-top: 9%; */
+    padding: 3% 2%;
     /* height: max-content; */
-    background-position: left;
+    /* background-position: left; */
     background-size: cover;
   }
 
   .hero-text {
-    text-align: right;
-    max-width: 85%;
-    margin-left: 20%;
-    padding: 10% 0;
+    text-align: center;
+    /* margin-left: 20%; */
+    /* padding: 10% 0; */
+  }
+
+  .hero-text h1 {
+    text-align: center;
+    /* font-weight: 600; */
+    /* font-size: 3.5rem; */
+    margin-bottom: 1rem;
   }
 
   .features-section-aboutus {

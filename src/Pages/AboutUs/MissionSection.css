@@ -164,7 +164,7 @@
    
   
     .section.reverse {
-      margin-top: 4%;
+      margin-top: 15%;
       flex-direction: column-reverse; /* Invierte la disposición en móviles */
     }
     .dual-image-card {

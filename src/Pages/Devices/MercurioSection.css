@@ -1,0 +1,132 @@
+.mercurio-body {
+    font-family: "Manrope", sans-serif;
+}
+
+.dynamic-section-mercurio {
+    padding: 5% 4%;
+    margin: 0;
+    transition: background-color 0.001s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto; /* 🔹 Se ajusta dinámicamente */
+}
+
+
+/* Contenedor principal en flexbox */
+.dynamic-container-mercurio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* 🔹 Cambiado de center a flex-start */
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+/* Estilos del texto */
+.dynamic-text-mercurio {
+    width: 50%;
+    text-align: left;
+}
+
+
+.dynamic-title-mercurio {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.dynamic-title2-mercurio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.dynamic-description-mercurio {
+    font-size: 1.4rem;
+    margin-bottom: 3%;
+    text-align: left;
+    /* max-width: 100%; */
+}
+
+/* Contenedor de la imagen */
+.dynamic-image-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding-top: 40px; /* 🔹 Baja todo el contenedor sin cortar el fondo */
+}
+
+/* Imagen con desplazamiento */
+.dynamic-image {
+    max-width: 65%;
+    margin-right: 20%;
+    height: auto;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .dynamic-container-mercurio {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .dynamic-text-mercurio {
+        width: 80%;
+        text-align: center;
+    }
+
+    .dynamic-title-mercurio {
+        font-size: 1.8rem;
+    }
+
+    .dynamic-title2-mercurio {
+        font-size: 1.4rem;
+    }
+
+    .dynamic-description-mercurio {
+        font-size: 1.1rem;
+    }
+
+    .dynamic-image-container {
+        width: 80%;
+    }
+
+    .dynamic-image {
+        max-width: 80%;
+    }
+}
+
+/* 🔹 Para pantallas móviles */
+@media (max-width: 600px) {
+    .dynamic-text-mercurio {
+        width: 90%;
+    }
+
+    .dynamic-title-mercurio {
+        font-size: 1.6rem;
+    }
+
+    .dynamic-title2-mercurio {
+        font-size: 1.2rem;
+    }
+
+    .dynamic-description-mercurio {
+        font-size: 1rem;
+    }
+
+    .dynamic-image {
+        max-width: 90%;
+    }
+
+    .dynamic-image-container {
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 0px; /* 🔹 Baja todo el contenedor sin cortar el fondo */
+    }
+}

@@ -1,0 +1,210 @@
+.transformation-container-mercurio {
+    text-align: center;
+    padding: 20px;
+    background: var(--Palette-Light-Gray, #F2F2F2);
+    color: #333;
+  }
+  
+  .transformation-container-mercurio  h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .transformation-container-mercurio p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .image-area-mercurio {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 420px;
+  }
+  
+  .image-display-mercurio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image-display-mercurio img {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .image-display-mercurio img:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .image-display-mercurio img[style*="display: block"] {
+    opacity: 1;
+  }
+
+  
+  .image-overlay-mercurio {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 33.33%;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .image-overlay-mercurio.left {
+    left: 0;
+  }
+  
+  .image-overlay-mercurio.center {
+    left: 33.33%;
+  }
+  
+  .image-overlay-mercurio.right {
+    left: 66.66%;
+  }
+  
+  .steps-container-transformation-mercurio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
+  }
+  
+  .step-transformation-mercurio {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    max-width: 30%;
+  }
+  
+  .step-number-transformation-mercurio {
+    font-size: 3rem;
+    font-weight: 650;
+    color: #00a5cf;
+    margin-bottom: 10px;
+  }
+  
+  .step-transformation-mercurio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .step-transformation-mercurio p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .transformation-container-mercurio {
+      text-align: center;
+      padding: 20px;
+      background: var(--Palette-Light-Gray, #F2F2F2);
+      color: #333;
+    }
+  
+    .image-area-mercurio {
+      width: fit-content;
+      height: fit-content;
+      margin-bottom: 0; 
+    }
+    
+    .image-display{
+  
+      width: fit-content;
+      height: fit-content;
+      padding: 0;
+      margin: 0;
+    }
+  
+  
+    .transformation-container-mercurio h2 {
+        font-size: 1.5rem;
+    }
+  
+    .transformation-container-mercurio p,
+    .step-transformation-mercurio p {
+        font-size: 0.9rem;
+    }
+  
+    .steps-container-transformation-mercurio {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra los elementos */
+      text-align: center; /* Asegura que el texto también esté centrado */
+  }
+  
+  .step-transformation-mercurio {
+    width: 100%; /* Asegura que los elementos ocupen todo el ancho */
+    max-width: 100%;
+  }
+  
+  .step-number-transformation-mercurio {
+    display: block; /* Asegura que los números estén en su propia línea */
+    text-align: center; /* Centra el número */
+    font-size: 2rem;
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .image-area-mercurio {
+        width: fit-content;
+        height: fit-content; 
+        margin-bottom: 0; 
+    }
+    .image-display-mercurio {
+  
+      width: fit-content;
+      height: fit-content;
+      padding: 0;
+      margin: 0;
+    }
+  
+    
+    .transformation-container-mercurio {
+        padding: 10px 5px; 
+    }
+  
+    
+  
+    .step-transformation-mercurio p {
+        margin-bottom: 0; 
+    }
+  
+    .image-display-mercurio img {
+        max-height: 100%; 
+    }
+  
+    .steps-container-transformation-mercurio {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra los elementos */
+      text-align: center;
+  }
+  
+  .step-transformation-mercurio {
+      width: 100%;
+      max-width: 100%;
+      padding: 5px 0;
+      text-align: center;
+  }
+  
+  .step-number-transformation-mercurio {
+      text-align: center; /* Centra los números */
+      font-size: 2rem;
+  }
+  
+  }
+  

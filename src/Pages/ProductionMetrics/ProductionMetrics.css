@@ -4,7 +4,7 @@
 
   .metrics{
     background-color: rgba(33, 33, 33, 1);
-    padding: 10px 0;
+    /* padding: 10px 0; */
   }
 
   .metrics-s2 {
@@ -52,7 +52,7 @@
 
 @media (max-width: 768px) {
   .metrics {
-    padding: 20px 0; 
+    padding: 0; 
   }
 
   .metrics-s2 h2 {

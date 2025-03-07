@@ -5,6 +5,8 @@ import Button from "../../components/Buttons/Button";
 import Transformation from "./Transformation";
 import ProteoSection from "./ProteoSection";
 import SolutionSection from "./SolutionSection";
+import MercurioSection from "./MercurioSection";
+import TransformationMercurio from "./TransformationMercurio";
 
 const Devices = () => {
     const { t } = useLanguage();
@@ -152,9 +154,11 @@ const Devices = () => {
                     </div>
                 </div>
             </div>
-
+            
             <Transformation />
-            <ProteoSection />
+            {/* <ProteoSection /> */}
+            <MercurioSection />
+            <TransformationMercurio />
             <SolutionSection />
         </div>
     );

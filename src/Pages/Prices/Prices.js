@@ -59,7 +59,7 @@ const Prices = () => {
             <p className="price">
               {t("enterprisePrice")}
             </p>
-            <p className="price-details">{t("pricePerVariable")}</p>
+            <p className="price-details">{t("pricePerVariableEnterprice")}</p>
             <ul className="features">
               {/* <li>{t("forOneUser")}</li> */}
               <li>{t("feature7")}</li>

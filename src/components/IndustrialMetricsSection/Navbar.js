@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import Button from '../Buttons/Button';
+import React, { useEffect, useState } from "react";
+import Button from "../Buttons/Button";
 import { useLanguage } from "../../LanguageContext";
-import './Navbar.css';
+import "./Navbar.css";
 
-const Navbar = ({title, toLink}) => {
+const Navbar = ({ title, toLink }) => {
   const { t } = useLanguage();
-  const [activeSection, setActiveSection] = useState(''); // Estado para la sección activa
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['characteristics', 'software', 'benefits'];
-      let currentSection = '';
+      const sections = ["characteristics", "software", "benefits"];
+      let currentSection = "";
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
@@ -22,57 +22,65 @@ const Navbar = ({title, toLink}) => {
         }
       });
 
-      setActiveSection(currentSection); // Actualiza la sección activa
+      setActiveSection(currentSection);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      const navbarHeight = document.querySelector('.industrial-navbar')?.offsetHeight || 0;
-      const sectionPosition = section.getBoundingClientRect().top + window.scrollY - navbarHeight - 0; // Ajuste de 20px extra
+      // Obtener altura dinámica del navbar
+      const navbar = document.querySelector(".navbar");
+      const navbarHeight = navbar ? navbar.offsetHeight : 0;
   
+      // Obtener la posición real de la sección
+      const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+  
+      // Evita que el scroll sea impreciso en diferentes dispositivos
       window.scrollTo({
-        top: sectionPosition,
-        behavior: 'smooth'
+        top: sectionPosition - navbarHeight - 20, // Se ajusta el margen
+        behavior: "smooth",
       });
     }
   };
   
+  
 
   return (
     <nav className="industrial-navbar">
-      <div className="navbar-top">
-        <h1>{title}</h1>
-        <Button to={toLink}>
-        {t("scheduleDemo")}
-          <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="demo" />
-        </Button>
-      </div>
-      <div className="navbar-bottom">
-        <button
-          onClick={() => scrollToSection('characteristics')}
-          className={activeSection === 'characteristics' ? 'active' : ''}
-        >
-          {t("characteristics")}
-        </button>
-        <button
-          onClick={() => scrollToSection('software')}
-          className={activeSection === 'software' ? 'active' : ''}
-        >
-         {t("software")}
-        </button>
-        <button
-          onClick={() => scrollToSection('benefits')}
-          className={activeSection === 'benefits' ? 'active' : ''}
-        >
-          {t("benefitsNavbar")}
-        </button>
+      <div className="navbar-container">
+        <h1 className="navbar-title">{title}</h1>
+        <div className="navbar-links">
+          <button
+            onClick={() => scrollToSection("characteristics")}
+            className={activeSection === "characteristics" ? "active" : ""}
+          >
+            {t("characteristics")}
+          </button>
+          <button
+            onClick={() => scrollToSection("software")}
+            className={activeSection === "software" ? "active" : ""}
+          >
+            {t("software")}
+          </button>
+          <button
+            onClick={() => scrollToSection("benefits")}
+            className={activeSection === "benefits" ? "active" : ""}
+          >
+            {t("benefitsNavbar")}
+          </button>
+        </div>
+        <div className="button-demo">
+          <Button to={toLink}>
+            {t("scheduleDemo")}
+            <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="demo" />
+          </Button>
+        </div>
       </div>
     </nav>
   );

@@ -1,48 +1,43 @@
 .industrial-navbar {
-  position: sticky; 
-  top: 0; 
+  position: sticky;
+  top: 10%;
   z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
+  width: 100%;
+  /* height: ; */
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Manrope', sans-serif;
+  padding: 0.8rem 0;
+}
+
+.industrial-navbar .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
   width: 100%;
-  
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  position: relative;
 }
 
-/* Navbar superior */
-.industrial-navbar .navbar-top {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  width: 100%; 
-  padding: 10px 40px; 
-  border-bottom: 1px solid #e0e0e0; 
-  box-sizing: border-box;
-}
-
-/* Responsive: Ajuste del título y botón */
-.industrial-navbar .navbar-top h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.industrial-navbar .navbar-title {
   margin: 0;
+  white-space: nowrap; /* Evita que el título se rompa en móviles */
 }
 
-.industrial-navbar .navbar-bottom {
-  margin-top: 10px;
+.industrial-navbar .navbar-links {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* Botones */
-.industrial-navbar .navbar-bottom button {
+/* Botones del navbar */
+.industrial-navbar .navbar-links button {
   font-family: 'Manrope', sans-serif;
-  padding: 3% 5%;
-  font-size: 1.2rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
   border: none;
   background-color: #f5f5f5;
   cursor: pointer;
@@ -51,61 +46,48 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.industrial-navbar .navbar-bottom button:hover,
-.industrial-navbar .navbar-bottom button.active {
-  background-color: black; 
+.industrial-navbar .navbar-links button:hover,
+.industrial-navbar .navbar-links button.active {
+  background-color: black;
   color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.632);
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .industrial-navbar .navbar-top {
-      padding: 10px 20px;
-  }
-
-  .industrial-navbar .navbar-bottom {
-      gap: 15px;
-  }
-
-  .industrial-navbar .navbar-bottom button {
-      font-size: 1rem;
-      padding: 8px 12px;
-  }
+/* 🚀 Mantener el navbar secundario debajo del original */
+.navbar-secondary {
+  position: relative; /* Se apila debajo del navbar principal */
+  top: 0;
+  z-index: 900; /* Debajo del navbar principal */
+  width: 100%;
+  margin-top: 4rem; /* Ajusta según la altura del navbar principal */
 }
 
-@media (max-width: 768px) {
-  .industrial-navbar .navbar-top {
-      /* flex-direction: column; */
-      text-align: center;
-      gap: 10px;
-  }
-
-  .industrial-navbar .navbar-bottom {
-      /* flex-direction: column; */
-      width: 100%;
-      align-items: center;
-      gap: 10px;
-  }
-
-  .industrial-navbar .navbar-bottom button {
-      width: 90%;
-      font-size: 1rem;
-      padding: 10px;
-  }
-}
-
-@media (max-width: 480px) {
+/* 🌍 Diseño completamente responsivo */
+@media screen and (max-width: 1024px) {
   .industrial-navbar {
-      padding: 10px 0;
+    padding: 0.6rem 0;
+  }
+  
+  .industrial-navbar .navbar-container {
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .industrial-navbar .navbar-title {
+    display: none; /* Oculta el título en móviles */
   }
 
-  .industrial-navbar .navbar-top h1 {
-      font-size: 1.2rem;
+  .industrial-navbar .button-demo {
+    display: none; /* Oculta el botón de agendar demo en móviles */
   }
 
-  .industrial-navbar .navbar-bottom button {
-      font-size: 0.9rem;
-      padding: 8px;
+  .industrial-navbar .navbar-container {
+    padding: 0.5rem 0;
+    justify-content: center;
+  }
+
+  .navbar-secondary {
+    margin-top: 3rem; /* Ajusta la separación en móviles */
   }
 }

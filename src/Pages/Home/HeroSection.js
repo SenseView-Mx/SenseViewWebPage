@@ -3,7 +3,7 @@ import Button from "../../components/Buttons/Button";
 import { useLanguage } from "../../LanguageContext";
 
 const HeroSection = () => {
-  const { t } = useLanguage(); // Traslate
+  const { t } = useLanguage(); // Traducción
 
   const texts = [
     t("AnimationSectionText1"),
@@ -13,8 +13,8 @@ const HeroSection = () => {
     t("AnimationSectionText5"),
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(-1);
-  const [showText, setShowText] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0); // Cambio aquí
+  const [showText, setShowText] = useState(true); // Ahora se muestra desde el inicio
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,8 +22,9 @@ const HeroSection = () => {
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex === texts.length - 1 ? 0 : prevIndex + 1));
         setShowText(true);
-      }, 500);
-    }, 3000);
+      }, 300); // Reducido de 500ms a 200ms
+    }, 3000); // 3000ms
+
     return () => clearInterval(interval);
   }, [texts.length]);
 
@@ -33,7 +34,7 @@ const HeroSection = () => {
         <h1 className="static-text">{t("AnimationSectionTitle")}</h1>
         <div className={`dynamic-container ${showText ? "text-visible" : "text-hidden"}`}>
           <span className="changing-text">
-            {showText && currentIndex !== -1 ? texts[currentIndex] : ""}
+            {showText ? texts[currentIndex] : ""}
             <span className="moving-line"></span>
           </span>
         </div>

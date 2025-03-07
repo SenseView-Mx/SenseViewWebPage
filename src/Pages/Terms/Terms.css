@@ -1,54 +1,85 @@
 .terms-container {
-    font-family: 'Manrope', sans-serif;
-    line-height: 1.6;
-    margin: 0 auto; 
-  }
-  
-  .terms-header {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 5% 5%;
-  }
-  
-  .terms-header h1 {
-    margin: 0;
-    font-size: 4em;
-    font-weight: 600;
-  }
-  
-  .terms-header p {
-    font-size: 1.2em;
-    padding: 0 10%;
-    color: #ababaa;
-  }
-  
-  .terms-content {
-    background-color: white;
-    padding: 20px;
-    text-align: left;
-    padding: 2% 15%;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.6;
+  margin: 0 auto; 
+}
 
-  }
-  
-  .terms-content h2 {
-    color: black;
-    font-size: 2.5em;
-    margin-top: 20px;
+.terms-header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 5% 5%;
+}
 
-  }
-  
-  .terms-content p, .terms-content ul {
-    color: #333;
-    font-size: 1.1em;
-  }
-  
-  .terms-content ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .terms-content ul li {
-    padding: 5px 0;
-  }
-  
+.terms-header h1 {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.terms-header p {
+  font-size: 1.2em;
+  padding: 0 10%;
+  color: #ababaa;
+}
+
+.terms-content {
+  background-color: white;
+  padding: 2% 15%;
+  text-align: left;
+}
+
+/* Sección interactiva con ícono */
+.terms-section {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+/* Títulos de las secciones con icono al lado derecho */
+.terms-title {
+  color: black;
+  font-size: 2.5em;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Efecto hover para indicar que es interactivo */
+.terms-title:hover {
+  /* color: #007bff; */
+}
+
+/* Ícono de expandir y colapsar */
+.faq-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sección de contenido que se expande y colapsa */
+.terms-text {
+  padding: 10px 0;
+  /* background-color: #f9f9f9; */
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Listas dentro de cada sección */
+.terms-content p, 
+.terms-content ul {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.terms-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.terms-content ul li {
+  padding: 5px 0;
+}
