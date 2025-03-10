@@ -50,26 +50,37 @@
     padding-bottom: 2%;  
   }
 
-@media (max-width: 768px) {
-  .metrics {
-    padding: 0; 
-  }
 
-  .metrics-s2 h2 {
-    font-size: 2rem; 
+  @media (max-width: 768px) {
+    .metrics {
+      padding: 0; 
+    }
+  
+    .metrics-s2 {
+      padding: 0 2%; 
+      margin: 0; 
+    }
+  
+    .metrics-s2 h2,
+    .metrics-s2 h3,
+    .metrics-s2 p {
+      padding: 0 10%;
+      text-align: left; /* Cambia aquí para alinear el texto a la izquierda */
+      font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
+    }
+  
+    .metrics-s2 h3 {
+      font-size: 1.8rem; /* Mantén la coherencia de tamaño */
+    }
+  
+    .metrics-s2 p {
+      font-size: 0.9rem; 
+      line-height: 1.4; 
+    }
+  
+    .metrics-p-section {
+      margin: 0 10%; 
+      padding-bottom: 5%;
+    }
   }
-
-  .metrics-s2 h3 {
-    font-size: 1.8rem;
-  }
-
-  .metrics-s2 p {
-    font-size: 0.9rem; 
-    line-height: 1.4; 
-  }
-
-  .metrics-p-section {
-    margin: 0 10%; 
-    padding-bottom: 5%;
-  }
-}
+  

@@ -72,7 +72,7 @@
 .benefit-text-container.default {
   flex: 1;
   text-align: left;
-  padding-left: 60px;
+  padding: 0 80px;
 }
 
 .benefit-text-container h3{
@@ -101,6 +101,8 @@
   text-align: left; 
 }
 
+
+
 .benefits-container.alternative {
   display: flex;
   flex-direction: column;
@@ -123,6 +125,7 @@
 .benefit-text-container.alternative {
   flex: 1;
   text-align: left;
+  padding-right: 2%;
   margin-right: 50px;
 }
 

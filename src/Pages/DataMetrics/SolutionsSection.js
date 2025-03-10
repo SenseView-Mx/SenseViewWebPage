@@ -21,7 +21,7 @@ const SolutionsSection = () => {
             toLink={"/services"}
           />
           <FeatureCard
-            imageSrc="/05-Services/Photo_Device01.webp"
+            imageSrc="/14-Data Metrics/Proteo_Encendido.jpg"
             title={t("proteoTitle")}
             description={t("proteoDescription")}
             buttonText={t("proteoButton")}

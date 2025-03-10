@@ -27,11 +27,14 @@
 }
 
 @media (max-width: 768px) {
+  .solutionsDataMetrics-section{
+    padding: 20px 8vw;
+  }
   .solutionsDataMetrics-section h1 {
       font-size: 1.8rem;
   }
   .solutionsDataMetrics-section .section-label {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
   }
 }
 

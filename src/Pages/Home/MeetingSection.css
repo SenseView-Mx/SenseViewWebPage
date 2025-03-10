@@ -44,86 +44,81 @@
   flex: 4.8;
 }
 
-/* 📱 Responsividad */
+/* Ajustes para dispositivos grandes y tablets */
 @media (max-width: 1024px) {
   .meeting-section-home {
-      flex-direction: column;
-      padding: 2.5rem;
-      text-align: center;
+    flex-direction: column;
+    padding: 2.5rem;
+    text-align: center;
   }
 
   .meeting-info-home {
-      align-items: center;
-      text-align: center;
-      margin: 0;
+    align-items: center;
+    text-align: center;
+    margin: 0;
   }
 
   .meeting-info-box {
-      padding-left: 5%; /* Reduce el padding en pantallas medianas */
-      padding-right: 5%;
-  }
-
-  .meeting-info-home h2 {
-      font-size: 1.6rem;
-  }
-
-  .meeting-info-home p {
-      font-size: 0.95rem;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .meeting-card {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+    width: 100%; /* Usa el 100% del ancho disponible */
+    display: flex;
+    justify-content: center;
   }
 }
 
+/* Ajustes específicos para dispositivos móviles (menos de 768px) */
 @media (max-width: 768px) {
   .meeting-section-home {
-      padding: 2rem;
-      text-align: center;
+    padding: 2rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que todos los elementos estén centrados */
   }
 
   .meeting-info-home {
-      text-align: center;
-      align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    align-items: center;
   }
 
   .meeting-info-box {
-      padding-left: 0; /* Se centra el contenido en pantallas pequeñas */
-      padding-right: 0;
-      max-width: 100%;
-  }
-
-  .meeting-info-home h2 {
-      font-size: 1.4rem;
-  }
-
-  .meeting-info-home p {
-      font-size: 0.9rem;
+    padding: 0;
+    max-width: 100%;
   }
 
   .meeting-card {
-      width: 100%;
-      padding: 1rem;
+    width: 90%; /* Usa el 100% del ancho disponible */
+    display: block;
+    justify-content: center;
   }
+
 }
 
+/* Ajustes para teléfonos muy pequeños (menos de 480px) */
 @media (max-width: 480px) {
   .meeting-section-home {
-      padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   .meeting-info-home h2 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .meeting-info-home p {
-      font-size: 0.85rem;
+    font-size: 0.85rem;
   }
 
   .meeting-info-home Button {
-      font-size: 0.9rem;
-      padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .meeting-card {
+    padding: 0; /* Elimina paddings para maximizar el espacio disponible */
   }
 }

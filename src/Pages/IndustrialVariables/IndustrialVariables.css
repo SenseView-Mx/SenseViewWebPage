@@ -141,6 +141,11 @@
     margin-left: 10%;
     width: 80%;
   }
+  .description-left{
+    /* margin-left: 10%; */
+    width: 84%;
+  }
+
 }
 
 @media (max-width: 576px) {

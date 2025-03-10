@@ -28,8 +28,6 @@
   z-index: -1;
 }
 
-
-
 .services-hero {
   margin-top: 7%;
   margin-bottom: 0;
@@ -54,7 +52,7 @@
 .services-content .section-label {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #666666;
+  color: var(--Tones-Black-80, #525050ab);
   margin-bottom: 10px; 
 }
 
@@ -67,9 +65,10 @@
 
 .services-content p {
   font-size: 1.2rem;
+  font-weight: 600;
   color: #666666;
   margin-bottom: 30px;
-  margin-right: 20%;
+  margin-right: 16%;
 }
 
 .card {
@@ -202,7 +201,7 @@
   }
 
   .services-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: left;
   }
 

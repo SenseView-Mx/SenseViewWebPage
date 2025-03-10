@@ -27,6 +27,7 @@
   background-color: white;
   padding: 2% 15%;
   text-align: left;
+  font-size: 0.8rem;
 }
 
 /* Sección interactiva con ícono */
@@ -82,4 +83,85 @@
 
 .terms-content ul li {
   padding: 5px 0;
+}
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  .terms-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .terms-header p {
+    font-size: 1rem;
+  }
+
+  .terms-content {
+    padding: 5%;
+  }
+
+  .terms-title {
+    font-size: 1.8rem;
+  }
+
+  .terms-text {
+    font-size: 1rem;
+  }
+}
+
+/* Teléfonos grandes (pantallas pequeñas) */
+@media (max-width: 768px) {
+  .terms-header {
+    padding: 5% 5%;
+  }
+
+  .terms-header h1 {
+    font-size: 2rem;
+  }
+
+  .terms-header p {
+    font-size: 1rem;
+  }
+
+  .terms-content {
+    padding: 5%;
+  }
+
+  .terms-title {
+    font-size: 1.6rem;
+    padding: 8px;
+  }
+
+  .faq-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .terms-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Teléfonos pequeños (menos de 480px) */
+@media (max-width: 480px) {
+  .terms-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .terms-header p {
+    font-size: 0.9rem;
+  }
+
+  .terms-title {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+
+  .faq-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .terms-text {
+    font-size: 0.9rem;
+  }
 }

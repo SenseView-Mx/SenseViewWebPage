@@ -328,6 +328,20 @@ body {
   
     border-bottom: 2px solid #ccc;
   }
+
+    
+  .language-selector button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .language-selector button.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+  }
   
   .solutions-dropdown.mobile-open li {
     padding-left: 30px; 
@@ -390,6 +404,10 @@ body {
     height: 120px; /* Altura total de los botones */
   }
 
+  .login-button-mobile, .request-trial-button{
+    width: 96%;
+  }
+
     
   .navbar-menu {
     display: flex;
@@ -406,6 +424,7 @@ body {
     text-align: left; /* Asegurar alineación izquierda */
     border-bottom: 1px solid #ccc;
   }
+  
 
   .navbar-menu a {
     width: 100%;
@@ -431,7 +450,7 @@ body {
       width: 100%;
       padding: 0; 
     }
-  
+    
     .solutions-dropdown li {
       width: 100%; 
       text-align: left; 
@@ -442,18 +461,9 @@ body {
     .solutions-dropdown li.additional-margin {
       padding-left: 20px; 
     }
+    .dropdown-solutions button{
+      margin-bottom: 6px;
+    }
   }
-  
-  .language-selector button {
-    padding: 5px 10px;
-    margin: 0 5px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  
-  .language-selector button.active {
-    font-weight: bold;
-    border-bottom: 2px solid #000;
-  }
+
   

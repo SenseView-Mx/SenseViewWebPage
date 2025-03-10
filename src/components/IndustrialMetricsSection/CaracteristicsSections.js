@@ -27,7 +27,7 @@ const CaracteristicsSections = ({ variant = "default" }) => {
       <div className="characteristics-content">
         {/* Imagen del producto */}
         <div className="product-image">
-          <img src="/06-Service01/S-Devices.png" alt="Product" />
+          <img src="/06-Service01/Dispositivos.png" alt="Product" />
         </div>
 
         {/* Listas de características */}

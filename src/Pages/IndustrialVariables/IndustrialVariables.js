@@ -60,7 +60,7 @@ const IndustrialVariables = () => {
       />
       <div className="description-section">
         <div className="description-left">
-          <h4 className="section-subtitle">{t("description")}</h4>
+          {/* <h4 className="section-subtitle">{t("description")}</h4> */}
           <h2 className="description-title">
             <span className="highlight">{t("dataToPowerHighlight")}</span> <br />
             {t("dataToPowerSubtitle")}

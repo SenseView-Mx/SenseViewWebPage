@@ -71,3 +71,88 @@
 .privacy-content ul li {
   padding: 5px 0;
 }
+
+.privacy-section{
+  font-size: 0.8rem;
+}
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  .privacy-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .privacy-header p {
+    font-size: 1rem;
+  }
+
+  .privacy-content {
+    padding: 5%;
+  }
+
+  .privacy-title {
+    font-size: 1.8rem;
+  }
+
+  .privacy-text {
+    font-size: 1rem;
+  }
+}
+
+/* Teléfonos grandes (pantallas pequeñas) */
+@media (max-width: 768px) {
+  .privacy-header {
+    padding: 5% 5%;
+  }
+
+  .privacy-header h1 {
+    font-size: 2rem;
+  }
+
+  .privacy-header p {
+    font-size: 1rem;
+  }
+
+  .privacy-content {
+    padding: 5%;
+  }
+
+  .privacy-title {
+    font-size: 1.6rem;
+    padding: 8px;
+  }
+
+  .faq-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .privacy-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Teléfonos pequeños (menos de 480px) */
+@media (max-width: 480px) {
+  .privacy-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .privacy-header p {
+    font-size: 0.9rem;
+  }
+
+  .privacy-title {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+
+  .faq-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .privacy-text {
+    font-size: 0.9rem;
+  }
+}

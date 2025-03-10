@@ -99,6 +99,10 @@
   opacity: 0;
 }
 
+.fade-low {
+  opacity: 0.25;
+}
+
 
 
 .feature-content img.feature-image {
@@ -126,6 +130,10 @@
 }
 
 @media (max-width: 768px) {
+  .static-texts{
+    padding: 0 3%;
+  }
+
   .static-texts h1 {
       font-size: 2rem;
   }

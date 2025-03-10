@@ -5,23 +5,37 @@ import { useLanguage } from "../../LanguageContext";
 const InteractiveFeatures = () => {
   const { t } = useLanguage();
   const [activeFeature, setActiveFeature] = useState("feature1");
-  const [fadeClass, setFadeClass] = useState("fade-out");
+  const [imageSrc, setImageSrc] = useState("/14-Data Metrics/Carrusel_1_Completa.png");
+  const [fadeClass, setFadeClass] = useState("fade-in"); // Inicialmente visible
 
   const features = [
     { id: "feature1", title: t("feature1Title"), icon: "/09-Dashboard/Icons/dashboard_customize.svg", image: "/14-Data Metrics/Carrusel_1_Completa.png" },
     { id: "feature2", title: t("feature2Title"), icon: "/09-Dashboard/Icons/ads_click.svg", image: "/14-Data Metrics/Carrusel_2_Completa.png" },
     { id: "feature3", title: t("feature3Title"), icon: "/09-Dashboard/Icons/tune.svg", image: "/14-Data Metrics/Carrusel_3_Completa.png" },
     { id: "feature4", title: t("feature4Title"), icon: "/09-Dashboard/Icons/notifications_unread.svg", image: "/14-Data Metrics/Carrusel_4_Completa.png" },
-    // { id: "feature5", title: t("feature5Title"), icon: "/09-Dashboard/Icons/verified_user.svg", image: "/14-Data Metrics/Carrusel_4_Completa.png" },
   ];
 
   useEffect(() => {
-    setFadeClass("fade-out"); // Aplica la clase de fade-out antes de cambiar la imagen
-    const timeout = setTimeout(() => {
-      setFadeClass("fade-in"); // Activa el fade-in después del cambio
-    }, 200); // Pequeño retraso para que el fade-out se complete antes del cambio
+    if (!activeFeature) return;
 
-    return () => clearTimeout(timeout);
+    setFadeClass("fade-out"); // Disminuir opacidad al 0%
+
+    const timeout1 = setTimeout(() => {
+      const selectedFeature = features.find((feature) => feature.id === activeFeature);
+      if (selectedFeature) {
+        setImageSrc(selectedFeature.image);
+        setFadeClass("fade-low"); // Imagen con 25% de opacidad
+      }
+    }, 300); // Esperar 300ms antes de cambiar la imagen
+
+    const timeout2 = setTimeout(() => {
+      setFadeClass("fade-in"); // Volver al 100% de opacidad
+    }, 500); // Subir opacidad tras 200ms con imagen nueva
+
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+    };
   }, [activeFeature]);
 
   return (
@@ -46,14 +60,9 @@ const InteractiveFeatures = () => {
         </div>
 
         <div className="feature-display">
-          {features.map(
-            (feature) =>
-              activeFeature === feature.id && (
-                <div key={feature.id} className={`feature-content ${fadeClass}`}>
-                  <img src={feature.image} alt={feature.title} className="feature-image" />
-                </div>
-              )
-          )}
+          <div className={`feature-content ${fadeClass}`}>
+            <img src={imageSrc} alt="Feature" className="feature-image" />
+          </div>
         </div>
       </div>
     </div>

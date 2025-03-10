@@ -54,7 +54,7 @@
   @media (max-width: 767px) {
     .giant-card {
       padding: 2rem 1.5rem;
-      gap: 1.5rem;
+      gap: 3rem;  /* Aumentado para más espacio entre cards */
       border-radius: 16px;
       margin: 7% auto;
     }
@@ -62,6 +62,7 @@
     .card-section {
       flex-direction: column;
       align-items: center;
+      gap: 0.5rem;
     }
   
     .card-section.reverse {
@@ -73,6 +74,7 @@
       height: auto; 
       object-fit: cover;
       border-radius: 12px;
+      margin-bottom: 0rem; /* Reducido para acercar al texto */
     }
   
     .section-content {
@@ -80,6 +82,7 @@
     }
   
     .section-content h3 {
+      margin-top: 0;
       font-size: 1.2rem; 
       margin-bottom: 0.5rem;
     }
@@ -92,6 +95,7 @@
     .section-buttons {
       justify-content: center; 
       gap: 0.8rem;
+      margin-bottom: 2%;
     }
   }
   
