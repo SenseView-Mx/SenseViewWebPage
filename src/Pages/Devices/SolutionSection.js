@@ -12,13 +12,13 @@ const SolutionSection = () => {
         <p className="section-label">{t("solutionsLabel")}</p>
         <h1>{t("solutionsTitle")}</h1>
         <div className="solutionsSection-grid">
-          <FeatureCard
-            imageSrc="/05-Services/Photo_Encendido.jpg"
-            title={t("proteoTitle")}
-            description={t("proteoDescription")}
-            buttonText={t("proteoButton")}
-            buttonIcon="/00-Buttons, Dropdowns & Questions/memory.svg"
-            toLink={"/devices"}
+        <FeatureCard
+            imageSrc="/14-Data Metrics/Digitalize_Robots.png"
+            title={t("solutionsDataMetricsTitle")}
+            description={t("solutionsDataMetricsDescription")}
+            buttonText={t("services")}
+            buttonIcon="/00-Buttons, Dropdowns & Questions/senseview_isotype.svg"
+            toLink={"/services"}
           />
           <FeatureCard
             imageSrc="/05-Services/Gerente_Var.png"

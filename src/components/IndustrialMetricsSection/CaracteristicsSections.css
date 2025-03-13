@@ -76,7 +76,7 @@
 }
 
 .details-list img {
-  width: 15%; /* Aumenta el tamaño de los iconos */
+  width: fit-content; /* Aumenta el tamaño de los iconos */
   height: 80px;
   object-fit: cover;
 }
@@ -96,7 +96,8 @@
 
 /* Botón */
 .details-block Button {
-  margin-left: 40px;
+  margin-top: 3%;
+  margin-left: 4%;
 }
 
 /* Responsive Design */

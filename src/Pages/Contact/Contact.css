@@ -14,19 +14,20 @@
   justify-content: flex-start;
   align-items: flex-start;
   color: white;
-  padding: 2% 6%;
+  padding: 3% 6%;
   background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%), 
   linear-gradient(270deg, rgba(23, 42, 79, 0.00) 0%, #172A4F 100%), 
   url("/public/12-Contact Us/Headline Image/Contact_Us_02_MediumDark.jpg") lightgray 50% / cover no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
-  background-position: top;
+  background-position: center;
+  min-height: 500px
 }
 
 .contact-content {
   position: relative;
   z-index: 2;
-  max-width: 40%;
+  max-width: 50%;
 }
 
 .contact-title {
@@ -87,7 +88,7 @@
   filter: brightness(1.2);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .contact-container {
     /* margin-top: 10%; */
     justify-content: center;

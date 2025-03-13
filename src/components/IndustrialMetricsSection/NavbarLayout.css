@@ -1,25 +1,42 @@
 .industrial-navbar {
   position: sticky;
-  top: 10%;
+  top: 60px;
   z-index: 1000;
   width: 100%;
-  /* height: ; */
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   font-family: 'Manrope', sans-serif;
-  padding: 0.8rem 0;
+  padding: 0.1rem 0;
+  transition: none; /* Evita transiciones que puedan cambiar la altura */
+  height: 70px; /* 🔹 Fija la altura del navbar */
+  display: flex;
+  align-items: center; /* 🔹 Asegura que los elementos internos estén alineados */
+}
+
+.industrial-navbar.stacked {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 0.1rem 0;
+  height: 70px; /* 🔹 Mantiene la misma altura */
+}
+
+.industrial-navbar.hidden {
+  /* display: none; */
 }
 
 .industrial-navbar .navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1480px;
   width: 100%;
   margin: 0 auto;
-  padding: 0.8rem 1.5rem;
-  position: relative;
+  height: 100%; /* 🔹 Mantiene el tamaño del contenedor */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
 }
 
 .industrial-navbar .navbar-title {

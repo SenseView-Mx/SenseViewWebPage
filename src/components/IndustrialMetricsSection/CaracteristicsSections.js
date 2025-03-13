@@ -51,6 +51,13 @@ const CaracteristicsSections = ({ variant = "default" }) => {
                 </div>
               </li>
               <li>
+                <img className="mercury-icon" src="/06-Service01/Icons/Mercurio_Icono_v4.png" alt={t("mercurioTitle")} />
+                <div>
+                  <h4>{t("mercurioTitleCharacteristics")}</h4>
+                  <p>{t("mercurioDescriptionCharacteristics")}</p>
+                </div>
+              </li>
+              <li>
                 <img src="/06-Service01/Icons/display_activity.svg" alt={t("ledScreenTitle")} />
                 <div>
                   <h4>{t("ledScreenTitle")}</h4>

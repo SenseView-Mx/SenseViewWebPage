@@ -219,7 +219,6 @@ const es = {
     dataToPowerHighlight: "De datos a poder:",
     dataToPowerSubtitle: "Convierta información en decisiones.",
     dataToPowerDescription: "Desde su celular o computadora acceda a la aplicación web para conocer las mediciones exactas de múltiples variables en sus procesos de producción, y obtenga alertas importantes, gráficas interactivas y reportes claros. Al tener un control preciso de distintas variables, podrá ajustar sus procesos de producción y distribución de manera más eficiente.",
-    
     // Monitoring Section
     monitoringTitle: "Monitoreo de variables como:",
     temperatureAndHumidity: "Temperatura & Humedad",
@@ -250,6 +249,8 @@ const es = {
     sensorsDescriptionMetrics: "Ensable ajustable, no invasivo.",
     proteoTitleCharacteristics: "Proteo",
     proteoDescriptionCharacteristics: "Dispositivo modular de adquisición y comunicación de datos.",
+    mercurioTitleCharacteristics: "Mercurio",
+    mercurioDescriptionCharacteristics: "Dispositivo de comunicación de datos desde PLC.",
     ledScreenTitle: "Pantalla LED",
     ledScreenDescription: "Datos en tiempo real para el área de producción.",
     features: "Características",
@@ -429,6 +430,9 @@ const es = {
     flexibleMountingDescription: "Se puede fijar de múltiples formas, entre ellas: montado en un riel DIN, atornillado a una base, con imanes o empotrado.",
     compatibleWithVariousSensors: "Compatible con diversos sensores",
     sensorsDescription2: "Cuenta con la capacidad de comunicarse mediante diversas tecnologías como voltaje digital, voltaje analógico, corriente analógica, I2C y RS485.",
+    // Solutions
+    solutionsDevicesTitle: "Digitalice su producción",
+    solutionsDevicesDescription: "Conozca los servicios que Sense View tiene para su negocio.",
   // Data Metrics
     dataAndMetrics: "Datos y Métricas",
     fromDataToInformation: "De datos a información valiosa.",

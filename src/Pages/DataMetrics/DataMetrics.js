@@ -34,7 +34,7 @@ const DataMetrics = () => {
           <p className="header-description">
             {t("senseViewDashboard")}
           </p>
-          <button className="login-button" onClick={() => navigate("/login")}>
+          <button className="login-button" onClick={() => navigate("/")}>
             {t("login")}
             <img src="/01-NavBar/login.svg" alt="Log in button" />
           </button>
