@@ -92,6 +92,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 7px 20px;
+  margin-right: 1rem;
   /* gap: 8px; */
   border-radius: 12px;
   background: var(--Palette-Black, #212121);

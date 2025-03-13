@@ -29,18 +29,29 @@
 }
 
 .industrial-navbar .navbar-container {
-  max-width: 1480px;
+  /* max-width: 1480px; */
   width: 100%;
   margin: 0 auto;
   height: 100%; /* 🔹 Mantiene el tamaño del contenedor */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
+}
+
+/* Crear un contenedor específico para el botón que siempre se alinea a la derecha */
+.industrial-navbar .button-demo-container {
+  margin-left: 0;  /* Esto empuja el botón hacia la derecha */
+}
+
+.industrial-navbar .button-demo {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .industrial-navbar .navbar-title {
-  margin: 0;
+  margin-left: 1rem;
   white-space: nowrap; /* Evita que el título se rompa en móviles */
 }
 

@@ -96,11 +96,13 @@ const NavbarLayout = ({ title, toLink }) => {
             {t("benefitsNavbar")}
           </button>
         </div>
-        <div className="button-demo">
-          <Button to={toLink}>
-            {t("scheduleDemo")}
-            <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="demo" />
-          </Button>
+        <div className="button-demo-container">
+          <div className="button-demo">
+            <Button to={toLink}>
+              {t("scheduleDemo")}
+              <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="demo" />
+            </Button>
+          </div>
         </div>
       </div>
     </nav>

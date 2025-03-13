@@ -28,7 +28,7 @@ body {
 }
 
 .hero-content {
-  padding: 12% 6%;
+  padding: 8% 6%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,8 @@ body {
 }
 
 .hero-content h1 {
-  margin: 0.5rem 0;
+  margin-top: 0;
+  /* margin: 1rem 0; */
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30), 0px 4px 12px rgba(0, 0, 0, 0.15);
   font-family: Manrope;
   font-size: 64px;
@@ -59,12 +60,12 @@ body {
 }
 
 .hero-content p {
-  margin: 1% 0;
+  margin: 7% 0;
   /* margin-bottom: 30px; */
   color: var(--Tones-Black-20, #FFF);
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30), 0px 4px 12px rgba(0, 0, 0, 0.15);
   font-family: Manrope;
-  font-size: 20px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
