@@ -24,7 +24,6 @@
 .benefits-section.default {
   text-align: center;
   justify-content: center;
-
 }
 
 .benefits-container.default {
@@ -177,7 +176,6 @@
     margin-right: 0;
   }
   
-
   .benefits-section.alternative {
     flex-direction: column; 
     align-items: center;
@@ -213,7 +211,6 @@
     display: none;
   } 
 
-
   .benefits-container.default {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -234,5 +231,4 @@
   .benefit-text-container p{
     font-size: 1.2rem;
   }
-  
 }

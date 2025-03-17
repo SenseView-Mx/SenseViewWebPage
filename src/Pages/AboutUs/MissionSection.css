@@ -16,7 +16,6 @@
     width: fit-content;
     justify-self: center;
     margin: 2% 7%;
-    
   }
   
   .section {
@@ -111,7 +110,6 @@
                 linear-gradient(180deg, rgba(0, 165, 207, 0.00) 0%, rgba(0, 165, 207, 0.50) 100%);
   }
   
-  
   /* Responsividad */
 @media screen and (max-width: 1024px) {
 
@@ -161,8 +159,6 @@
   }
   
   @media screen and (max-width: 768px) {
-   
-  
     .section.reverse {
       margin-top: 15%;
       flex-direction: column-reverse; /* Invierte la disposición en móviles */
@@ -192,7 +188,7 @@
       width: fit-content; /* Ajustado para ocupar la mitad del espacio */
       text-align: left;
     }
-  }
+}
   
   @media screen and (max-width: 480px) {
     .dual-image-card {
@@ -219,5 +215,5 @@
     .cta-image img {
       border-radius: 16px;
     }
-  }
+}
   

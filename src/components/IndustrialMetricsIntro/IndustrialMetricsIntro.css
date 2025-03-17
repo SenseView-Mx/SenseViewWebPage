@@ -1,4 +1,3 @@
-
   .content {
     padding: 0 8%;
     margin: 0;
@@ -65,10 +64,7 @@
     }
   }
   
-  /* 📌 Pantallas grandes (1024px - 1600px) */
   @media (max-width: 1600px) {
-
-  
     .content {
       max-width: 70%;
     }
@@ -84,8 +80,6 @@
   
   /* 📌 Pantallas medianas (768px - 1024px) */
   @media (max-width: 1024px) {
-
-  
     .content {
       max-width: 100%;
       margin-top: 10px;
@@ -114,6 +108,7 @@
     .industrial-variables-container {
       padding: 10px 0; 
     }
+    
     .breadcrumb {
       margin-top: 5%;
     }

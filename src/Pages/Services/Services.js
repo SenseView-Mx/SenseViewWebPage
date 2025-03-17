@@ -12,7 +12,7 @@ function Services() {
       <div className="services-page">
         <div className="services-hero">
           <div className="services-content">
-            <p className="section-label">{t("sectionLabel")}</p>
+            <p className="section-label">{t("services")}</p>
             <h1>{t("heroTitle")}</h1>
             <p>{t("heroDescription")}</p>
             <Button to={"/contact"}>

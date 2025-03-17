@@ -114,7 +114,7 @@
   text-align: center;
   font-weight: 500;
 }
-/* Ajustes para diferentes tamaños de pantalla, ejemplos: */
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .monitoring-grid {
     grid-template-columns: repeat(2, 1fr);

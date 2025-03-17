@@ -8,7 +8,6 @@
   min-height: 100vh; /* Asegura que ambas secciones tengan altura similar */
 }
 
-
 .faq-support-sidebar {
   flex: 0 0 380px;
   position: sticky; 
@@ -30,8 +29,6 @@
   border-radius: 15px;
   align-self: flex-start; /* Asegura alineación con FAQSection */
 }
-
-
 
 
 /* Responsividad */

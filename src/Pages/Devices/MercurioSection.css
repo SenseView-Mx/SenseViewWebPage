@@ -9,26 +9,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: auto; /* 🔹 Se ajusta dinámicamente */
+    min-height: auto; 
 }
 
-
-/* Contenedor principal en flexbox */
 .dynamic-container-mercurio {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* 🔹 Cambiado de center a flex-start */
+    align-items: flex-start; 
     justify-content: space-between;
     width: 100%;
     gap: 2rem;
 }
 
-/* Estilos del texto */
 .dynamic-text-mercurio {
     width: 50%;
     text-align: left;
 }
-
 
 .dynamic-title-mercurio {
     font-size: 2rem;
@@ -51,23 +47,20 @@
     /* max-width: 100%; */
 }
 
-/* Contenedor de la imagen */
 .dynamic-image-container {
     width: 90%;
     display: flex;
     justify-content: flex-end;
     position: relative;
-    padding-top: 40px; /* 🔹 Baja todo el contenedor sin cortar el fondo */
+    padding-top: 40px; 
 }
 
-/* Imagen con desplazamiento */
 .dynamic-image {
     max-width: 65%;
     margin-right: 20%;
     height: auto;
 }
 
-/* 🔹 RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     .dynamic-container-mercurio {
         flex-direction: column;
@@ -102,7 +95,6 @@
     }
 }
 
-/* 🔹 Para pantallas móviles */
 @media (max-width: 600px) {
     .dynamic-text-mercurio {
         width: 90%;
@@ -127,6 +119,6 @@
     .dynamic-image-container {
         width: 100%;
         justify-content: flex-start;
-        padding-top: 0px; /* 🔹 Baja todo el contenedor sin cortar el fondo */
+        padding-top: 0px; 
     }
 }

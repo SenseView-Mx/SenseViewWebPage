@@ -3,7 +3,6 @@
   background-color: #e0e0e049;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -26,7 +25,6 @@
   padding: 0 40px; /* Reduce el margen lateral */
 }
 
-/* Imagen del producto */
 .product-image {
   flex: 2.2; /* Hace que la imagen ocupe más espacio */
   display: block;

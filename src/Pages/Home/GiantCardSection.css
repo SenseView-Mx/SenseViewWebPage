@@ -50,11 +50,10 @@
     gap: 1rem;
   }
   
-  /* Ajustes responsivos para móviles */
   @media (max-width: 767px) {
     .giant-card {
       padding: 2rem 1.5rem;
-      gap: 3rem;  /* Aumentado para más espacio entre cards */
+      gap: 3rem;  
       border-radius: 16px;
       margin: 7% auto;
     }

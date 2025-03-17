@@ -37,7 +37,7 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  align-items: stretch; /* Todas las tarjetas tendrán la misma altura */
+  align-items: stretch; 
 }
 
 .price-card {
@@ -45,13 +45,12 @@
   border-radius: 20px;
   padding: 3% 1%;
   width: 100%;
-  max-width: 340px; /* Tamaño máximo de la tarjeta */
-  min-width: 280px; /* Tamaño mínimo para evitar que se hagan demasiado pequeñas */
+  max-width: 340px; 
+  min-width: 280px; 
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
   position: relative;
 }
-
 
 .plan-title {
   font-size: 1.25rem;
@@ -65,13 +64,13 @@
   left: 50%;
   transform: translateX(-50%);
   min-width: fit-content;
-  max-width: 400px; /* Limita el ancho máximo */
+  max-width: 400px; 
   text-align: center;
   z-index: 1;
   border: 5px solid #ffffff;
-  white-space: nowrap; /* Evita el salto de línea */
-  overflow: hidden; /* Oculta cualquier desbordamiento */
-  text-overflow: ellipsis; /* Agrega "..." si el texto es muy largo */
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 
 
@@ -83,7 +82,6 @@
   margin-top: 8%;
   margin-bottom: 2%;
 }
-
 
 .price sup {
   font-size: 0.8rem;

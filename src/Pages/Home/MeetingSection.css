@@ -15,9 +15,9 @@
 }
 
 .meeting-info-box {
-  padding-left: 11%; /* Aumenté el espacio a la izquierda */
-  padding-right: 0;  /* Evita que los textos se peguen demasiado */
-  min-width: fit-content; /* Evita que el texto crezca demasiado en pantallas grandes */
+  padding-left: 11%; 
+  padding-right: 0;  
+  min-width: fit-content;
 }
 
 .meeting-info-home h2 {
@@ -44,7 +44,6 @@
   flex: 4.8;
 }
 
-/* Ajustes para dispositivos grandes y tablets */
 @media (max-width: 1024px) {
   .meeting-section-home {
     flex-direction: column;
@@ -64,7 +63,7 @@
   }
 
   .meeting-card {
-    width: 100%; /* Usa el 100% del ancho disponible */
+    width: 100%; 
     display: flex;
     justify-content: center;
   }
@@ -77,7 +76,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Asegura que todos los elementos estén centrados */
+    align-items: center; 
   }
 
   .meeting-info-home {
@@ -92,14 +91,13 @@
   }
 
   .meeting-card {
-    width: 90%; /* Usa el 100% del ancho disponible */
+    width: 90%; 
     display: block;
     justify-content: center;
   }
 
 }
 
-/* Ajustes para teléfonos muy pequeños (menos de 480px) */
 @media (max-width: 480px) {
   .meeting-section-home {
     padding: 1.5rem;
@@ -119,6 +117,6 @@
   }
 
   .meeting-card {
-    padding: 0; /* Elimina paddings para maximizar el espacio disponible */
+    padding: 0; 
   }
 }

@@ -50,7 +50,6 @@
     overflow: hidden;
   }
   
-  
   .instant-info-texts {
     margin-top: 1rem;
   }
@@ -67,7 +66,6 @@
     margin-top: 0.5rem;
   }
   
-  /* Ajustes responsivos para móviles */
   @media (max-width: 767px) {
     .data-texts-container h3 {
       font-size: 1.5rem;

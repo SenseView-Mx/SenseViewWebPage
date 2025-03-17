@@ -47,15 +47,15 @@
 @media (max-width: 768px) {
   .feature-card-content {
     padding: 15px; 
-}
+  }
 
-.feature-card-content h3 {
-    font-size: 0.5rem; 
-}
+  .feature-card-content h3 {
+      font-size: 0.5rem; 
+  }
 
-.feature-card-content p {
-    font-size: 0.9rem; 
-}
+  .feature-card-content p {
+      font-size: 0.9rem; 
+  }
 
   .feature-card-content {
       bottom: 10px;

@@ -114,7 +114,6 @@
     margin: 0;
   }
 
-
   .transformation-container h2 {
       font-size: 1.5rem;
   }
@@ -157,12 +156,9 @@
     margin: 0;
   }
 
-  
   .transformation-container {
       padding: 10px 5px; 
   }
-
-  
 
   .step-transformation p {
       margin-bottom: 0; 
@@ -190,5 +186,4 @@
     text-align: center; /* Centra los números */
     font-size: 2rem;
 }
-
 }

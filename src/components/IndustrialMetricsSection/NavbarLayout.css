@@ -29,17 +29,14 @@
 }
 
 .industrial-navbar .navbar-container {
-  /* max-width: 1480px; */
   width: 100%;
   margin: 0 auto;
   height: 100%; /* 🔹 Mantiene el tamaño del contenedor */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 1.5rem; */
 }
 
-/* Crear un contenedor específico para el botón que siempre se alinea a la derecha */
 .industrial-navbar .button-demo-container {
   margin-left: 0;  /* Esto empuja el botón hacia la derecha */
 }
@@ -81,7 +78,6 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.632);
 }
 
-/* 🚀 Mantener el navbar secundario debajo del original */
 .navbar-secondary {
   position: relative; /* Se apila debajo del navbar principal */
   top: 0;
@@ -90,7 +86,6 @@
   margin-top: 4rem; /* Ajusta según la altura del navbar principal */
 }
 
-/* 🌍 Diseño completamente responsivo */
 @media screen and (max-width: 1024px) {
   .industrial-navbar {
     padding: 0.6rem 0;

@@ -119,33 +119,37 @@
 
 @media (max-width: 768px) {
   .industrial-variables-container {
-    /* margin-top: 10%; */
     padding: 20px;
     min-height: 40vh; 
   }
+
   .title {
     font-size: 2rem;
   }
+
   .description {
     font-size: 1rem; 
   }
+
   .monitoring-grid {
     margin-left: 5%;
     margin-right: 5%;
   }
+
   .monitoring-item {
     flex: 1 1 calc(50% - 10px); 
     max-width: calc(50% - 10px);
   }
+
   .description-right{
     margin-left: 10%;
     width: 80%;
   }
+
   .description-left{
     /* margin-left: 10%; */
     width: 84%;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -157,12 +161,15 @@
     flex: 1 1 100%;
     max-width: 100%;
   }
+
   .content-monitoring {
     padding: 10px; 
   }
+
   .icon-container {
     padding: 30px; 
   }
+
   .feature-description {
     width: 100%;
     height: auto; 
@@ -174,14 +181,16 @@
     flex-wrap: wrap;
     font-size: 0.9rem; 
   }
+
   .title {
     font-size: 1.8rem; 
   }
+
   .description {
     font-size: 0.9rem;
   }
+
   .feature-text-description {
     font-size: 0.8rem; 
   }
-  
 }

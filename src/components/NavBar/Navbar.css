@@ -23,8 +23,7 @@ body {
   padding: 0;
   top: 0;
   left: 0;
-
-}
+  }
   
   .navbar-logo img {
     margin-left: 5%;
@@ -66,10 +65,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px; 
-    /* margin-right: 1%; */
   }
-
-  
 
 .navbar-menu a, 
 .navbar-links a {
@@ -120,36 +116,35 @@ body {
 
 .request-trial-button, 
 .login-button-mobile {
-  font-family: 'Manrope', sans-serif;
-  width: 100%;
-  /* padding: 12px 0; */
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  gap: 8px;
-  font-weight: bold;
-  color: #FFF;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    /* padding: 12px 0; */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 8px;
+    font-weight: bold;
+    color: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.login-button-nav img {
-  margin-left: 8px; /* Añadir esto */
-}
+  .login-button-nav img {
+    margin-left: 8px; 
+  }
 
-.request-trial-button {
-  background-color: var(--palette-100-cyan-35-blue, #087AA2);
-}
+  .request-trial-button {
+    background-color: var(--palette-100-cyan-35-blue, #087AA2);
+  }
 
-.login-button-mobile {
-  background-color: #333;
-}
+  .login-button-mobile {
+    background-color: #333;
+  }
 
-  
-  .navbar-actions {
+.navbar-actions {
     display: flex;
     align-items: center;
     /* gap: 15px; */
@@ -194,7 +189,6 @@ body {
     padding: 0; 
     height: auto; 
   }
-  
   
   .dropdown-solutions .dropdown-toggle:hover {
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
@@ -278,13 +272,12 @@ body {
     font-family: inherit;
     padding: 8px 20px;
     height: auto;
-}
+  }
 
-.language-button:hover {
-  text-shadow: 0px 0px 1px rgb(0, 0, 0);
-}
+  .language-button:hover {
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+  }
 
-  
   .language-selector:hover {
     border: 1px solid var(--Palette-Black, #212121);
     background: var(--Opacities-Black-20, rgba(33, 33, 33, 0.20));
@@ -329,7 +322,6 @@ body {
   .language-dropdown li:hover {
     background-color: rgba(0, 0, 0, 0.05);
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
-
   }
   
   .language-dropdown li:first-child {
@@ -353,20 +345,13 @@ body {
   .solutions-dropdown.mobile-open li {
     padding-left: 30px; 
   }
-
-  /* @media (max-width: 1200px) {
-    .navbar-menu li {
-      padding: 0 4px;
-      font-size: 18px;
-    }
-  } */
   
   @media (max-width: 1250px) {
   
     .login-button-nav {
-      padding: 5px 12px; /* Reducir el padding */
-      font-size: 16px; /* Reducir el tamaño de la fuente */
-      margin-left: 10px; /* Espacio entre selector de idioma y botón */
+      padding: 5px 12px; 
+      font-size: 16px; 
+      margin-left: 10px; 
     }
 
     .navbar-links {
@@ -384,7 +369,6 @@ body {
       display: block;
     }
 
-    /* Contenedor del menú móvil */
     .navbar-links.open {
       display: flex;
       flex-direction: column;
@@ -400,7 +384,6 @@ body {
       z-index: 998;
     }
 
-    
   .navbar-menu {
     display: flex;
     flex-direction: column;
@@ -417,7 +400,6 @@ body {
     border-bottom: 1px solid #ccc;
   }
   
-
   .navbar-menu a {
     width: 100%;
     display: block; /* Asegurar que ocupa todo el ancho */

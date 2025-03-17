@@ -7,17 +7,12 @@ body {
   background: var(--Palette-Light-Gray, #F2F2F2);
 }
 
-
-
-/* Section 1 */
 .home-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   color: white;
-  /* padding: 5% 6%; */
-  /* margin-top: 5%; */
   background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%), 
   linear-gradient(270deg, rgba(23, 42, 79, 0.00) 0%, rgba(23, 42, 79, 0.80) 100%), 
   url('/public/03-Home/Headline Image/Home_MediumDark.jpg') lightgray 50% / cover no-repeat;
@@ -32,12 +27,11 @@ body {
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: start; /* Centra todo el contenido en el eje horizontal */
+  align-items: start; 
 }
 
 .hero-content h1 {
   margin-top: 0;
-  /* margin: 1rem 0; */
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30), 0px 4px 12px rgba(0, 0, 0, 0.15);
   font-family: Manrope;
   font-size: 64px;
@@ -61,7 +55,6 @@ body {
 
 .hero-content p {
   margin: 7% 0;
-  /* margin-bottom: 30px; */
   color: var(--Tones-Black-20, #FFF);
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.30), 0px 4px 12px rgba(0, 0, 0, 0.15);
   font-family: Manrope;
@@ -117,18 +110,8 @@ body {
   display: inline-block;
 }
 
-
-/* Ajustes responsivos para móviles */
 @media (max-width: 767px) {
-  /* .home-container {
-    height: auto;
-    padding: 15px;
-    background-size: cover;
-    background-position: center;
-  } */
-
   .hero-content {
-    /* margin-top: 10%; */
     padding: 10% 4%;
     max-width: 100%;
     text-align: left;

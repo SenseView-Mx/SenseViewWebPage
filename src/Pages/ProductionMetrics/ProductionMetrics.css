@@ -1,10 +1,6 @@
-  /* 
-      url('/public/07-Service02/Headline Image/Métricas.webp') no-repeat center/cover;
-  */
 
   .metrics{
     background-color: rgba(33, 33, 33, 1);
-    /* padding: 10px 0; */
   }
 
   .metrics-s2 {
@@ -65,7 +61,7 @@
     .metrics-s2 h3,
     .metrics-s2 p {
       padding: 0 10%;
-      text-align: left; /* Cambia aquí para alinear el texto a la izquierda */
+      text-align: left; 
       font-size: 2rem; /* Ajusta el tamaño del texto si es necesario */
     }
   

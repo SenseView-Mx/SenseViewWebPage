@@ -1,7 +1,6 @@
 .hw-body{
   background: #f2f2f2;
   font-family: "Manrope", sans-serif;
-  /* padding: 4% 0; */
 }
 
 .how-it-works-container {
@@ -11,7 +10,6 @@
   align-items: flex-start;
   color: white;
   padding: 8% 6%;
-  /* margin-top: 5%; */
   background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%), 
   linear-gradient(270deg, rgba(23, 42, 79, 0.00) 0%, rgba(23, 42, 79, 0.80) 100%), 
   url('/public/04-How It Works/Headline Image/Image_Production01.webp') lightgray 50% / cover no-repeat;
@@ -26,7 +24,6 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #f3eeeeac;
-  /* padding-bottom: 0; */
 }
 
 .how-it-works-content {
@@ -38,7 +35,6 @@
 .how-it-works-title {
   font-size: 4.3rem;
   font-weight: 600;
-  /* margin-bottom: 0; */
   margin-top: 0;
 }
 
@@ -58,21 +54,19 @@
   padding: 2% 10%;
 }
 
-/* Línea entre los círculos */
 .timeline-circle::after {
   content: "";
   position: absolute;
-  bottom: -240px;
+  bottom: -235px;
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
   height: calc(100% + 126px);
   background-color: #ddd;
   z-index: -1;
-  transition: background-color 0.3s ease; /* Transición para el color */
+  transition: background-color 0.3s ease; 
 }
 
-/* Estilo de los círculos */
 .timeline-circle {
   margin-right: 1%;
   width: 160px;
@@ -95,7 +89,6 @@
   font-weight: 600;
 }
 
-/* Resaltar el círculo actual */
 .timeline-circle.hovered {
   background-color: #00a5cf;
   border-color: #00a5cf;
@@ -106,24 +99,20 @@
   color: white;
 }
 
-/* Resaltar la línea y el círculo del paso anterior */
 .timeline-circle.connected::after {
   background-color: #00a5cf; /* Línea azul celeste */
 }
 
-/* Mostrar el número dentro del círculo conectado */
 .timeline-circle.connected span {
   opacity: 1;
   color: white;
 }
 
-/* Configuración de los cards */
 .step-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding: 2% 3%; /* Reducir el espacio entre tarjetas */
 }
 
 .step-content {
@@ -136,6 +125,7 @@
   width: 100%;
   gap: 3%; /* Reduce la separación entre imagen y texto */
   min-height: 180px; /* Asegura que todas las tarjetas tengan la misma altura */
+  margin-bottom: 2rem;
 }
 
 .step-content img {
@@ -143,9 +133,6 @@
   height: 192px; /* Tamaño fijo para todas las imágenes */
   border-radius: 16px;
   object-fit: cover; /* Asegura que la imagen se recorte y no se deforme */
-  /* margin-left: 15px;  */
-  /* margin-top: 15px; */
-  /* margin-bottom: 15px; */
   flex-shrink: 0; /* Evita que la imagen se reduzca en flexbox */
 }
 
@@ -173,8 +160,6 @@
   margin-bottom: 0;
 }
 
-
-
 .step-item:last-child .timeline-circle::after {
   display: none;
 }
@@ -194,12 +179,10 @@
   background-color: #00a5cf;
 }
 
-/* Línea conectada */
 .timeline-circle.connected::after {
   background-color: #00a5cf;
 }
 
-/* Mantiene los números visibles en círculos conectados */
 .timeline-circle.connected span {
   opacity: 1;
   color: white;
@@ -302,7 +285,6 @@
 @media (max-width: 768px) {
 
   .how-it-works-container {
-    /* padding: 3% 6%; */
     backdrop-filter: blur(8px);
     background-size: cover;
   }
@@ -329,7 +311,7 @@
   }
 
   .steps-container {
-    /* padding: 5% 5%; */
+    /* margin-bottom: ; */
   }
 
   .step-content {
@@ -340,8 +322,9 @@
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    gap: 3%; /* Reduce la separación entre imagen y texto */
-    min-height: 180px; /* Asegura que todas las tarjetas tengan la misma altura */
+    gap: 3%; 
+    min-height: 180px;
+    margin-bottom: 5%; 
   }
 
   .step-content img{
