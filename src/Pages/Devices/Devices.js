@@ -22,6 +22,33 @@ const Devices = () => {
         }
     }, [isDarkMode, isFinalPosition]); 
     
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.innerWidth <= 768) { // Solo para móviles
+                const sections = document.querySelectorAll(".dynamic-section");
+                const middleOfScreen = window.innerHeight / 2;
+                
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    const topBelowMiddle = rect.top > middleOfScreen;
+                    const bottomAboveMiddle = rect.bottom < middleOfScreen;
+                    
+                    // Nueva lógica: Light mode → Dark mode → Light mode
+                    if (topBelowMiddle || bottomAboveMiddle) {
+                        setIsDarkMode(false); // Light mode en estas condiciones
+                    } else {
+                        setIsDarkMode(true); // Dark mode cuando esté en el centro
+                    }
+                });
+            }
+        };
+        
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const isMobile = window.innerWidth <= 768;
+    
 
     const buttonLabels = {
         COM: { main: "COM", detail: t("Communication") },
@@ -117,8 +144,10 @@ const Devices = () => {
 
             <div 
                 className={`dynamic-section ${isDarkMode ? "dark-mode" : "light-mode"}`}
-                onMouseEnter={() => setIsDarkMode(true)}
-                onMouseLeave={() => setIsDarkMode(false)}
+                {...(!isMobile && {
+                    onMouseEnter: () => setIsDarkMode(true),
+                    onMouseLeave: () => setIsDarkMode(false),
+                })}
             >
                 <div className="dynamic-content">
                     <h2 className="dynamic-title">{t('dynamicTitle')}</h2>

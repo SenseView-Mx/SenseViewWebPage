@@ -19,32 +19,53 @@ const Transformation = () => {
     });
   }, []);
 
-  const handleMouseEnter = (state) => {
-    setHoverState(state);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth <= 768) { // Solo en móviles
+        const diagram = document.querySelector(".image-display");
+        if (!diagram) return;
 
-  const handleMouseLeave = () => {
-    setHoverState(0);
-  };
+        const rect = diagram.getBoundingClientRect();
+        const screenHeight = window.innerHeight;
+        const quarter = screenHeight / 4;
+
+        // Determinar en qué parte de la pantalla está el diagrama
+        if (rect.top > 3 * quarter) {
+          setHoverState(0); // Primera imagen
+        } else if (rect.top > 2 * quarter) {
+          setHoverState(1); // Segunda imagen
+        } else if (rect.top > quarter) {
+          setHoverState(2); // Tercera imagen
+        } else {
+          setHoverState(3); // Cuarta imagen
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const isMobile = window.innerWidth <= 768;
 
   return (
     <div className="transformation-container">
       <h2>{t('transformTitle')}</h2>
       <p>{t('transformSubtitle')}</p>
 
-      <div className="image-area" onMouseLeave={handleMouseLeave}>
-        <div
-          className="image-overlay left"
-          onMouseEnter={() => handleMouseEnter(1)}
-        ></div>
-        <div
-          className="image-overlay center"
-          onMouseEnter={() => handleMouseEnter(2)}
-        ></div>
-        <div
-          className="image-overlay right"
-          onMouseEnter={() => handleMouseEnter(3)}
-        ></div>
+      <div 
+        className="image-area"
+        {...(!isMobile && {
+          onMouseLeave: () => setHoverState(0),
+        })}
+      >
+        {!isMobile && (
+          <>
+            <div className="image-overlay left" onMouseEnter={() => setHoverState(1)}></div>
+            <div className="image-overlay center" onMouseEnter={() => setHoverState(2)}></div>
+            <div className="image-overlay right" onMouseEnter={() => setHoverState(3)}></div>
+          </>
+        )}
 
         <div className="image-display">
           <img src={imagePaths[hoverState]} alt={t(`state-${hoverState}`)} />

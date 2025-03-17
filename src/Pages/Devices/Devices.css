@@ -229,8 +229,6 @@
     clip-path:inset(0 0 0 10px);
   }
 
-  
-
 .dynamic-media.final-position {
     transform: scale(1);
     opacity: 1;
@@ -262,8 +260,6 @@
     color: #ffffff;
 }
 
-
-
 @media (max-width: 1200px) {
 
     .device-section-label { font-size: 1.3rem; }
@@ -286,13 +282,13 @@
 
 @media (max-width: 992px) {
     .device-section-label { font-size: 1.2rem; }
-   .device-title { font-size: 2.5rem; }
-   .device-description { font-size: 1rem; }
-   .dynamic-title { font-size: 1.6rem; }
-   .dynamic-title2 { font-size: 1.2rem; }
-   .dynamic-description { font-size: 1rem; }
-   .dynamic-title-end { font-size: 1.2rem; }
-   .dynamic-description-end { font-size: 1rem; }
+    .device-title { font-size: 2.5rem; }
+    .device-description { font-size: 1rem; }
+    .dynamic-title { font-size: 1.6rem; }
+    .dynamic-title2 { font-size: 1.2rem; }
+    .dynamic-description { font-size: 1rem; }
+    .dynamic-title-end { font-size: 1.2rem; }
+    .dynamic-description-end { font-size: 1rem; }
     .dynamic-media-container {
         height: 350px;
     }
@@ -311,18 +307,22 @@
     .device-container {
         padding: 8% 0;
     }
+
     .device-section-label { 
         font-size: 1.1rem;
         /* margin-left: 10%;  */
     }
+
    .device-title { font-size: 2rem; 
     /* margin-left: 10%;  */
     }
+
    .device-description {
     /* width: 100%; */
     font-size: 0.9rem; 
     /* margin-left: 10%;  */
     }
+
    .dynamic-title { font-size: 1.4rem; }
    .dynamic-title2 { font-size: 1.1rem; }
    .dynamic-description { font-size: 0.9rem; }
@@ -337,8 +337,8 @@
    .device-container{
     width: 100%;
    }
-
-    .button-main {
+   
+   .button-main {
         font-weight: 700;
         font-size: 0.8rem;
         transition: color 0.3s ease;
@@ -384,11 +384,13 @@
         height: auto;
         margin-bottom: 20px;
     }
+
     .device-button {
         padding: 6px 12px;
         margin-bottom: 10px;
         font-size: 0.9rem;
     }
+    
     .text-overlay {
         position: relative;
         transform: none;

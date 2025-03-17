@@ -16,12 +16,41 @@ const MercurioSection = () => {
         }
     }, [isDarkMode, isFinalPosition]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.innerWidth <= 768) { // Solo en móviles
+                const sections = document.querySelectorAll(".dynamic-section-mercurio");
+                const middleOfScreen = window.innerHeight / 2;
+
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    const topAboveMiddle = rect.top < middleOfScreen;
+                    const bottomBelowMiddle = rect.bottom > middleOfScreen;
+
+                    // Light mode → Dark mode → Light mode
+                    if (topAboveMiddle && bottomBelowMiddle) {
+                        setIsDarkMode(true);  // Dark mode cuando la sección está en el centro
+                    } else {
+                        setIsDarkMode(false); // Light mode al inicio y final
+                    }
+                });
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const isMobile = window.innerWidth <= 768;
+
     return (
         <div className="mercurio-body">
             <div 
                 className={`dynamic-section-mercurio ${isDarkMode ? "dark-mode" : "light-mode"}`}
-                onMouseEnter={() => setIsDarkMode(true)}
-                onMouseLeave={() => setIsDarkMode(false)}
+                {...(!isMobile && {
+                    onMouseEnter: () => setIsDarkMode(true),
+                    onMouseLeave: () => setIsDarkMode(false),
+                })}
             >
                 <div className="dynamic-container-mercurio">
                     {/* Contenedor del texto */}
