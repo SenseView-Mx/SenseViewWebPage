@@ -53,14 +53,13 @@ const IndustrialVariables = () => {
         title={t("industrialVariables")} 
         description={t("industrialVariablesDescription")}
         buttonText={t("scheduleDemoButton")}
-        buttonIcon="/00-Buttons, Dropdowns & Questions/event.svg"
+        buttonIcon="/00-Buttons_Dropdowns_Questions/event.svg"
         toLink={"/contact"}
         backgroundPosition={"top"}
-        backgroundImage="/06-Service01/Headline Image/Variables Industriales.webp" // Imagen específica
+        backgroundImage="/06-Service01/Headline_Image/Variables_Industriales.webp" // Imagen específica
       />
       <div className="description-section">
         <div className="description-left">
-          {/* <h4 className="section-subtitle">{t("description")}</h4> */}
           <h2 className="description-title">
             <span className="highlight">{t("dataToPowerHighlight")}</span> <br />
             {t("dataToPowerSubtitle")}

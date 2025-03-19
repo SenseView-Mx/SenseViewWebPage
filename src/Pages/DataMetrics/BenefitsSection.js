@@ -12,7 +12,7 @@ const BenefitsSection = () => {
         {/* Mockup de imágenes en la izquierda */}
         <div className="section5-image">
           <img
-            src="/14-Data Metrics/Datos_Celular-Celular.png"
+            src="/14-Data_Metrics/Datos_Celular_Celular.png"
             alt={t("powerfulTool")}
             className="mockup-image-benefits"
           />
@@ -27,14 +27,14 @@ const BenefitsSection = () => {
             <Button to={"/contact"}>
               {t("scheduleDemoButton")}
               <img
-                src="/00-Buttons, Dropdowns & Questions/event.svg"
+                src="/00-Buttons_Dropdowns_Questions/event.svg"
                 alt="Demo"
               />
             </Button>
             <Button variant="secondary" to={"/pricing"}>
               {t("pricingButton")}
               <img
-                src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"
+                src="00-Buttons_Dropdowns_Questions/arrow_forward_ios.svg"
                 alt={t("pricingButtonAlt")}
               />
             </Button>

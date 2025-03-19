@@ -47,7 +47,7 @@ const BenefitsSection = () => {
           <div className="benefit-item-home" key={index}>
           <div className="benefit-header-home">
             <div className="benefit-icon-home">
-              <img src={`03-Home/Icons/${benefit.icon}`} alt={benefit.title} />
+              <img src={`/03-Home/Icons/${benefit.icon}`} alt={benefit.title} />
             </div>
             <h3>{benefit.title}</h3>
           </div>

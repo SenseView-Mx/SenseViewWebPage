@@ -24,7 +24,7 @@ const TransformationMercurio = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth <= 768) { // Solo en móviles
+      if (window.innerWidth <= 500) { // Solo en móviles
         const diagram = document.querySelector(".image-display-mercurio");
         if (!diagram) return;
 
@@ -49,7 +49,7 @@ const TransformationMercurio = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 500;
 
   return (
     <div className="transformation-container-mercurio">

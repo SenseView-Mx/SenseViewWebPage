@@ -156,45 +156,44 @@
     font-size: 1.2rem;
   }
 
+  .details-list li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px; /* Reduce la distancia entre icono y texto */
+    margin-bottom: 20px; /* Agrega más separación entre cada elemento */
+    margin-top: 0;
+  }
+
   .details-list img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0; /* Hace que el icono esté más cerca del texto */
   }
 
   .details-list h4 {
+    margin-top: 0;
     font-size: 1rem;
+    margin-bottom: 5px; /* Separa el título del párrafo */
   }
 
   .details-list p {
     font-size: 0.85rem;
+    margin-bottom: 10px; /* Agrega margen antes del siguiente icono */
   }
+
+  .details-block Button {
+    display: flex;
+    margin-top: 3%;
+    margin-left: 0;
+    width: 110%;
+  }
+  
 }
-
 @media (max-width: 480px) {
-  .section-title {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .product-image img {
-    margin-top: 5%;
-    max-width: 100%;
-  }
-
-  .details-title {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-
-  .details-list li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
   .details-list img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   .details-list h4 {
@@ -203,11 +202,5 @@
 
   .details-list p {
     font-size: 0.8rem;
-  }
-
-  .details-block Button {
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
   }
 }

@@ -13,6 +13,16 @@ const Devices = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [activeButton, setActiveButton] = useState("COM");
     const [isFinalPosition, setIsFinalPosition] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 500);
+        };
+        
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useEffect(() => {
         if (isDarkMode && !isFinalPosition) {
@@ -24,7 +34,7 @@ const Devices = () => {
     
     useEffect(() => {
         const handleScroll = () => {
-            if (window.innerWidth <= 768) { // Solo para móviles
+            if (isMobile) { // Solo para móviles
                 const sections = document.querySelectorAll(".dynamic-section");
                 const middleOfScreen = window.innerHeight / 2;
                 
@@ -45,10 +55,7 @@ const Devices = () => {
         
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-    const isMobile = window.innerWidth <= 768;
-    
+    }, [isMobile]);
 
     const buttonLabels = {
         COM: { main: "COM", detail: t("Communication") },
@@ -81,12 +88,12 @@ const Devices = () => {
                 muted
                 playsInline
             >
-                <source src="/08-Devices/videos/Video-Proteo 3COM V1_Gradient.mp4" type="video/mp4" />
+                <source src="/08-Devices/videos/Video_Proteo_3COM_V1_Gradient.mp4" type="video/mp4" />
             </video>
         ) : (
             <img
                 key="COM-image"
-                src="/08-Devices/Proteo Interaction/Static-Proteo COM & POW.png"
+                src="/08-Devices/Proteo_Interaction/Static_Proteo_COM_&_POW.png"
                 alt={t('wifiLteLora')}
                 className="dynamic-media"
             />
@@ -94,14 +101,14 @@ const Devices = () => {
         SEN: isDarkMode ? (
             <img
                 key="SEN-image"
-                src="/08-Devices/videos/Interaction-Proteo SEN_Gradient.png"
+                src="/08-Devices/videos/Interaction_Proteo_SEN_Gradient.png"
                 alt={t('analogDigitalSensors')}
                 className={`dynamic-media ${isFinalPosition ? "final-position" : ""}`}
             />
         ) : (
             <img
                 key="SEN-image"
-                src="/08-Devices/Proteo Interaction/Static-Proteo SEN.png"
+                src="/08-Devices/Proteo_Interaction/Static_Proteo_SEN.png"
                 alt={t('analogDigitalSensors')}
                 className="dynamic-media"
             />
@@ -115,12 +122,12 @@ const Devices = () => {
                 muted
                 playsInline
             >
-                <source src="/08-Devices/videos/Video-Proteo 2POW V1_Gradient.mp4" type="video/mp4" />
+                <source src="/08-Devices/videos/Video_Proteo_2POW_V1_Gradient.mp4" type="video/mp4" />
             </video>
         ) : (
             <img
                 key="POW-image"
-                src="/08-Devices/Proteo Interaction/Static-Proteo COM & POW.png"
+                src="/08-Devices/Proteo_Interaction/Static_Proteo_COM_&_POW.png"
                 alt={t('batteryBarrel')}
                 className="dynamic-media"
             />
@@ -131,14 +138,14 @@ const Devices = () => {
         <div className="dv-body">
             <div className="device-container">
                 <video className="background-video" autoPlay loop muted playsInline>
-                    <source src="/08-Devices/Headline Video/Video-Proteo Assembly.mp4" type="video/mp4" />
+                    <source src="/08-Devices/Headline_Video/Video_Proteo_Assembly.mp4" type="video/mp4" />
                 </video>
                 <div className="gradient-overlay"></div>
                 <div className="device-content">
                     <p className="device-section-label">{t('deviceSectionLabel')}</p>
                     <h1 className="device-title">{t('deviceTitle')}</h1>
                     <p className="device-description">{t('deviceDescription')}</p>
-                    <Button to={"/contact"}>{t('scheduleDemoButton')}<img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="Demo"/></Button>
+                    <Button to={"/contact"}>{t('scheduleDemoButton')}<img src="/00-Buttons_Dropdowns_Questions/event.svg" alt="Demo"/></Button>
                 </div>
             </div>
 
@@ -167,18 +174,20 @@ const Devices = () => {
                                     </span>
                                     {activeButton === key && (
                                         <span className="button-detail">
-                                            - {t(buttonLabels[key].detail)}
+                                            - {buttonLabels[key].detail}
                                         </span>
                                     )}
                                 </button>
                             ))}
                         </div>
 
-                        {elements[activeButton]}
+                        <div className="media-wrapper">
+                            {elements[activeButton]}
+                        </div>
 
                         <div className="text-overlay">
-                            <h3 className="dynamic-title-end">{t(descriptions[activeButton].title)}</h3>
-                            <p className="dynamic-description-end">{t(descriptions[activeButton].description)}</p>
+                            <h3 className="dynamic-title-end">{descriptions[activeButton].title}</h3>
+                            <p className="dynamic-description-end">{descriptions[activeButton].description}</p>
                         </div>
                     </div>
                 </div>

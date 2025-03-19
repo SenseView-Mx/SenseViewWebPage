@@ -18,7 +18,7 @@ const MercurioSection = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.innerWidth <= 768) { // Solo en móviles
+            if (window.innerWidth <= 500) { // Solo en móviles
                 const sections = document.querySelectorAll(".dynamic-section-mercurio");
                 const middleOfScreen = window.innerHeight / 2;
 
@@ -41,7 +41,7 @@ const MercurioSection = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 500;
 
     return (
         <div className="mercurio-body">
@@ -64,7 +64,7 @@ const MercurioSection = () => {
     
                     {/* Contenedor de la imagen */}
                     <div className="dynamic-image-container">
-                        <img src="/08-Devices/Mercurio/Mercurio_1-2.png" alt="Mercurio" className="dynamic-image" />
+                        <img src="/08-Devices/Mercurio/Mercurio_1_2.png" alt="Mercurio" className="dynamic-image" />
                     </div>
                 </div>
             </div>

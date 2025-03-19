@@ -1,5 +1,5 @@
 .body-prices{
-  background: var(--Palette-White, #FFF);
+  background: #ffffff;
 }
 .prices-container {
   font-family: "Manrope", sans-serif;
@@ -154,7 +154,10 @@
   }
 
   .fq-section{
+    /* justify-content: center;
     margin: 0 5%;
+    padding: 2% 0;
+    background: #ffffff; */
   }
 }
 

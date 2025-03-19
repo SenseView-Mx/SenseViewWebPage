@@ -12,7 +12,7 @@
   padding: 8% 6%;
   background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%), 
   linear-gradient(270deg, rgba(23, 42, 79, 0.00) 0%, rgba(23, 42, 79, 0.80) 100%), 
-  url('/public/04-How It Works/Headline Image/Image_Production01.webp') lightgray 50% / cover no-repeat;
+  url('/public/04-How_It_Works/Headline Image/Image_Production01.webp') lightgray 50% / cover no-repeat;
   backdrop-filter: blur(8px);
   background-size: 100%;
   background-attachment: fixed;
@@ -129,15 +129,18 @@
 }
 
 .step-content img {
-  width: 256px;  /* Tamaño fijo para todas las imágenes */
-  height: 192px; /* Tamaño fijo para todas las imágenes */
+  width: 100%; /* Ajusta al tamaño del contenedor */
+  max-width: 400px; /* Evita que la imagen se agrande demasiado */
+  height: auto; /* Mantiene la proporción */
+  aspect-ratio: 16/9; /* Relación de aspecto para imágenes consistentes */
   border-radius: 16px;
-  object-fit: cover; /* Asegura que la imagen se recorte y no se deforme */
-  flex-shrink: 0; /* Evita que la imagen se reduzca en flexbox */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Centrar la imagen */
 }
 
 .step-content-text {
-  flex: 1; /* El texto ocupa el espacio restante en el card */
+  /* flex: 1;  */
 }
 
 .step-content-text h2 {
@@ -240,6 +243,10 @@
 }
 
 @media (max-width: 1200px) {
+  .timeline-circle {
+    display: none;
+  }
+
   .how-it-works-container {
     padding: 20px;
   }
@@ -253,10 +260,10 @@
     gap: 10px;
   }
 
-  .step-content img {
+  /* .step-content img {
     width: 100px;
     height: 100px;
-  }
+  } */
 
   .hw-call-to-action {
     flex-direction: column;
@@ -327,9 +334,12 @@
     margin-bottom: 5%; 
   }
 
-  .step-content img{
-    width: 350px;
-    height: fit-content;
+  .step-content img {
+    width: 100%; 
+    max-width: 400px; /* Limitar tamaño máximo para no expandirse demasiado */
+    min-width: 300px; /* Limitar tamaño máximo para no expandirse demasiado */
+    height: auto; /* Mantiene la proporción */
+    min-height: 180px;
   }
 
   .step-content-text h2 {

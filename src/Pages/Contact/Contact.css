@@ -17,7 +17,7 @@
   padding: 3% 6%;
   background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%), 
   linear-gradient(270deg, rgba(23, 42, 79, 0.00) 0%, #172A4F 100%), 
-  url("/public/12-Contact Us/Headline Image/Contact_Us_02_MediumDark.jpg") lightgray 50% / cover no-repeat;
+  url("/public/12-Contact_Us/Headline_Image/Contact_Us_02_MediumDark.jpg") lightgray 50% / cover no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

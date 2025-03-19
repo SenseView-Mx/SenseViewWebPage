@@ -20,7 +20,7 @@ const FAQnSupport = () => {
           email={"contacto@senseview.mx"}
           phone={"+52 331 819 3343"}
           buttonText={t("moreContactMethodsButton")}
-          buttonIcon={"/00-Buttons, Dropdowns & Questions/arrow_forward_ios.png"}
+          buttonIcon={"/00-Buttons_Dropdowns_Questions/arrow_forward_ios.png"}
           buttonAction={() => console.log("Redirigir a más métodos de contacto")}
           variantButton="secondary"
           toLink={"/contact"}

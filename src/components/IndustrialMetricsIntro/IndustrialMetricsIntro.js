@@ -50,7 +50,7 @@ const IndustrialMetricsIntro = ({
             {index < breadcrumbLinks.length - 1 && (
               <img
                 className="breadcrumb-separator"
-                src="/00-Buttons, Dropdowns & Questions/arrow_forward_ios_white.svg"
+                src="/00-Buttons_Dropdowns_Questions/arrow_forward_ios_white.svg"
                 alt="separator"
               />
             )}

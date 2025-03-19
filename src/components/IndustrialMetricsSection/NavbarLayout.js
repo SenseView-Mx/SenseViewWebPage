@@ -100,7 +100,7 @@ const NavbarLayout = ({ title, toLink }) => {
           <div className="button-demo">
             <Button to={toLink}>
               {t("scheduleDemo")}
-              <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="demo" />
+              <img src="/00-Buttons_Dropdowns_Questions/event.svg" alt="demo" />
             </Button>
           </div>
         </div>

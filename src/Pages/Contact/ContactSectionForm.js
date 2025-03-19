@@ -61,7 +61,7 @@ const ContactSectionForm = () => {
         email="contacto@senseview.mx"
         phone="+52 331 819 3343"
         buttonText={t("howItWorks")}
-        buttonIcon="/00-Buttons, Dropdowns & Questions/arrow_forward_ios_white.png"
+        buttonIcon="/00-Buttons_Dropdowns_Questions/arrow_forward_ios_white.png"
         variantButton="primary"
         toLink="/how-it-works"
         buttonAction={() => console.log("Redirigir a más métodos de contacto")}
@@ -114,15 +114,14 @@ const ContactSectionForm = () => {
                 <h3>Estado</h3>
                 <select name="state" value={formData.state} onChange={handleChange} required>
                 <option value="" disabled>
-  <span className="custom-text-color">{t("selectState")}</span>
-</option>
-{MEXICO_STATES.map((state) => (
-  <option key={state} value={state}>
-    <span className="custom-text-color">{state}</span>
-  </option>
-))}
-</select>
-
+                  <span className="custom-text-color">{t("selectState")}</span>
+                </option>
+                {MEXICO_STATES.map((state) => (
+                  <option key={state} value={state}>
+                    <span className="custom-text-color">{state}</span>
+                  </option>
+                ))}
+                </select>
               </div>
               <div>
                 <h3>{t("city")}</h3>

@@ -103,9 +103,8 @@
   }
 
   .benefits-container-home {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    grid-template-columns: 1fr; /* Un solo elemento por fila */
+    padding: 0 1rem;
   }
 
   .benefit-item-home {

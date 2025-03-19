@@ -8,11 +8,11 @@ const HowItWorks = () => {
   const { t } = useLanguage();
 
   const stepImages = [
-      "/04-How It Works/Valoración.webp", // Imagen para el paso 1
-      "/04-How It Works/Selección.webp",  // Imagen para el paso 2
-      "/04-How It Works/Proteo_Desarmador.jpg", // Imagen para el paso 3
-      "/04-How It Works/Operador_Botellas.png",     // Imagen para el paso 4
-      "/04-How It Works/Operador_Ope.png",   // Imagen para el paso 5
+      "/04-How_It_Works/Valoración.webp", // Imagen para el paso 1
+      "/04-How_It_Works/Selección.webp",  // Imagen para el paso 2
+      "/04-How_It_Works/Proteo_Desarmador.jpg", // Imagen para el paso 3
+      "/04-How_It_Works/Operador_Botellas.png",     // Imagen para el paso 4
+      "/04-How_It_Works/Operador_Ope.png",   // Imagen para el paso 5
     ];
 
   const [hoveredStep, setHoveredStep] = useState(null);
@@ -38,7 +38,7 @@ const HowItWorks = () => {
           <p className="how-it-works-description">{t("descriptionHW")}</p>
           <Button to={"/contact"}>
             {t("scheduleDemoButton")}
-            <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="Demo" />
+            <img src="/00-Buttons_Dropdowns_Questions/event.svg" alt="Demo" />
           </Button>
         </div>
       </div>
@@ -78,11 +78,11 @@ const HowItWorks = () => {
           <p>{t("ctaDescriptionHW")}</p>
           <Button to={"/contact"}>
             {t("ctaButton")}
-            <img src="/00-Buttons, Dropdowns & Questions/contact_page.png" alt={t("ctaImageAlt")} />
+            <img src="/00-Buttons_Dropdowns_Questions/contact_page.png" alt={t("ctaImageAlt")} />
           </Button>
         </div>
         <div className="hw-cta-image">
-          <img src="/04-How It Works/Fabrica Inteligente.webp" alt={t("ctaImageAlt")} />
+          <img src="/04-How_It_Works/Fabrica_Inteligente.webp" alt={t("ctaImageAlt")} />
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ const Prices = () => {
             <Button to={"/contact"}>
               {t("ScheduleDemoButton")}
               <img
-                src="00-Buttons, Dropdowns & Questions/event.svg"
+                src="00-Buttons_Dropdowns_Questions/event.svg"
                 alt={t("DemoImageAlt")}
               />
             </Button>
@@ -41,7 +41,6 @@ const Prices = () => {
             </p>
             <p className="price-details">{t("pricePerVariable")}</p>
             <ul className="features">
-              {/* <li>{t("forThreeUsers")}</li> */}
               <li>{t("feature4")}</li>
               <li>{t("feature5")}</li>
               <li>{t("feature6")}</li>
@@ -49,7 +48,7 @@ const Prices = () => {
             <Button to={"/contact"}>
               {t("ScheduleDemoButton")}
               <img
-                src="00-Buttons, Dropdowns & Questions/event.svg"
+                src="00-Buttons_Dropdowns_Questions/event.svg"
                 alt={t("DemoImageAlt")}
               />
             </Button>
@@ -61,7 +60,6 @@ const Prices = () => {
             </p>
             <p className="price-details">{t("pricePerVariableEnterprice")}</p>
             <ul className="features">
-              {/* <li>{t("forOneUser")}</li> */}
               <li>{t("feature7")}</li>
               <li>{t("feature8")}</li>
               <li>{t("feature9")}</li>
@@ -69,7 +67,7 @@ const Prices = () => {
             <Button to={"/contact"}>
               {t("ScheduleDemoButton")}
               <img
-                src="00-Buttons, Dropdowns & Questions/event.svg"
+                src="00-Buttons_Dropdowns_Questions/event.svg"
                 alt={t("DemoImageAlt")}
               />
             </Button>

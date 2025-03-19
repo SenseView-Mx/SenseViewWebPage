@@ -15,7 +15,7 @@ const Contact = () => {
           <div className="contact-info">
             <p>
               <img
-                src="12-Contact Us/Icons/mail.svg"
+                src="12-Contact_Us/Icons/mail.svg"
                 alt="Email icon"
                 className="contact-icon"
               />
@@ -25,7 +25,7 @@ const Contact = () => {
             </p>
             <p>
               <img
-                src="12-Contact Us/Icons/call.svg"
+                src="12-Contact_Us/Icons/call.svg"
                 alt="Call icon"
                 className="contact-icon"
               />
@@ -40,7 +40,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="12-Contact Us/Icons/Facebook_Buttons.svg"
+                  src="12-Contact_Us/Icons/Facebook_Buttons.svg"
                   alt="Facebook"
                   className="social-icon"
                 />
@@ -51,7 +51,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="12-Contact Us/Icons/LinkedIn_Buttons.svg"
+                  src="12-Contact_Us/Icons/LinkedIn_Buttons.svg"
                   alt="LinkedIn"
                   className="social-icon"
                 />
@@ -62,7 +62,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="12-Contact Us/Icons/Youtube_Buttons.svg"
+                  src="12-Contact_Us/Icons/Youtube_Buttons.svg"
                   alt="YouTube"
                   className="social-icon"
                 />
@@ -73,7 +73,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="12-Contact Us/Icons/Instagram_Buttons.svg"
+                  src="12-Contact_Us/Icons/Instagram_Buttons.svg"
                   alt="Instagram"
                   className="social-icon"
                 />
@@ -84,7 +84,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="12-Contact Us/Icons/X_Button.svg"
+                  src="12-Contact_Us/Icons/X_Button.svg"
                   alt="Twitter"
                   className="social-icon"
                 />

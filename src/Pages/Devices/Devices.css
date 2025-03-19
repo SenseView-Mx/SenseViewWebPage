@@ -124,8 +124,7 @@
 }
 
 .dark-mode .device-button.inactive {
-    background-color: 
-    #626262; 
+    background-color: #626262; 
     color: #ffffff; 
 }
 
@@ -189,6 +188,15 @@
     text-align: center;
 }
 
+.media-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .button-overlay {
     position: absolute;
     top: 0;
@@ -226,7 +234,7 @@
     z-index: 0;
     display: block;
     clip-path:inset(0 0 0 10px);
-  }
+}
 
 .dynamic-media.final-position {
     transform: scale(1);
@@ -260,188 +268,131 @@
 }
 
 @media (max-width: 1200px) {
-
     .device-section-label { font-size: 1.3rem; }
-   .device-title { font-size: 3rem; }
-   .device-description { font-size: 1.1rem; }
-   .dynamic-title { font-size: 1.8rem; }
-   .dynamic-title2 { font-size: 1.3rem; }
-   .dynamic-description { font-size: 1.1rem; }
-   .dynamic-title-end { font-size: 1.3rem; }
-   .dynamic-description-end { font-size: 1.1rem; }
+    .device-title { font-size: 3rem; }
+    .device-description { font-size: 1.1rem; }
+    .dynamic-title { font-size: 1.8rem; }
+    .dynamic-title2 { font-size: 1.3rem; }
+    .dynamic-description { font-size: 1.1rem; }
+    .dynamic-title-end { font-size: 1.3rem; }
+    .dynamic-description-end { font-size: 1.1rem; }
+    
     .dynamic-media-container {
         height: 400px;
     }
 
     .dynamic-media {
         width: 85%;
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 992px) {
-    .device-section-label { font-size: 1.2rem; }
-    .device-title { font-size: 2.5rem; }
-    .device-description { font-size: 1rem; }
-    .dynamic-title { font-size: 1.6rem; }
-    .dynamic-title2 { font-size: 1.2rem; }
-    .dynamic-description { font-size: 1rem; }
-    .dynamic-title-end { font-size: 1.2rem; }
-    .dynamic-description-end { font-size: 1rem; }
-    .dynamic-media-container {
-        height: 350px;
-    }
-
-    .dynamic-media {
-        width: 90%;
         max-width: 500px;
     }
 
-    .button-overlay {
-        gap: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .device-container {
-        padding: 8% 0;
-    }
-
-    .device-section-label { 
-        font-size: 1.1rem;
-        /* margin-left: 10%;  */
-    }
-
-   .device-title { font-size: 2rem; 
-    /* margin-left: 10%;  */
-    }
-
-   .device-description {
-    /* width: 100%; */
-    font-size: 0.9rem; 
-    /* margin-left: 10%;  */
-    }
-
-   .dynamic-title { font-size: 1.4rem; }
-   .dynamic-title2 { font-size: 1.1rem; }
-   .dynamic-description { font-size: 0.9rem; }
-   .dynamic-title-end { font-size: 1.1rem; }
-   .dynamic-description-end { font-size: 0.9rem; }
-
-   .device-content{
-    padding: 0 4%;
-    max-width: 100%;
-   }
-
-   .device-container{
-    width: 100%;
-   }
-   
-   .button-main {
+    .button-main {
         font-weight: 700;
-        font-size: 0.8rem;
+        font-size: 1rem;
         transition: color 0.3s ease;
     }
-    
+
     .button-detail {
         font-weight: normal;
-        margin-left: 0;
+        margin-left: 4px;
         font-weight: 600;
-        font-size: 0.65rem;
+        font-size: 1rem;
         transition: opacity 0.3s ease;
     }
-
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    position: relative;
+}
+@media (max-width: 640px) {
+    .device-content {
+        max-width: 90%; /* Aumentado para que el texto no se acumule en móvil */
+    }
+    
     .dynamic-section {
-        padding: 40px 50px;
+        padding: 40px 20px; /* Reducir padding horizontal en móvil */
+    }
+
+    .dynamic-content {
+        width: 100%;
+    }
+
+    .dynamic-title, .dynamic-title2 {
+        width: 100%;
+        text-align: left;
     }
 
     .dynamic-description {
-        margin-bottom: 3%;
-        max-width: 100%;
-    }
-
-    .dynamic-content{
-        padding: 0;
-    }
-
-    .dynamic-media-container {
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .dynamic-media {
-        position: relative;
-        margin: auto 0;
+        max-width: 100%; /* Texto a ancho completo en móvil */
+        margin-bottom: 60px; /* Espacio adicional antes de los botones */
     }
 
     .button-overlay {
         position: relative;
-        transform: none;
+        top: 0;
         left: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
         height: auto;
+        gap: 10px;
+        margin-top: 2rem;
         margin-bottom: 20px;
     }
 
     .device-button {
-        padding: 6px 12px;
-        margin-bottom: 10px;
-        font-size: 0.9rem;
-    }
-    
-    .text-overlay {
-        position: relative;
-        transform: none;
-        left: 0;
-        margin-top: 0;
-    }
-    
-    .dynamic-title-end {
+        width: 100%;
+        text-align: left;
+        padding: 12px 16px;
         font-size: 1rem;
-        font-weight: 650;
-        margin-bottom: 0;
-        text-align: center;
-        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
-    .dynamic-description-end {
-        font-size: 0.9rem;
-        margin-bottom: 10%;
-        margin-top: 0;
-        text-align: center;
-        /* max-width: 800px; */
-        align-self: center;
+    .button-main {
+        font-size: 1.2rem;
     }
-}
 
-@media (max-width: 480px) {
-    .device-section-label { font-size: 1rem; }
-    .device-title { font-size: 1.8rem; }
-    .device-description { font-size: 0.85rem; }
-    .dynamic-title { font-size: 1.2rem; }
-    .dynamic-title2 { font-size: 1rem; }
-    .dynamic-description { font-size: 0.85rem; }
-    .dynamic-title-end { font-size: 1rem; }
-    .dynamic-description-end { font-size: 0.85rem; }
-    
+    .button-detail {
+        font-size: 1rem;
+    }
+
     .dynamic-media-container {
-        height: 250px;
+        height: 600px; /* Aumentado para acomodar los botones y la imagen */
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-wrapper {
+        position: relative;
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .dynamic-media {
-        width: 100%;
-        max-width: 350px;
+        position: relative;
+        max-width: 90%;
+        height: auto;
+        max-height: 250px;
     }
 
-    .button-overlay {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .text-overlay {
+        position: relative;
+        padding: 20px;
+        bottom: auto;
     }
 
-    .device-button {
+    .dynamic-title-end, .dynamic-description-end {
         width: 100%;
-        max-width: 250px;
+        text-align: center;
     }
 }

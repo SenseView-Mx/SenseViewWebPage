@@ -13,11 +13,11 @@ const SolutionSection = () => {
         <h1>{t("solutionsTitle")}</h1>
         <div className="solutionsSection-grid">
         <FeatureCard
-            imageSrc="/14-Data Metrics/Digitalize_Robots.png"
+            imageSrc="/14-Data_Metrics/Digitalize_Robots.png"
             title={t("solutionsDataMetricsTitle")}
             description={t("solutionsDataMetricsDescription")}
             buttonText={t("services")}
-            buttonIcon="/00-Buttons, Dropdowns & Questions/senseview_isotype.svg"
+            buttonIcon="/00-Buttons_Dropdowns_Questions/senseview_isotype.svg"
             toLink={"/services"}
           />
           <FeatureCard
@@ -25,7 +25,7 @@ const SolutionSection = () => {
             title={t("dataTitle")}
             description={t("dataDescription")}
             buttonText={t("dataButton")}
-            buttonIcon="/00-Buttons, Dropdowns & Questions/dashboard_customize.svg"
+            buttonIcon="/00-Buttons_Dropdowns_Questions/dashboard_customize.svg"
             toLink={"/data-metrics"}
           />
         </div>

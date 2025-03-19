@@ -10,11 +10,11 @@ const SoftwareSection = ({ variant = "default" }) => {
   const imageVariants = {
     default: {
       laptop: "/06-Service01/Software/Variables_Laptop.png",
-      tablet: "/06-Service01/Software/Variables_Tablet-Celular.png",
+      tablet: "/06-Service01/Software/Variables_Tablet_Celular.png",
     },
     alternative: {
       laptop: "/07-Service02/SoftwareLayout/Metricas_Laptop.png",
-      tablet: "/07-Service02/SoftwareLayout/Metricas_Tablet-Celular.png",
+      tablet: "/07-Service02/SoftwareLayout/Metricas_Tablet_Celular.png",
     },
   };
 
@@ -72,7 +72,7 @@ const SoftwareSection = ({ variant = "default" }) => {
             }}
           >
             {t("softwareFooterButton")}{" "}
-            <img src="/00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg" alt="arrow" />
+            <img src="/00-Buttons_Dropdowns_Questions/arrow_forward_ios.svg" alt="arrow" />
           </Button>
         </div>
       </div>

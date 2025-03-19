@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/public/05-Services/Headline Image/Image_Production03.webp") no-repeat center center;
+  background: url("/public/05-Services/Headline_Image/Image_Production03.webp") no-repeat center center;
   background-size: cover; /* Mantiene la imagen completa sin recortar */
   background-position: top;
   transform: scaleX(-1); /* Invierte la imagen horizontalmente */

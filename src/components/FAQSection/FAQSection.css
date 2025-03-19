@@ -1,13 +1,14 @@
 .faq-section {
   font-family: 'Manrope', sans-serif;
-  margin:0 auto; 
   width: 100%;
   max-width: 805px;
   background: var(--Palette-White, #FFF);
   color: #000000;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  box-sizing: border-box;
+  padding: 5% 5%; /* Agrega padding lateral en móviles */
+  margin: 0 auto; /* Centrar en pantallas más grandes */
 }
 
 .faq-title {
@@ -96,40 +97,43 @@
   transform: rotate(180deg);
 }
 
-/* Tablets */
-@media screen and (max-width: 1024px) {
-  .faq-section {
-    width: 95%;
-  }
-}
-
-/* Móviles */
 @media screen and (max-width: 768px) {
   .faq-section {
-    width: 80%;
-    margin: 3% 0;
-    padding: 0 15px;
+    width: 95%;
+    /* padding: 5% 5%; */
   }
 
   .faq-title {
     font-size: 1.75rem;
+    /* text-align: center; */
+  }
+
+  .faq-category {
+    width: 90%;
+    margin-bottom: 20px;
   }
 
   .category-title {
     font-size: 1.1rem;
+    /* text-align: center; */
   }
 
   .faq-item {
     padding: 12px 15px;
-    /* max-width: 10px; */
+    width: 100%; /* Se asegura que ocupe todo el ancho disponible */
+    text-align: left;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+    margin-right: 10px;
   }
 }
 
-/* Teléfonos pequeños */
 @media screen and (max-width: 480px) {
   .faq-section {
-    margin: 2% auto;
-    padding: 0 10px;
+    width: 90%;
+    /* padding: 5%; */
   }
 
   .faq-title {
@@ -163,26 +167,5 @@
   .faq-icon {
     width: 16px;
     height: 16px;
-  }
-
-  /* Desactivar la animación de hover en móviles */
-  .faq-item:hover {
-    transform: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-}
-
-/* Pantallas muy pequeñas */
-@media screen and (max-width: 320px) {
-  .faq-title {
-    font-size: 1.25rem;
-  }
-
-  .faq-question {
-    font-size: 0.85rem;
-  }
-
-  .faq-answer {
-    font-size: 0.8rem;
   }
 }

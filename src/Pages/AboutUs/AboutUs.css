@@ -16,7 +16,7 @@
   color: white;
   padding: 7% 6%;
   /* margin-top: 5%; */
-  background-image: url("/public/13-About Us/Headline Image/AU-Headline.webp");
+  background-image: url("/public/13-About_Us/Headline_Image/AU_Headline.webp");
   background-size: 100%;
   background-attachment: cover;
   background-position: center;
@@ -66,8 +66,8 @@
 }
 
 .feature-aboutus img {
-  width: 24px;
-  height: 24px;
+  width: fit-content;
+  height: auto;
 }
 
 .feature-aboutus p {
@@ -87,7 +87,7 @@
 
 @media (max-width: 768px) {
   .hero-section-AboutUs {
-    background: url("/public/13-About Us/Headline Image/About_Us.png");
+    background: url("/public/13-About_Us/Headline_Image/About_Us.png");
     /* margin-top: 9%; */
     padding: 3% 2%;
     /* height: max-content; */
@@ -118,8 +118,8 @@
   }
 
   .feature-aboutus img {
-    width: 16px;
-    height: 16px;
+    width: fit-content;
+    height: auto;
   }
 }
 

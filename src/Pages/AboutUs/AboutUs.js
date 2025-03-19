@@ -23,7 +23,7 @@ const AboutUs = () => {
         <div className="features-section-aboutus">
           {t("aboutUsFeatures", { returnObjects: true }).map((feature, index) => (
             <div className="feature-aboutus" key={index}>
-              <img src={`13-About Us/Icons/${feature.alt.toLowerCase()}.svg`} alt={feature.alt} />
+              <img src={`13-About_Us/Icons/${feature.alt.toLowerCase()}.svg`} alt={feature.alt} />
               <p>{feature.text}</p>
             </div>
           ))}

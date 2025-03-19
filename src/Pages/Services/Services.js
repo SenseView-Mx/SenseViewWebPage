@@ -17,7 +17,7 @@ function Services() {
             <p>{t("heroDescription")}</p>
             <Button to={"/contact"}>
               {t("scheduleDemoButton")}
-              <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="Demo" />
+              <img src="/00-Buttons_Dropdowns_Questions/event.svg" alt="Demo" />
             </Button>
           </div>
           <div className="services-cards-container">
@@ -31,14 +31,14 @@ function Services() {
                 <Button variant="secondary" to={"/services/industrial-variables"}>
                   {t("variablesCardbuttonText")}
                   <img
-                    src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"
+                    src="00-Buttons_Dropdowns_Questions/arrow_forward_ios.svg"
                     alt="Arrow"
                   />
                 </Button>
               </div>
               <div className="card-body">
                 <img
-                  src="/05-Services/Variables Industriales.webp"
+                  src="/05-Services/Variables_Industriales.webp"
                   alt="Variables Industriales"
                   className="card-image"
                 />
@@ -58,7 +58,7 @@ function Services() {
                 <Button variant="secondary" to={"/services/production-metrics"}>
                   {t("metricsCardbuttonText")}
                   <img
-                    src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"
+                    src="00-Buttons_Dropdowns_Questions/arrow_forward_ios.svg"
                     alt="Arrow"
                   />
                 </Button>
@@ -86,7 +86,7 @@ function Services() {
             title={t("proteoTitle")}
             description={t("proteoDescription")}
             buttonText={t("proteoButton")}
-            buttonIcon="/00-Buttons, Dropdowns & Questions/memory.svg"
+            buttonIcon="/00-Buttons_Dropdowns_Questions/memory.svg"
             toLink={"/devices"}
           />
           <FeatureCard
@@ -94,7 +94,7 @@ function Services() {
             title={t("dataTitle")}
             description={t("dataDescription")}
             buttonText={t("dataButton")}
-            buttonIcon="/00-Buttons, Dropdowns & Questions/dashboard_customize.svg"
+            buttonIcon="/00-Buttons_Dropdowns_Questions/dashboard_customize.svg"
             toLink={"/data-metrics"}
           />
         </div>

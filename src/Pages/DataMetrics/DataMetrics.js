@@ -20,7 +20,7 @@ const DataMetrics = () => {
           <p className="data-metrics-description">{t("discoverBenefits")}</p>
           <Button to={"/contact"}>
             {t("scheduleDemoButton")}
-            <img src="/00-Buttons, Dropdowns & Questions/event.svg" alt="Demo" />
+            <img src="/00-Buttons_Dropdowns_Questions/event.svg" alt="Demo" />
           </Button>
         </div>
       </div>
@@ -43,7 +43,7 @@ const DataMetrics = () => {
         {/* Sección de contenido visual e información */}
         <div className="content-section">
           <div className="image-container">
-            <img src="/14-Data Metrics/Datos_Tablet-Celular.png" alt="Mockup del tablero"  />
+            <img src="/14-Data_Metrics/Datos_Tablet_Celular.png" alt="Mockup del tablero"  />
           </div>
 
           <div className="text-section">
@@ -69,7 +69,7 @@ const DataMetrics = () => {
             </p>
           </div>
           <div className="mockup-container">
-            <img src="/14-Data Metrics/Datos_Laptop.png" alt="Dashboard mockup" className="mockup-image" />
+            <img src="/14-Data_Metrics/Datos_Laptop.png" alt="Dashboard mockup" className="mockup-image" />
           </div>
         </div>
       </div>

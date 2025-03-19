@@ -32,23 +32,9 @@
   }
   
   .image-display-mercurio img {
-    transition: opacity 0.3s ease-in-out;
-    opacity: 1;
     width: 100%;
-    height: fit-content;
-    object-fit: cover;
-    max-width: 100%;
-  }
-
-  .image-display-mercurio img:not(:first-child) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-  
-  .image-display-mercurio img[style*="display: block"] {
-    opacity: 1;
+  height: auto;
+  object-fit: contain;
   }
 
   .image-overlay-mercurio {
@@ -106,6 +92,7 @@
   }
   
   @media (max-width: 768px) {
+    
     .transformation-container-mercurio {
       text-align: center;
       padding: 20px;
@@ -120,7 +107,6 @@
     }
     
     .image-display{
-  
       width: fit-content;
       height: fit-content;
       padding: 0;
@@ -199,5 +185,5 @@
       text-align: center; /* Centra los números */
       font-size: 2rem;
   }
-  }
+}
   

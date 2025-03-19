@@ -150,7 +150,8 @@
 
   .feature-item {
       font-size: 0.9rem;
-      width: 90%;
+      width: 100%;
+      min-width: 250px;
   }
 }
 
@@ -165,7 +166,7 @@
 
   .feature-item {
       font-size: 0.8rem;
-      width: 100%;
+      width: 80%;
   }
 
   .feature-display {

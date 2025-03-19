@@ -11,7 +11,7 @@ const GiantCardSection = () => {
       {/* Primer bloque */}
       <div className="card-section">
         <img
-          src="03-Home/Soluciones Personalizadas.webp"
+          src="03-Home/Soluciones_Personalizadas.webp"
           alt={t("GiantCardAlt1")}
           className="section-image"
         />
@@ -22,13 +22,13 @@ const GiantCardSection = () => {
             <Button to={"/services"}>
               {t("GiantCardButton1")}
               <img
-                src="00-Buttons, Dropdowns & Questions/senseview_isotype.svg"
+                src="00-Buttons_Dropdowns_Questions/senseview_isotype.svg"
                 alt={t("GiantCardButton1Alt")}
               />
             </Button>
             <Button variant="secondary" to={"/how-it-works"}>{t("GiantCardButton2")}
             <img
-                src="00-Buttons, Dropdowns & Questions/arrow_forward_ios.svg"
+                src="00-Buttons_Dropdowns_Questions/arrow_forward_ios.svg"
                 alt={t("GiantCardButton1Alt")}
               />
             </Button>
@@ -50,7 +50,7 @@ const GiantCardSection = () => {
             <Button to={"/devices"}>
               {t("GiantCardButton3")}
               <img
-                src="00-Buttons, Dropdowns & Questions/memory.svg"
+                src="00-Buttons_Dropdowns_Questions/memory.svg"
                 alt={t("GiantCardButton3Alt")}
               />
             </Button>
@@ -72,7 +72,7 @@ const GiantCardSection = () => {
             <Button to={"/data-metrics"}>
               {t("GiantCardButton4")}
               <img
-                src="00-Buttons, Dropdowns & Questions/dashboard_customize.svg"
+                src="00-Buttons_Dropdowns_Questions/dashboard_customize.svg"
                 alt={t("GiantCardButton4Alt")}
               />
             </Button>

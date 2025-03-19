@@ -5,14 +5,14 @@ import { useLanguage } from "../../LanguageContext";
 const InteractiveFeatures = () => {
   const { t } = useLanguage();
   const [activeFeature, setActiveFeature] = useState("feature1");
-  const [imageSrc, setImageSrc] = useState("/14-Data Metrics/Carrusel_1_Completa.png");
+  const [imageSrc, setImageSrc] = useState("/14-Data_Metrics/Carrusel_1_Completa.png");
   const [fadeClass, setFadeClass] = useState("fade-in"); // Inicialmente visible
 
   const features = [
-    { id: "feature1", title: t("feature1Title"), icon: "/09-Dashboard/Icons/dashboard_customize.svg", image: "/14-Data Metrics/Carrusel_1_Completa.png" },
-    { id: "feature2", title: t("feature2Title"), icon: "/09-Dashboard/Icons/ads_click.svg", image: "/14-Data Metrics/Carrusel_2_Completa.png" },
-    { id: "feature3", title: t("feature3Title"), icon: "/09-Dashboard/Icons/tune.svg", image: "/14-Data Metrics/Carrusel_3_Completa.png" },
-    { id: "feature4", title: t("feature4Title"), icon: "/09-Dashboard/Icons/notifications_unread.svg", image: "/14-Data Metrics/Carrusel_4_Completa.png" },
+    { id: "feature1", title: t("feature1Title"), icon: "/09-Dashboard/Icons/dashboard_customize.svg", image: "/14-Data_Metrics/Carrusel_1_Completa.png" },
+    { id: "feature2", title: t("feature2Title"), icon: "/09-Dashboard/Icons/ads_click.svg", image: "/14-Data_Metrics/Carrusel_2_Completa.png" },
+    { id: "feature3", title: t("feature3Title"), icon: "/09-Dashboard/Icons/tune.svg", image: "/14-Data_Metrics/Carrusel_3_Completa.png" },
+    { id: "feature4", title: t("feature4Title"), icon: "/09-Dashboard/Icons/notifications_unread.svg", image: "/14-Data_Metrics/Carrusel_4_Completa.png" },
   ];
 
   useEffect(() => {

@@ -18,7 +18,7 @@ const MeetingSection = () => {
           <Button to={"/contact"}>
             {t("MeetingSectionButton")}
             <img
-              src="00-Buttons, Dropdowns & Questions/contact_page.svg"
+              src="00-Buttons_Dropdowns_Questions/contact_page.svg"
               alt={t("MeetingSectionButtonAlt")}
             />
           </Button>

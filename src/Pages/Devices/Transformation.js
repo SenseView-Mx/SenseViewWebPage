@@ -6,10 +6,10 @@ const Transformation = () => {
   const { t } = useLanguage();
   const [hoverState, setHoverState] = useState(0);
   const imagePaths = [
-    "/08-Devices/Diagram/Diagram-Proteo01.png",
-    "/08-Devices/Diagram/Diagram-Proteo02.png",
-    "/08-Devices/Diagram/Diagram-Proteo03.png",
-    "/08-Devices/Diagram/Diagram-Proteo04.png",
+    "/08-Devices/Diagram/Diagram_Proteo01.png",
+    "/08-Devices/Diagram/Diagram_Proteo02.png",
+    "/08-Devices/Diagram/Diagram_Proteo03.png",
+    "/08-Devices/Diagram/Diagram_Proteo04.png",
   ];
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Transformation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth <= 768) { // Solo en móviles
+      if (window.innerWidth <= 500) { // Solo en móviles
         const diagram = document.querySelector(".image-display");
         if (!diagram) return;
 
@@ -46,7 +46,7 @@ const Transformation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 500;
 
   return (
     <div className="transformation-container">
