@@ -11,7 +11,7 @@ const GiantCardSection = () => {
       {/* Primer bloque */}
       <div className="card-section">
         <img
-          src="/03-Home/Soluciones_Personalizadas.webp"
+          src={`/03-Home/Soluciones_Personalizadas.webp`}
           alt={t("GiantCardAlt1")}
           className="section-image"
         />
