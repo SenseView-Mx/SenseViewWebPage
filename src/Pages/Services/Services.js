@@ -38,7 +38,7 @@ function Services() {
               </div>
               <div className="card-body">
                 <img
-                  src="/05-Services/Variables_Industriales.webp"
+                  src="/05-Services/Variables_Industriales1.webp"
                   alt="Variables Industriales"
                   className="card-image"
                 />
