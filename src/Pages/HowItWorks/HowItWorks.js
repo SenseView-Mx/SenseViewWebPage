@@ -8,8 +8,8 @@ const HowItWorks = () => {
   const { t } = useLanguage();
 
   const stepImages = [
-      "/04-How_It_Works/Valoración.webp", // Imagen para el paso 1
-      "/04-How_It_Works/Selección.webp",  // Imagen para el paso 2
+      "/04-How_It_Works/Valoración.jpg", // Imagen para el paso 1
+      "/04-How_It_Works/Selección.jpg",  // Imagen para el paso 2
       "/04-How_It_Works/Proteo_Desarmador.jpg", // Imagen para el paso 3
       "/04-How_It_Works/Operador_Botellas.png",     // Imagen para el paso 4
       "/04-How_It_Works/Operador_Ope.png",   // Imagen para el paso 5
@@ -82,7 +82,7 @@ const HowItWorks = () => {
           </Button>
         </div>
         <div className="hw-cta-image">
-          <img src="/04-How_It_Works/Fabrica_Inteligente.webp" alt={t("ctaImageAlt")} />
+          <img src="/04-How_It_Works/Fabrica_Inteligente.png" alt={t("ctaImageAlt")} />
         </div>
       </div>
     </div>
