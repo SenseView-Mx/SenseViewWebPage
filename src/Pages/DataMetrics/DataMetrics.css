@@ -243,7 +243,7 @@
     .data-metrics-container {
       /* margin-top: 5%; */
       padding: 5% 8%;
-      background-attachment: fixed;
+      background-attachment: local;
     }
     
     .data-metrics-section-label {
@@ -336,10 +336,10 @@
     .data-metrics-container {
       /* margin-top: 5%; */
       padding: 5% 8%;
-      background-attachment: fixed;
+      background-attachment: local;
     }
     
-    
+
     .header-title {
       font-size: 1.5rem;
     }
