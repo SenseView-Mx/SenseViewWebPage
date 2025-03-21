@@ -106,11 +106,13 @@
 }
 
 @media (max-width: 768px) {
+  
   .contact-container {
     margin-top: 0;
     padding: 2% 5%;
     backdrop-filter: blur(8px);
     background-size: cover;
+    background-attachment: local;
   }
 
   .contact-title {
