@@ -166,6 +166,7 @@
   
     .dual-image-card {
       padding: 2rem;
+      border-radius: 16px;
     }
   
     .image-container img {
@@ -209,6 +210,7 @@
   @media screen and (max-width: 480px) {
     .dual-image-card {
       padding: 1rem;
+      border-radius: 16px;
     }
   
     .text-container h2 {
