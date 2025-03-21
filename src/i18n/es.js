@@ -17,7 +17,7 @@ const es = {
   // footer
     terms: "Terminos",
     privacy: "Privacidad",
-    reserved_rights: "© 2024 Sense View. Todos los derechos reservados.",
+    reserved_rights: "© 2025 Sense View. Todos los derechos reservados.",
   // home
     // section 1
     AnimationSectionTitle: "Datos para",
