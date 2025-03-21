@@ -58,11 +58,11 @@ const Contact = () => {
               </a>
               <a
                 href="https://www.youtube.com/@senseviewmx"
-                target="_blank"
+                target="youtube"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="12-Contact_Us/Icons/Youtube_Buttons.svg"
+                  src="12-Contact_Us/Icons/Youtube_Buttons.png"
                   alt="YouTube"
                   className="social-icon"
                 />
