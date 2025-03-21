@@ -36,9 +36,9 @@
   .faq-support-container {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    /* padding: 0;
     margin-top: 0;
-    gap: 0;    
+    gap: 0;     */
   }
 
   .faq-support-sidebar {
@@ -49,6 +49,6 @@
   }
 
   .faq-support-content {
-    width: 90%;
+    width: 85%;
   }
 }
