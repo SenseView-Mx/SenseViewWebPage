@@ -12,7 +12,7 @@ const MissionSection = () => {
         {/* Primera sección */}
         <div className="section">
           <div className="image-container">
-            <img src="/13-About_Us/Nuestra_Misión.png" alt={t("missionImageAlt")} />
+            <img src="/13-About_Us/Nuestra_Mision.png" alt={t("missionImageAlt")} />
           </div>
           <div className="text-container">
             <h2>{t("missionTitle")}</h2>
