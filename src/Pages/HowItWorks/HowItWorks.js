@@ -8,8 +8,8 @@ const HowItWorks = () => {
   const { t } = useLanguage();
 
   const stepImages = [
-      "/04-How_It_Works/Valoración.jpg", // Imagen para el paso 1
-      "/04-How_It_Works/Selección.jpg",  // Imagen para el paso 2
+      "/04-How_It_Works/Valoracion.jpg", // Imagen para el paso 1
+      "/04-How_It_Works/Seleccion.jpg",  // Imagen para el paso 2
       "/04-How_It_Works/Proteo_Desarmador.jpg", // Imagen para el paso 3
       "/04-How_It_Works/Operador_Botellas.png",     // Imagen para el paso 4
       "/04-How_It_Works/Operador_Ope.png",   // Imagen para el paso 5
