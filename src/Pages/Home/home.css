@@ -111,6 +111,14 @@ body {
 }
 
 @media (max-width: 767px) {
+
+  .home-container {
+    background-size: cover;
+    background-attachment: local;
+    /* background-position: top; */
+  }
+
+  
   .hero-content {
     padding: 10% 4%;
     max-width: 100%;
