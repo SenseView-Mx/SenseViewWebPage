@@ -56,7 +56,7 @@ const IndustrialVariables = () => {
         buttonIcon="/00-Buttons_Dropdowns_Questions/event.svg"
         toLink={"/contact"}
         backgroundPosition={"top"}
-        backgroundImage="/06-Service01/Headline_Image/Variables_Industriales.webp" // Imagen específica
+        backgroundImage="/06-Service01/Headline_Image/Variables_Industriales.png" // Imagen específica
       />
       <div className="description-section">
         <div className="description-left">
