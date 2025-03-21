@@ -12,7 +12,7 @@ const MissionSection = () => {
         {/* Primera sección */}
         <div className="section">
           <div className="image-container">
-            <img src="/13-About_Us/Nuestra_Misión.webp" alt={t("missionImageAlt")} />
+            <img src="/13-About_Us/Nuestra_Misión.png" alt={t("missionImageAlt")} />
           </div>
           <div className="text-container">
             <h2>{t("missionTitle")}</h2>
@@ -49,23 +49,22 @@ const MissionSection = () => {
       </div>
 
       {/* Tercera sección */}
-<div className="call-to-action">
-  {/* Texto en la izquierda */}
-  <div className="cta-text">
-    <h3>{t("ctaText")}</h3>
-    <Button to={"/contact"}>
-      {t("ctaButton")}
-      <img src="/00-Buttons_Dropdowns_Questions/contact_page.png" alt="Contact Icon" />
-    </Button>
-  </div>
-  
-  {/* Imagen en la derecha con gradiente */}
-  <div className="cta-image">
-    <div className="cta-image-overlay"></div>
-    <img src="/13-About_Us/Image_Production04.jpg" alt={t("ctaImageAlt")} />
-  </div>
-</div>
-
+    <div className="call-to-action">
+      {/* Texto en la izquierda */}
+      <div className="cta-text">
+        <h3>{t("ctaText")}</h3>
+        <Button to={"/contact"}>
+          {t("ctaButton")}
+          <img src="/00-Buttons_Dropdowns_Questions/contact_page.png" alt="Contact Icon" />
+        </Button>
+      </div>
+        
+        {/* Imagen en la derecha con gradiente */}
+        <div className="cta-image">
+          <div className="cta-image-overlay"></div>
+          <img src="/13-About_Us/Image_Production04.jpg" alt={t("ctaImageAlt")} />
+        </div>
+      </div>
     </div>
   );
 };
