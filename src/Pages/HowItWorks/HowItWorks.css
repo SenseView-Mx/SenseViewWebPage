@@ -294,6 +294,7 @@
   .how-it-works-container {
     backdrop-filter: blur(8px);
     background-size: cover;
+    background-attachment: local;
   }
 
   .how-it-works-content {
