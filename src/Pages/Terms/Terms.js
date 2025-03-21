@@ -221,8 +221,8 @@ const Terms = () => {
                   className="faq-icon"
                   src={
                     isExpanded
-                      ? "/00-Buttons, Dropdowns & Questions/remove.svg"
-                      : "/00-Buttons, Dropdowns & Questions/add.svg"
+                      ? "/00-Buttons_Dropdowns_Questions/remove.svg"
+                      : "/00-Buttons_Dropdowns_Questions/add.svg"
                   }
                   alt={isExpanded ? "Colapsar" : "Expandir"}
                 />
