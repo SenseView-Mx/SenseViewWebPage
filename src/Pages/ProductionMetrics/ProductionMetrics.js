@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import IndustrialMetricsIntro from "../../components/IndustrialMetricsIntro/IndustrialMetricsIntro";
 import { useLanguage } from "../../LanguageContext";
 import MonitoringSection from "../../components/MonitoringSection/MonitoringSection";
@@ -7,6 +7,10 @@ import "./ProductionMetrics.css";
 
 const ProductionMetrics = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+                        document.title = "Sense View | " + t("productionMetrics");
+                      }, []);
 
   const breadcrumbLinks = [
     { label: t("solutions"), active: false },

@@ -712,7 +712,8 @@ const en = {
     jurisdiction_content: "These Terms and Conditions are governed by the laws of the United Mexican States. Any dispute shall be resolved before the competent courts of the State of Jalisco.",
     jurisdiction_commitment: "We are committed to your success and the optimization of your processes. If you have any questions or need assistance, feel free to contact us at contacto@senseview.com. Thank you for choosing Sense View!",
 
-    terms_conditions_header: "Términos y Condiciones de Sense View",
+    terms_conditions_header: "Sense View Terms and Conditions",
+
     last_updated: "Última actualización: 25 de febrero de 2025",
   
   

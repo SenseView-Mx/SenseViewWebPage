@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../../components/Buttons/Button";
 import { useLanguage } from "../../LanguageContext";
 
@@ -6,6 +6,10 @@ import "./HowItWorks.css";
 
 const HowItWorks = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+                document.title = "Sense View | " + t("howItWorks");
+              }, []);
 
   const stepImages = [
       "/04-How_It_Works/Valoracion.jpg", // Imagen para el paso 1

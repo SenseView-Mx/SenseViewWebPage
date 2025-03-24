@@ -16,6 +16,10 @@ const Devices = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
+            document.title = "Sense View | " + t("devices");
+          }, []);
+
+    useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 500);
         };

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutUs.css";
 import MissionSection from "./MissionSection";
 import { useLanguage } from "../../LanguageContext";
 
 const AboutUs = () => {
     const { t } = useLanguage();
+    useEffect(() => {
+        document.title = "Sense View | " + t("aboutUs");
+      }, []);
+      
   return (
     <div>
         <div className="about-us">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./FAQnSupport.css";
 import FAQSection from "../../components/FAQSection/FAQSection.js";
 import { useLanguage } from "../../LanguageContext.js";
@@ -6,6 +6,10 @@ import ContactCard from "../../components/ContactCard/ContactCard";
 
 const FAQnSupport = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+              document.title = "Sense View | " + t("faq");
+            }, []);
 
   return (
     <div className="faq-support-container">

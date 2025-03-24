@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../../components/Buttons/Button";
 import { useLanguage } from "../../LanguageContext";
 import InteractiveFeatures from "./InteractiveFeatures";
@@ -10,6 +10,10 @@ import { useNavigate } from "react-router-dom";
 const DataMetrics = () => {
   const { t } = useLanguage();
   const navigate = useNavigate(); // Navegación con react-router
+
+  useEffect(() => {
+        document.title = "Sense View | " + t("dataMetrics");
+      }, []);
 
   return (
     <div className="dm-body">

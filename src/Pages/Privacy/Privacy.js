@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import "./Privacy.css";
 import { useLanguage } from "../../LanguageContext";
@@ -8,6 +8,10 @@ import { useLanguage } from "../../LanguageContext";
 const Privacy = () => {
   const { t } = useLanguage();  
   const [openSections, setOpenSections] = useState({});
+
+  useEffect(() => {
+                      document.title = "Sense View | " + t("privacy");
+                    }, []);
 
   const toggleSection = (index) => {
     setOpenSections((prev) => ({

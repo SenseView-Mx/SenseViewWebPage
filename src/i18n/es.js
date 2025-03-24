@@ -710,7 +710,8 @@ const es = {
     jurisdiction_content: "Estos Términos y Condiciones se rigen por las leyes de los Estados Unidos Mexicanos. Cualquier controversia será resuelta ante los tribunales competentes del Estado de Jalisco.",
     jurisdiction_commitment: "Estamos comprometidos con su éxito y la optimización de sus procesos. Si tiene dudas o necesita asistencia, no dude en escribirnos a contacto@senseview.com. ¡Gracias por elegir Sense View!",
 
-    terms_conditions_header: "Sense View Terms and Conditions",
+    terms_conditions_header: "Términos y Condiciones de Sense View",
+
     last_updated: "Last updated: February 25, 2025",
   
   

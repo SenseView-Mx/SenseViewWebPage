@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Prices.css";
 import Button from "../../components/Buttons/Button";
 import FAQSection from "../../components/FAQSection/FAQSection.js";
@@ -6,6 +6,10 @@ import { useLanguage } from "../../LanguageContext";
 
 const Prices = () => {
   const { t } = useLanguage();
+
+  useEffect(() => {
+                    document.title = "Sense View | " + t("pricing");
+                  }, []);
   return (
     <div className="body-prices">
       <div className="prices-container">

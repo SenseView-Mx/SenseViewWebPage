@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import Button from "../../components/Buttons/Button";
 import "./Services.css";
 import FeatureCard from "../../components/FeatureCard/FeatureCard";
@@ -6,6 +6,10 @@ import { useLanguage } from "../../LanguageContext";
 
 function Services() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+                          document.title = "Sense View | " + t("services");
+                        }, []);
 
   return (
     <div>

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import ContactSectionForm from "./ContactSectionForm";
 import { useLanguage } from "../../LanguageContext";
 
 const Contact = () => {
   const { t } = useLanguage();
+  useEffect(() => {
+      document.title = "Sense View | " + t("contact");
+    }, []);
 
   return (
     <div className="contact-page-container">

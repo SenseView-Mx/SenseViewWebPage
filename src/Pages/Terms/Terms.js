@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import "./Terms.css";
 import { useLanguage } from "../../LanguageContext";
@@ -7,6 +7,10 @@ import { useLanguage } from "../../LanguageContext";
 const Terms = () => {
   const { t } = useLanguage();  
   const [openSections, setOpenSections] = useState({});
+
+  useEffect(() => {
+                            document.title = "Sense View | " + t("terms");
+                          }, []);
 
   const toggleSection = (index) => {
     setOpenSections((prev) => ({
