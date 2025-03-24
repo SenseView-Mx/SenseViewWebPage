@@ -1,19 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importa Link de react-router-dom
 import "./Footer.css";
 import { useLanguage } from "../../LanguageContext";
 
 const Footer = () => {
     const { t } = useLanguage();  // Traslate
+
     return (
         <footer className="footer">
           <div className="footer-top">
             <div className="footer-logo-links">
               <img src="/02-Footer/Original-8.png" alt="Logo" className="footer-logo" />
               <nav className="footer-links">
-                <a href="/faq">{t("faq")}</a>
-                <a href="/contact">{t("contact")}</a>
-                <a href="/terms">{t("terms")}</a>
-                <a href="/privacy">{t("privacy")}</a>
+                {/* Utiliza Link en lugar de a */}
+                <Link to="/faq">{t("faq")}</Link>
+                <Link to="/contact">{t("contact")}</Link>
+                <Link to="/terms">{t("terms")}</Link>
+                <Link to="/privacy">{t("privacy")}</Link>
               </nav>
             </div>
             <div className="footer-contact">
@@ -33,7 +36,7 @@ const Footer = () => {
           </div>
           <div className="footer-container">
             <div className="footer-social">
-              {[ 
+              {[
                 { href: "https://www.facebook.com/people/Sense-View/61556885189499/?is_tour_completed=true", src: "/02-Footer/Facebook_Buttons.png", alt: "Facebook" },
                 { href: "https://www.linkedin.com/company/senseview/about/", src: "/02-Footer/LinkedIn_Buttons.png", alt: "LinkedIn" },
                 { href: "https://www.youtube.com/@senseviewmx", src: "/02-Footer/YouTube_Buttons.png", alt: "YouTube" },
@@ -46,15 +49,14 @@ const Footer = () => {
               ))}
             </div>
             <nav className="footer-links-mobile">
-              <a href="/terms">{t("terms")}</a>
-              <a href="/privacy">{t("privacy")}</a>
-              </nav>
+              <Link to="/terms">{t("terms")}</Link>
+              <Link to="/privacy">{t("privacy")}</Link>
+            </nav>
             <div className="footer-bottom">
               <p>{t("reserved_rights")}</p>
             </div>
           </div>
-      </footer>
-      
+        </footer>
     );
 };
 
