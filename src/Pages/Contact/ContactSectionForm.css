@@ -32,122 +32,82 @@
   margin: 0 10%;
 }
 
-.form-section h1 {
-  font-size: 3rem;
-  font-weight: 600;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 0 5%; /* 👈 Añade margen horizontal interior */
 }
 
-.form-group {
+/* Estructura de dos columnas */
+.form-group{
   display: flex;
-  gap: 6%;
-  width: 80%;
-}
-
-.form-group input {
-  flex: 1;
-  padding: 8px 8px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  height: 36px;
-  width: 270px;
-  font-size: 14px;
-}
-
-.form-group-single-input {
-  display: flex;
-  gap: 15%;
+  justify-content: space-between;
+  gap: 10%;
   width: 100%;
-}
-
-.form-group-single-input input {
-  flex: 1;
-  padding: 8px 14px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  height: 36px;
-  min-width: 600px;
-  font-size: 14px;
 }
 
 .select-group {
   display: flex;
-  gap: 3%;
+  justify-content: space-between;
+  gap: 5%;
   width: 100%;
 }
 
-.select-group select {
-  font-family: 'Manrope', sans-serif;
+/* Cada input ocupa el 50% menos el gap */
+.form-group > div,
+.select-group > div {
   flex: 1;
-  padding: 8px 8px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  height: 50px;
-  min-width: 270px;
-  font-size: 17px;
-  background-color: white;
-  appearance: none;
-  color: var(--Tones-Black-60, #5e5d5dc9); /* Placeholder color */
 }
 
-/* Cuando el usuario selecciona una opción válida, cambia el color a negro */
-.select-group select:focus,
-.select-group select:not(:invalid) {
-  color: #000000;
+/* Ajustes visuales uniformes */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+/* Textarea */
+textarea {
+  height: 100px;
+  resize: vertical;
+  width: 100%;
+}
+
+/* Botón ocupa todo el ancho del form */
+.submit-button {
+  background-color: #101011;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #272829;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   font-family: 'Manrope', sans-serif;
-  color: #aaa; /* Color de placeholder más tenue */
+  color: #aaa;
 }
 
-.contact-form, 
-.contact-form input, 
-.contact-form textarea, 
-.contact-form select, 
-.contact-form button, 
-.contact-form h3, 
+.contact-form,
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button,
+.contact-form h3,
 .contact-form p {
   font-family: 'Manrope', sans-serif !important;
-}
-
-
-.custom-text-color {
-  color: #1a9de3; /* Puedes cambiar este color a lo que prefieras */
-  font-weight: bold;
-}
-
-textarea {
-  width: 99%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  resize: none;
-  padding: 8px 14px;
-  font-size: 14px;
-  height: 80px;
-  min-width: 600px;
-}
-
-.submit-button {
-  font-family: 'Manrope', sans-serif !important;
-  background-color: #101011;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.3rem;
-  cursor: pointer;
-  min-width: 610px
-}
-
-.submit-button:hover {
-  background-color: #272829;
 }
 
 .contact-form h3 {
@@ -155,6 +115,11 @@ textarea {
   font-size: 1rem;
   font-weight: bold;
   color: var(--Tones-Black-60, #5e5d5dc9);
+}
+
+.custom-text-color {
+  color: #1a9de3;
+  font-weight: bold;
 }
 
 .extra-section-title {
@@ -168,6 +133,7 @@ textarea {
   font-weight: 700;
 }
 
+/* TABLETS */
 @media (max-width: 1024px) {
   .contact-section-container {
     padding: 20px;
@@ -175,8 +141,8 @@ textarea {
   }
 
   .form-section {
-    margin-right: 0; /* Reducir o eliminar el margen derecho */
-    margin-bottom: 20px; /* Espacio por debajo para separar del siguiente bloque */
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .form-section h1 {
@@ -184,18 +150,18 @@ textarea {
   }
 }
 
+/* MÓVILES */
 @media (max-width: 768px) {
   .contact-section-container {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     max-width: 100%;
   }
 
   .contact-section-container .contact-card {
-    position: static; 
+    position: static;
     top: auto;
     width: 80%;
-    /* margin-left: 14%; */
     flex: 0 0 100px;
   }
 
@@ -205,8 +171,9 @@ textarea {
   }
 
   .form-section {
-    width: 80%;
+    width: 90%;
     margin: 4% 0;
+    padding: 5%;
   }
 
   .form-section h1 {
@@ -214,23 +181,19 @@ textarea {
   }
 
   .form-group,
-  .select-group,
+  .select-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
   .form-group-single-input {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
-  .form-group-single-input input{
-    min-width: 290px;
-  }
-
-  .form-group input,
-  .select-group select {
-    min-width: fit-content;
-  }
-
-  textarea {
-    min-width: fit-content;
+  .form-group > div,
+  .select-group > div {
+    width: 100%;
   }
 
   .extra-section-title {
@@ -238,23 +201,21 @@ textarea {
   }
 
   .submit-button {
-    background-color: #101011;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    min-width: fit-content;
-    margin-bottom: 5%;
+    margin-top: 10px;
+  }
+
+  .contact-form {
+    padding: 0 6%; /* más margen horizontal en móvil */
+  }
+
+  .submit-button {
+    width: 110%;
   }
 }
 
+/* CELULARES PEQUEÑOS */
 @media (max-width: 480px) {
-  .form-section h1 {
-    font-size: 1.6rem;
-  }
-
+  .form-section h1,
   .extra-section-title {
     font-size: 1.6rem;
   }
