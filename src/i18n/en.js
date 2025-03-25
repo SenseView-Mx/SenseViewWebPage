@@ -714,7 +714,8 @@ const en = {
 
     terms_conditions_header: "Sense View Terms and Conditions",
 
-    last_updated: "Última actualización: 25 de febrero de 2025",
+    last_updated: "Last updated: February 25, 2025",
+    home: "Home",
   
   
   
