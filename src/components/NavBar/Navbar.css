@@ -507,61 +507,76 @@ body {
     width: 96%;
     padding: 1% 0;
   }
-
     
   .navbar-menu {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    padding: 0; /* Eliminar padding lateral */
-    width: 100%; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between; /* This keeps space distribution even */
+    width: 100%; /* Ensures full width utilization */
   }
     
   .navbar-menu li {
-    width: 100%; 
-    margin: 0; /* Eliminar margen */
-    padding: 0; /* Ajustar padding */
-    text-align: left; /* Asegurar alineación izquierda */
-    border-bottom: 1px solid #ccc;
+    padding: 15px; /* Increased vertical padding for more balance */
+    display: flex;
+    align-items: center;
+    position: relative; /* For precise border positioning */
+  }
+
+  .navbar-menu li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px; /* Matches left padding */
+    right: 15px; /* Matches right padding */
+    height: 1px;
+    /* background-color: #ccc; */
   }
   
-
+  .navbar-menu li:last-child {
+    border-bottom: none; /* Removes border from the last item */
+  }
+  
   .navbar-menu a {
     width: 100%;
-    display: block; /* Asegurar que ocupa todo el ancho */
-    padding: 10px 0px; /* Agregar padding solo en los lados para espaciar */
+    padding: 0;
     margin: 0;
-    
-    text-decoration: none;
-    color: inherit;
-    font-size: 18px;
-    }
+  }
 
-    .navbar-menu li:last-child {
-      border-bottom: none; 
-    }
+ 
   
-    .dropdown-solutions .solutions-dropdown {
-      position: static; 
-      display: block; 
-      margin-top: 0px;
-      box-shadow: none; 
-      border: none;
-      width: 95vw; 
-      min-width: 100%;
-      padding: 0; 
-    }
+  .dropdown-solutions .solutions-dropdown {
+    position: static; 
+    display: block; 
+    margin-top: 0px;
+    box-shadow: none; 
+    border: none;
+    width: 95vw; 
+    min-width: 100%;
+    padding: 0; 
+  }
     
-    .solutions-dropdown li {
-      width: 100%; 
-      text-align: left; 
-      padding: 0 12px;
-      font-size: 18px;
-    }
+   .solutions-dropdown li {
+    padding: 15px;
+    position: relative;
+  }
+
+  .solutions-dropdown li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 1px;
+    /* background-color: #ccc; */
+  }
   
     .solutions-dropdown li.additional-margin {
-      padding-left: 20px; 
+      padding-left: 40px; /* Increased left padding for indented items */
+      width: 90%; 
     }
+
     .dropdown-solutions button{
       margin-bottom: 6px;
     }

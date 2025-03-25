@@ -88,6 +88,9 @@
 }
 
 @media (max-width: 1200px) {
+  .feature-text-description {
+    margin-top: 2%;
+  }
   .description-section {
     padding: 50px 80px; 
   }
@@ -95,7 +98,8 @@
     width: 50%; 
   }
   .description-right {
-    gap: 40px; 
+    gap: 40px;
+    margin-left: 10%; 
   }
   .feature-description {
     width: 280px; 
@@ -118,6 +122,11 @@
 }
 
 @media (max-width: 768px) {
+  .feature-text-description {
+    padding-left: 25%;
+    padding-right: 5%;
+  }
+
   .industrial-variables-container {
     padding: 20px;
     min-height: 40vh; 
