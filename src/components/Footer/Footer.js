@@ -37,11 +37,11 @@ const Footer = () => {
           <div className="footer-container">
             <div className="footer-social">
               {[
-                { href: "https://www.facebook.com/people/Sense-View/61556885189499/?is_tour_completed=true", src: "/02-Footer/Facebook_Buttons.png", alt: "Facebook" },
-                { href: "https://www.linkedin.com/company/senseview/about/", src: "/02-Footer/LinkedIn_Buttons.png", alt: "LinkedIn" },
-                { href: "https://www.youtube.com/@senseviewmx", src: "/02-Footer/YouTube_Buttons.png", alt: "YouTube" },
-                { href: "https://www.instagram.com/senseviewmx/?igsh=MXZzMmoyc3BoMW9ocA%3D%3D#", src: "/02-Footer/Instagram_Buttons.png", alt: "Instagram" },
-                { href: "https://x.com/senseviewmx?s=11&t=yUWHfdCX1kRt_eElh_qhsg", src: "/02-Footer/X_Button.png", alt: "Twitter" },
+                { href: "https://www.facebook.com/people/Sense-View/61556885189499/?is_tour_completed=true", src: "/02-Footer/facebook_icon.png", alt: "Facebook" },
+                { href: "https://www.linkedin.com/company/senseview/about/", src: "/02-Footer/linkedin_icon.png", alt: "LinkedIn" },
+                { href: "https://www.youtube.com/@senseviewmx", src: "/02-Footer/youtube_icon.png", alt: "YouTube" },
+                { href: "https://www.instagram.com/senseviewmx/?igsh=MXZzMmoyc3BoMW9ocA%3D%3D#", src: "/02-Footer/instagram_icon.png", alt: "Instagram" },
+                { href: "https://x.com/senseviewmx?s=11&t=yUWHfdCX1kRt_eElh_qhsg", src: "/02-Footer/x_icon.png", alt: "Twitter" },
               ].map(({ href, src, alt }) => (
                 <a key={alt} href={href} target="_blank" rel="noopener noreferrer">
                   <img src={src} alt={alt} />

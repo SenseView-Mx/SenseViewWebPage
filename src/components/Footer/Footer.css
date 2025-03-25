@@ -60,8 +60,9 @@ body {
   }
   
   .footer-social a img {
-    width: 50px;
+    width: 25px;
     transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 0 10px; 
   }
   .footer-links-mobile a {
     display: none;
