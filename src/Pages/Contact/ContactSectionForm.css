@@ -13,7 +13,6 @@
   top: 100px;
   align-self: flex-start;
   height: fit-content;
-  
 }
 
 .content-right {
@@ -36,11 +35,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 5%; /* 👈 Añade margen horizontal interior */
+  padding: 0 5%;
 }
 
-/* Estructura de dos columnas */
-.form-group{
+.form-group {
   display: flex;
   justify-content: space-between;
   gap: 10%;
@@ -54,40 +52,34 @@
   width: 100%;
 }
 
-/* Cada input ocupa el 50% menos el gap */
 .form-group > div,
 .select-group > div {
   flex: 1;
 }
 
-/* Ajustes visuales uniformes */
 .contact-form input,
 .contact-form select,
-.contact-form textarea {
+.contact-form textarea,
+.submit-button {
   width: 100%;
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 15px;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
-/* Textarea */
 textarea {
   height: 100px;
   resize: vertical;
-  width: 100%;
 }
 
-/* Botón ocupa todo el ancho del form */
 .submit-button {
   background-color: #101011;
   color: white;
-  padding: 12px;
   border: none;
-  border-radius: 12px;
-  font-size: 1.3rem;
   cursor: pointer;
-  width: 100%;
+  font-size: 1.3rem;
 }
 
 .submit-button:hover {
@@ -205,11 +197,11 @@ textarea {
   }
 
   .contact-form {
-    padding: 0 6%; /* más margen horizontal en móvil */
+    padding: 0 6%;
   }
 
   .submit-button {
-    width: 110%;
+    width: 100%;
   }
 }
 
