@@ -24,7 +24,7 @@ const IndustrialVariables = () => {
       description: t("temperatureAndHumidityDesc"),
     },
     {
-      icon: "/06-Service01/Icons/water_pump.svg",
+      icon: "/06-Service01/Icons/water_pump.png",
       title: t("flow"),
       description: t("flowDesc"),
     },
@@ -39,7 +39,7 @@ const IndustrialVariables = () => {
       description: t("pressureDesc"),
     },
     {
-      icon: "/06-Service01/Icons/location_on.svg",
+      icon: "/06-Service01/Icons/location_on.png",
       title: t("gps"),
       description: t("gpsDesc"),
     },

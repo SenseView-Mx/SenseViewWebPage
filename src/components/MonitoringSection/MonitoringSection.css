@@ -59,7 +59,7 @@
 }
 
 .icon-container img {
-  width: 50px;
+  width: 15%;
   height: fit-content;
   object-fit: contain;
 }

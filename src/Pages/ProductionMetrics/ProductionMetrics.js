@@ -19,32 +19,32 @@ const ProductionMetrics = () => {
 
   const monitoringItems = [
     {
-      icon: "/07-Service02/Icons/sentiment_satisfied.svg",
+      icon: "/07-Service02/Icons/sentiment_satisfied.png",
       title: t("monitoringItems_0_title"),
       description: t("monitoringItems_0_description"),
     },
     {
-      icon: "/07-Service02/Icons/table_chart_view.svg",
+      icon: "/07-Service02/Icons/table_chart_view.png",
       title: t("monitoringItems_1_title"),
       description: t("monitoringItems_1_description"),
     },
     {
-      icon: "/07-Service02/Icons/timer.svg",
+      icon: "/07-Service02/Icons/timer.png",
       title: t("monitoringItems_2_title"),
       description: t("monitoringItems_2_description"),
     },
     {
-      icon: "/07-Service02/Icons/hourglass_disabled_big.svg",
+      icon: "/07-Service02/Icons/hourglass_disabled.png",
       title: t("monitoringItems_3_title"),
       description: t("monitoringItems_3_description"),
     },
     {
-      icon: "/07-Service02/Icons/trending_up.svg",
+      icon: "/07-Service02/Icons/trending_up.png",
       title: t("monitoringItems_4_title"),
       description: t("monitoringItems_4_description"),
     },
     {
-      icon: "/07-Service02/Icons/bar_chart_4_bars.svg",
+      icon: "/07-Service02/Icons/bar_chart_4_bars.png",
       title: t("monitoringItems_5_title"),
       description: t("monitoringItems_5_description"),
     },
