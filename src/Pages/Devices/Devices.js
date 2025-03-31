@@ -92,7 +92,7 @@ const Devices = () => {
                 muted
                 playsInline
             >
-                <source src="/08-Devices/videos/Video_Proteo_3COM_V1_Gradient.mp4" type="video/mp4" />
+                <source src="/08-Devices/videos/Video_Proteo_3COM_V1_Gradient1.mp4" type="video/mp4" />
             </video>
         ) : (
             <img
@@ -142,7 +142,7 @@ const Devices = () => {
         <div className="dv-body">
             <div className="device-container">
                 <video className="background-video" autoPlay loop muted playsInline>
-                    <source src="/08-Devices/Headline_Video/Video_Proteo_Assembly.mp4" type="video/mp4" />
+                    <source src="/08-Devices/Headline_Video/Video_Proteo_Assembly1.mp4" type="video/mp4" />
                 </video>
                 <div className="gradient-overlay"></div>
                 <div className="device-content">
